@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,30 +13,30 @@
             
             <p>
                 <label for="nome_completo">Nome:</label>
-                <input type="text"  name="nome_completo" id="nome_completo">
+                <input type="text"  name="nome_completo" id="nome_completo" class="campo">
             </p>
             
             <p>
                 <label for="data_nascimento">DN:</label>
-                <input type="date"  name="data_nascimento" id="data_nascimento">
+                <input type="date"  name="data_nascimento" id="data_nascimento" class="campo">
                 
                 <label for="tipo_sexo">Sexo:</label>
-                <select name="tipo_sexo" id="tipo_sexo">
-                    <option value="0">selecione</option>
-                    <option value="1">Masculino</option>
-                    <option value="2">Feminino</option>
+                <select name="tipo_sexo" id="tipo_sexo" class="campo">
+                    <option value="">selecione</option>
+                    <option value="0">Masculino</option>
+                    <option value="1">Feminino</option>
                 </select>                
             
                 <label for="peso">Peso (Kg):</label>                
-                <input type="text" name="peso" id="peso"> 
+                <input type="text" name="peso" id="peso" class="campo"> 
                 
 
                 <label for="altura">Altura</label>
-                <input type="text" name="altura" id="altura">
+                <input type="text" name="altura" id="altura" class="campo">
 
                 <label for="cor">Cor:</label>
-                <select name="cor" id="cor">                    
-                    <option value="0">selecione</option>
+                <select name="cor" id="cor" class="campo">                    
+                    <option value="">selecione</option>
                     <option value="1">Branco</option>
                     <option value="2">Pardo</option>
                     <option value="3">Negro</option>                    
@@ -44,29 +45,29 @@
                                
             <p>
                 <label for="escolaridade">escolaridade</label>
-                <input type="text" name="escolaridade" id="escolaridade">
+                <input type="text" name="escolaridade" id="escolaridade" class="campo">
 
                 <label for="profissao">Profissão</label>
-                <input type="text" name="profissao" id="profissao">
+                <input type="text" name="profissao" id="profissao" class="campo">
             </p>
 
             <p>
                 <label for="rg">RG</label>
-                <input type="text" name="rg" id="rg">
+                <input type="text" name="rg" id="rg" class="campo">
 
                 <label for="cpf">CPF</label>
-                <input type="text" name="cpf" id="cpf">
+                <input type="text" name="cpf" id="cpf" class="campo">
 
                 <label for="estado_civil">Estado Civil:</label>
-                <input type="text" name="estado_civil" id="estado_civil">
+                <input type="text" name="estado_civil" id="estado_civil" class="campo">
             </p>
 
             <p>
                 <label for="naturalidade">Naturalidade:</label>
-                <input type="text" name="naturalidade" id="naturalidade">
+                <input type="text" name="naturalidade" id="naturalidade" class="campo">
 
                 <label for="estados-brasil">Estado:</label>
-                <select name="estados-brasil">
+                <select name="estados-brasil" class="campo">
                     <option value="0">selecione--</option>
                     <option value="ac">Acre</option>
                     <option value="al">Alagoas</option>
@@ -103,31 +104,31 @@
                 <label for="filiacao">Filiação</label> <br>
                 
                 <label for="pai">Pai</label>
-                <input type="text" name="pai" id="pai">
+                <input type="text" name="pai" id="pai" class="campo">
                 
                 <label for="mae">Mãe</label>
-                <input type="text" name="mae" id="mae">                
+                <input type="text" name="mae" id="mae" class="campo">                
             </p>
 
             <p>
                 <label for="contato">Contato (tel/cel)</label>
-                <input type="text" name="contato" id="contato">
+                <input type="text" name="contato" id="contato" class="campo">
             </p>
 
             <p>
                 <!--Trocar para o campo correto-->
                 <label for="contato">Contato (tel/cel)</label>
-                <input type="text" name="contato" id="contato">
+                <input type="text" name="contato" id="contato" class="campo">
             </p>
 
             <p>
                 <!--Trocar para o campo correto-->
                 <label for=""><label>
-                <input type="" name="" id="">
+                <input type="" name="" id="" class="campo">
             </p>
 
-            <button id="botao-cadastrar">Cadastrar</button>
         </form>
+        <button id="botao-cadastrar">Cadastrar</button>
         <script src="main.js"></script>
         <script>
             main();
