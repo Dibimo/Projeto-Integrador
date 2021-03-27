@@ -3,10 +3,10 @@ function main() {
     botao.addEventListener("click", function (event){
         event.preventDefault();
         var form = document.querySelector("#formulario");
-        alert(validaFormulario(form));
+        alert(verificaCamposVazios(form));
     });
 
-    var campos = document.querySelectorAll(".campo");
+    var campos = document.querySelectorAll(".campo"); //obtem todos os campos do fórmulario
     adicionaListenerCampos(campos);
 }
 
@@ -24,10 +24,10 @@ function verificaCamposVazios(form) {
 
 function adicionaListenerCampos(campos) {
     for (let i = 0; i < campos.length; i++) {
-        campos[i].addEventListener("focus",function(){
+        campos[i].addEventListener("focus", function () {
             campos[i].classList.remove("campo-nao-preenchido")
         });
-        
+
     }
 }
 
