@@ -10,7 +10,7 @@ function main() {
     adicionaListenerCampos(campos);
 }
 
-function validaFormulario(form) {
+function verificaCamposVazios(form) {
     var ehValido = true;
     for (let i = 0; i < form.length; i++) {
         if(form[i].value == ""){
