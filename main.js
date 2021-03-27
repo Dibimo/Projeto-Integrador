@@ -31,3 +31,12 @@ function adicionaListenerCampos(campos) {
     }
 }
 
+function somenteNumeros(campo, max) {
+    var texto = campo.value;
+    if ((isNaN(texto)) || (texto.length > max)) {
+        texto = (texto).substring(0, (texto).length - 1);
+        campo.value = texto;
+    }
+
+}
+
