@@ -6,7 +6,7 @@ function main() {
         alert(verificaCamposVazios(form));
     });
 
-    var campos = document.querySelectorAll("#campo"); //obtem todos os campos do fórmulario
+    var campos = document.querySelectorAll("input, select"); //obtem todos os campos do fórmulario
     adicionaListenerCampos(campos);
 
     var camposNumericos = document.querySelectorAll(".campoNumerico");
