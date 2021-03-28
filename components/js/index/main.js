@@ -7,7 +7,10 @@ function main() {
     });
     var campos = document.querySelectorAll("input, select"); //obtem todos os campos do fórmulario
     adicionaListenerCampos(campos); //adiona um listener em todos eles
-
+    
+    var camposNumericos = document.querySelectorAll(".campoNumerico"); //obtem apenas os campos númericos
+    adicionaListenerCamposNumericos(camposNumericos); //adiciona um lister especifico para eles
+    
     var campoCpf = document.querySelector("#cpf");
     campoCpf.addEventListener("blur", function () {
         var texto = campoCpf.value;
@@ -25,10 +28,6 @@ function main() {
             console.log('deu 11 aqui');
         }
     });
-
-    var camposNumericos = document.querySelectorAll(".campoNumerico"); //obtem apenas os campos númericos
-    adicionaListenerCamposNumericos(camposNumericos); //adiciona um lister especifico para eles
-
 }
 
 
