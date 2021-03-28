@@ -11,7 +11,7 @@ function adicionaListenerCamposNumericos(campos) {
         campos[i].addEventListener("input", function () {
             var texto = campos[i].value;
             if ((isNaN(texto)) || (texto.length > 100)) {
-                texto = (texto).substring(0, (texto).length - 1);
+                texto = texto.replace(/\D/g,"");
                 campos[i].value = texto;
             }
         });
