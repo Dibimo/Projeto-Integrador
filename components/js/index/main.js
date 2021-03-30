@@ -4,6 +4,9 @@ function main() {
         event.preventDefault();
         var form = document.querySelector("#formulario");
         obtemPaciente(form);
+        verificaCamposVazios(form);
+        console.log(form);
+        
     });
     var campos = document.querySelectorAll("input, select"); //obtem todos os campos do fórmulario
     adicionaListenerCampos(campos); //adiona um listener em todos eles
