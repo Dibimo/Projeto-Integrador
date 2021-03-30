@@ -13,7 +13,7 @@ function main() {
     
     var campoCpf = document.querySelector("#cpf");
     campoCpf.addEventListener("blur", function () {
-        var texto = campoCpf.value;
+        var texto = campoCpf.value.replace(/[.,-]/g,""); //recebendo o texto sem os caracteres de separação
         if(texto.length >= 11){
             var parte1 = texto.slice(0, 3);
             var parte2 = texto.slice(3, 6);
@@ -23,11 +23,7 @@ function main() {
             campoCpf.value = textoFormatado;
         }
     });
-    campoCpf.addEventListener("input", function(){
-        if(campoCpf.value.replace(/[.-]/g,"").length == 11){
-            console.log('deu 11 aqui');
-        }
-    });
+
 }
 
 
