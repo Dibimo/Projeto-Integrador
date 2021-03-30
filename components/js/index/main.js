@@ -26,7 +26,7 @@ function main() {
 
     var telefone = document.querySelector("#contato");
     telefone.addEventListener("blur",function (){
-        var texto = telefone.value.replace(/[.,-]/g, ""); //recebendo o texto sem os caracteres de separação
+        var texto = telefone.value.replace(/[-]/g, ""); //recebendo o texto sem os caracteres de separação
         if (texto.length >= 10) {
             var ddd = texto.slice(0, 2);
             var parte2 = texto.slice(-4);
@@ -38,7 +38,7 @@ function main() {
 
     var cep = document.querySelector("#cep");
     cep.addEventListener("blur", function (){
-        var texto = cep.value.replace(/[.,-]/g, ""); //recebendo o texto sem os caracteres de separação
+        var texto = cep.value.replace(/[-]/g, ""); //recebendo o texto sem os caracteres de separação
         if (texto.length >= 7) {
             var parte1 = texto.slice(0,5);
             var parte2 = texto.slice(-3);
