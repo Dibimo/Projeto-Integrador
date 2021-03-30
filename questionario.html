@@ -1,0 +1,190 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionario</title>
+</head>
+<body>
+    <div class="conteiner">
+        <form>
+            <p>
+                <label for="nome_completo">Nome:</label>
+                <input type="text" name="nome_completo" id="nome_completo" class="campo">
+            </p>
+            <p>
+                <label for="cod_cadastro">Cadastro:</label>
+                <input type="text" name="cod_cadastro" id="cod_cadastro" class="campoNumerico">
+            </p>
+            <p>
+                <label for="queixa_principal">Queixa Principal:</label>
+                <textarea name="queixa_principal" id="queixa_principal" class="campo"></textarea>
+            </p>
+            <p>
+                <label for="hitorico_doenca">Historio da doença atual:</label>
+                <textarea name="hitorico_doenca" id="hitorico_doenca" class="campo"></textarea>
+            </p>
+            <p>
+                <ol>
+                    <li>
+                        <label for="hitorico_doenca">Já teve hemorragia?</label>
+                        <input type="radio" value="positivo" name="resposta_hemorragia">
+                        <label for="positivo">Sim</label>
+                        <input type="radio" value="negativo" name="resposta_hemorragia">
+                        <label for="negativo">Não</label>
+                    </li>
+                    <li>
+                        <label for="hitorico_doenca">Já sofreu alergia?</label>
+                        <input type="radio" value="positivo" name="resposta_alergia">
+                        <label for="positivo">Sim</label>
+                        <input type="radio" value="negativo" name="resposta_alergia">
+                        <label for="negativo">Não</label>
+                    </li>
+                    <li>
+                        <label for="hitorico_doenca">Já teve reumatismo infeccioso?</label>
+                        <input type="radio" value="positivo" name="resposta_reumatismo">
+                        <label for="positivo">Sim</label>
+                        <input type="radio" value="negativo" name="resposta_reumatismo">
+                        <label for="negativo">Não</label>
+                    </li>
+                    <li>
+                        <label for="hitorico_doenca">Sofre(u) de distúrbio cardiovascular?</label>
+                        <input type="radio" value="positivo" name="resposta_cardiovascular">
+                        <label for="positivo">Sim</label>
+                        <input type="radio" value="negativo" name="resposta_cardiovascular">
+                        <label for="negativo">Não</label>
+                    </li>
+                    <li>
+                        <label for="hitorico_doenca">Sofre(u) de gastrite?</label>
+                        <input type="radio" value="positivo" name="resposta_gastrite">
+                        <label for="positivo">Sim</label>
+                        <input type="radio" value="negativo" name="resposta_gastrite">
+                        <label for="negativo">Não</label>
+                    </li>
+                    <li>
+                        <label for="hitorico_doenca">É diabético ou tem familiares diabéticos?</label>
+                        <input type="radio" value="positivo" name="resposta_diabetico">
+                        <label for="positivo">Sim</label>
+                        <input type="radio" value="negativo" name="resposta_diabetico">
+                        <label for="negativo">Não</label>
+                    </li>
+                    <li>
+                        <label for="hitorico_doenca">Já desmaiou alguma vez?</label>
+                        <input type="radio" value="positivo" name="resposta_desmaio">
+                        <label for="positivo">Sim</label>
+                        <input type="radio" value="negativo" name="resposta_desmaio">
+                        <label for="negativo">Não</label>
+                    </li>
+                    <li>
+                        <label for="hitorico_doenca">Está sob tratamento médico?</label>
+                        <input type="radio" value="positivo" name="resposta_tratamento">
+                        <label for="positivo">Sim</label>
+                        <input type="radio" value="negativo" name="resposta_tratamento">
+                        <label for="negativo">Não</label>
+                    </li>
+
+                    <li>
+                        <label for="hitorico_doenca">Está tomando algum medicamento?</label>
+                        <input type="radio" value="positivo" name="resposta_medicamento">
+                        <label for="positivo">Sim</label>
+                        <input type="radio" value="negativo" name="resposta_medicamento">
+                        <label for="negativo">Não</label>
+                    </li>
+                    <li>
+                        <label for="hitorico_doenca">Esteve doente ou foi operado nos últimos 5 anos?</label>
+                        <input type="radio" value="positivo" name="resposta_operacao">
+                        <label for="positivo">Sim</label>
+                        <input type="radio" value="negativo" name="resposta_operacao">
+                        <label for="negativo">Não</label>
+                    </li>
+                    <li>
+                        <label for="hitorico_doenca">Tem hábitos, vícios ou manias?</label>
+                        <input type="radio" value="positivo" name="resposta_manias">
+                        <label for="positivo">Sim</label>
+                        <input type="radio" value="negativo" name="resposta_manias">
+                        <label for="negativo">Não</label>
+                    </li>
+                    <li>
+                        <label for="hitorico_doenca">Tem ansiedade/depressão?</label>
+                        <input type="radio" value="positivo" name="resposta_depressao">
+                        <label for="positivo">Sim</label>
+                        <input type="radio" value="negativo" name="resposta_depressao">
+                        <label for="negativo">Não</label>
+                    </li>
+                    <li>
+                        <label for="hitorico_doenca">Você e/ou algum familiar teve alguma(s) dessas doenças</label>
+                        <ul>
+                            <li>
+                                <label for="hitorico_doenca">Tuberculose</label>
+                                <input type="radio" value="positivo" name="resposta_tuberculose">
+                                <label for="positivo">Sim</label>
+                                <input type="radio" value="negativo" name="resposta_tuberculose">
+                                <label for="negativo">Não</label>
+                            </li>
+                            <li>
+                                <label for="hitorico_doenca">Sarampo</label>
+                                <input type="radio" value="positivo" name="resposta_sarampo">
+                                <label for="positivo">Sim</label>
+                                <input type="radio" value="negativo" name="resposta_sarampo">
+                                <label for="negativo">Não</label>
+                            </li>
+                            <li>
+                                <label for="hitorico_doenca">Sífilis</label>
+                                <input type="radio" value="positivo" name="resposta_sifilis">
+                                <label for="positivo">Sim</label>
+                                <input type="radio" value="negativo" name="resposta_sifilis">
+                                <label for="negativo">Não</label>
+                            </li>
+                            <li>
+                                <label for="hitorico_doenca">Caxumba</label>
+                                <input type="radio" value="positivo" name="resposta_caxumba">
+                                <label for="positivo">Sim</label>
+                                <input type="radio" value="negativo" name="resposta_caxumba">
+                                <label for="negativo">Não</label>
+                            </li>
+                            <li>
+                                <label for="hitorico_doenca">Hepatite, A, B, C</label>
+                                <input type="radio" value="positivo" name="resposta_hepatite">
+                                <label for="positivo">Sim</label>
+                                <input type="radio" value="negativo" name="resposta_hepatite">
+                                <label for="negativo">Não</label>
+                            </li>
+                            <li>
+                                <label for="hitorico_doenca">Varicela</label>
+                                <input type="radio" value="positivo" name="resposta_varicela">
+                                <label for="positivo">Sim</label>
+                                <input type="radio" value="negativo" name="resposta_varicela">
+                                <label for="negativo">Não</label>
+                            </li>
+                            <li>
+                                <label for="hitorico_doenca">AIDS</label>
+                                <input type="radio" value="positivo" name="resposta_aids">
+                                <label for="positivo">Sim</label>
+                                <input type="radio" value="negativo" name="resposta_aids">
+                                <label for="negativo">Não</label>
+                            </li>
+                            <li>
+                                <label for="outra">Outra</label>
+                                <input type="text" name="outra" id="outra">
+                                <input type="radio" value="positivo" name="resposta_sarampo">
+                                <label for="positivo">Sim</label>
+                                <input type="radio" value="negativo" name="resposta_sarampo">
+                                <label for="negativo">Não</label>
+                            </li>
+                        </ul>
+                        <li>
+                            <label for="hitorico_doenca">É fumante?</label>
+                            <input type="radio" value="positivo" name="resposta_fumante">
+                            <label for="positivo">Sim</label>
+                            <input type="radio" value="negativo" name="resposta_fumante">
+                            <label for="negativo">Não</label>
+                            <label for="frequencia">Frequência por dia:</label>
+                            <input type="text" name="frequencia" id="frequencia">
+                        </li>
+                    </li>
+
+                </ol>
+            </p>
+        </form>
+    </div>
+    
+</body>
+</html>
