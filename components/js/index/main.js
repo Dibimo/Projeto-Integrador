@@ -3,11 +3,10 @@ function main() {
     botao.addEventListener("click", function (event) {
         var form = document.querySelector("#formulario");
         var haCamposVazios = verificaCamposVazios(form); 
-        if(haCamposVazios){
+        if(haCamposVazios.length> 0){
             event.preventDefault();
-            alert("Por favor, preencha todos os campos adequadamente");
-        }else{
-
+            var erros = document.querySelector('#erros');
+            erros.textContent = 'Os seguintes campos não estão preenchidos: ' + haCamposVazios;
         }
         obtemPaciente(form);
         
