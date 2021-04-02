@@ -9,7 +9,7 @@
 </head>
 <body>
     <div>
-        <form id="formulario">
+        <form id="formulario" action="send_database.php">
             
             <p>
                 <label for="nome_completo">Nome:</label>
