@@ -39,6 +39,13 @@ function verificaPacienteValido(paciente) {
         invalidades.push("CPF");
     }
 
+}
 
+function removeNaoNumericos(texto) {
+    //função para remover as formatações dos números
+    return texto = texto.replace(/[^0-9]/g,"");
+}
 
+function substituiVirgulaPorPonto(texto) {
+    return texto = texto.replace(/[\,]/g,".");
 }
