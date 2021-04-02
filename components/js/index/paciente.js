@@ -6,8 +6,8 @@ function obtemPaciente(form) {
             sexo: form.tipo_sexo.value,
             escolaridade: form.escolaridade.value,
             profissao: form.profissao.value,
-            rg: form.rg.value,
-            cpf: form.cpf.value,
+            rg: removeNaoNumericos(form.rg.value),
+            cpf: removeNaoNumericos(form.cpf.value),
             estado_civil: form.estado_civil.value,
             naturalidade: form.naturalidade.value,
             estado_nascenca: form.estados_nascenca.value,
@@ -16,8 +16,8 @@ function obtemPaciente(form) {
             mae: form.mae.value
         },
         dadosFisicos: {
-            peso: form.peso.value,
-            altura: form.altura.value,
+            peso: substituiVirgulaPorPonto(form.peso.value),
+            altura: substituiVirgulaPorPonto(form.altura.value),
             cor: form.cor.value
         },
         enderecoCompleto: {
@@ -25,7 +25,7 @@ function obtemPaciente(form) {
             numero: form.numero.value,
             complemento: form.complemento.value,
             bairro: form.bairro.value,
-            cep: form.cep.value,
+            cep: removeNaoNumericos(form.cep.value),
             cidade: form.cidade.value,
             estado_moradia: form.estados_moradia.value
         },
