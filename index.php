@@ -175,6 +175,7 @@
             </p>
             <button id="botao-cadastrar">Cadastrar</button>
         </form>
+        <p id="erros"></p>
         <form>
             <p>
                 <input type="date" name="data_atual">                
