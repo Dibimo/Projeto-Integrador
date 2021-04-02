@@ -1,11 +1,15 @@
 function main() {
     var botao = document.querySelector("#botao-cadastrar");
     botao.addEventListener("click", function (event) {
-        event.preventDefault();
         var form = document.querySelector("#formulario");
+        var haCamposVazios = verificaCamposVazios(form); 
+        if(haCamposVazios){
+            event.preventDefault();
+            alert("Por favor, preencha todos os campos adequadamente");
+        }else{
+
+        }
         obtemPaciente(form);
-        verificaCamposVazios(form);
-        console.log(form);
         
     });
     var campos = document.querySelectorAll("input, select"); //obtem todos os campos do fórmulario
