@@ -1,13 +1,13 @@
 function verificaCamposVazios(form) {
-    var ehValido = true;
-    for (let i = 0; i < form.length; i++) {
+    var haCamposVazios = false;
+    for (let i = 0; i < form.length-1; i++) { //menos 1 para pular o botão --> achar solução mais inteligente
         if (form[i].value == "") { //há pelo menos um campo vazio
             form[i].classList.add("campo-nao-preenchido");
-            ehValido = false; //retorna false
+            haCamposVazios = true; //retorna false
         }
 
     }
-    return ehValido;
+    return haCamposVazios;
 }
 
 function validacaoCPF(cpf) {
