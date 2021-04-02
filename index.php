@@ -9,7 +9,7 @@
 </head>
 <body>
     <div>
-        <form id="formulario" action="send_database.php">
+        <form id="formulario" action="components/php/send_database.php">
             
             <p>
                 <label for="nome_completo">Nome:</label>
@@ -173,8 +173,8 @@
                     <option value="to">Tocantins</option>
                 </select>
             </p>
+            <button id="botao-cadastrar">Cadastrar</button>
         </form>
-        <button id="botao-cadastrar">Cadastrar</button>
         <form>
             <p>
                 <input type="date" name="data_atual">                
