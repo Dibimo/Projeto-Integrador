@@ -11,6 +11,7 @@ function verificaCamposVazios(form) {
 }
 
 function validacaoCPF(cpf) {
+    cpf = cpf.toString();
     var soma = 0;
     for (let i = 10; i > 1; i--) {
         soma += parseInt(cpf[10 - i]) * i;
@@ -32,7 +33,8 @@ function validacaoCPF(cpf) {
 }
 
 function validacaoCEP(cep) {
-    if((cep.length<8) (cep.length>8)){
+    cep = cep.toString();
+    if((cep.length<8) || (cep.length>8)){
         return false; //cep invalido
     }
     return true; //cep valido
@@ -40,21 +42,20 @@ function validacaoCEP(cep) {
 
 function verificaPacienteValido(paciente) {
     var invalidades = [];
-
-    var cpfValido = validacaoCPF(paciente.cpf);
+    var cpfValido = validacaoCPF(paciente.dadosPessoais.cpf);
     if(!cpfValido){
         invalidades.push("CPF");
     }
 
-    var cepValido = validacaoCEP(paciente.cep);
+    var cepValido = validacaoCEP(paciente.enderecoCompleto.cep);
     if(!cepValido){
         invalidades.push("CEP");
     }
 
-    if(paciente.altura>3){
+    if(paciente.dadosFisicos.altura>3){
         invalidades.push("altura");
     }
-    if((paciente.peso <= 0) || (paciente.peso > 300)){
+    if((paciente.peso <= 0) || (paciente.dadosFisicos.peso > 300)){
         invalidades.push("peso");
     }
     
