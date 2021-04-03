@@ -31,6 +31,8 @@ function main() {
             var digitosVerificadores = texto.slice(9,11);
             var textoFormatado = `${parte1}.${parte2}.${parte3}-${digitosVerificadores}`;
             campoCpf.value = textoFormatado;
+        }else{
+            campoCpf.classList.add('campo-nao-preenchido');
         }
     });
 
@@ -43,6 +45,8 @@ function main() {
             var parte1 = texto.substring(texto.indexOf(ddd)+2,texto.indexOf(parte2));
             var textoFormatado = `(${ddd}) ${parte1}-${parte2}`;
             telefone.value = textoFormatado;
+        }else{
+            telefone.classList.add('campo-nao-preenchido');
         }
     });
 
@@ -54,6 +58,8 @@ function main() {
             var parte2 = texto.slice(-3);
             var textoFormatado = `${parte1}-${parte2}`;
             cep.value = textoFormatado;
+        }else{
+            cep.classList.add('campo-nao-preenchido');
         }
     });
 }
