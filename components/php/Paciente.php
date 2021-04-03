@@ -1,4 +1,5 @@
 <?php
+    require_once 'Endereco.php';
     class Paciente
     {
         //dados pessoais
@@ -20,6 +21,7 @@
         private float $altura;
         private string $cor;
         //endereco completo
+        private Endereco $endereco;
     }
 
 
