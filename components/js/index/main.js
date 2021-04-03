@@ -19,10 +19,10 @@ function main() {
     adicionaListenerCampos(campos); //adiona um listener em todos eles
     
     var camposNumericos = document.querySelectorAll(".campoNumerico"); //obtem apenas os campos númericos
-    adicionaListenerCamposNumericos(camposNumericos,/[^0-9,.-]/); //adiciona um lister especifico para eles
+    defineEscopoCampos(camposNumericos,/[^0-9,.-]/); //adiciona um lister especifico para eles
     
     var camposLetriticos = document.querySelectorAll(".campoLetristico");
-    adicionaListenerCamposNumericos(camposLetriticos,/[^a-zA-Z ]/);
+    defineEscopoCampos(camposLetriticos,/[^a-zA-Z ]/);
 
 
     var campoCpf = document.querySelector("#cpf");
