@@ -508,7 +508,7 @@
 
         </form>
     </div>
-    <script src="/mainQuestionario.js"></script>
+    <script src="/components/js/anamnese/main.js"></script>
     <script>main()</script>
 </body>
 </html>
