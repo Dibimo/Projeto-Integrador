@@ -6,14 +6,12 @@ function adicionaListenerCampos(campos) {
 
     }
 }
-function adicionaListenerCamposNumericos(campos) {
+function adicionaListenerCamposNumericos(campos, expressao) {
     for (let i = 0; i < campos.length; i++) {
         campos[i].addEventListener("input", function () {
             var texto = campos[i].value;
-            if ((isNaN(texto)) || (texto.length > 100)) {
-                texto = texto.replace(/[^0-9,.-]/g,"");
-                campos[i].value = texto;
-            }
+            texto = texto.replace(expressao,"");
+            campos[i].value = texto;
         });
 
     }
