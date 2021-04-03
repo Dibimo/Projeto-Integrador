@@ -3,17 +3,22 @@ function main() {
     botao.addEventListener("click", function (event) {
         var form = document.querySelector("#formulario");
         var haCamposVazios = verificaCamposVazios(form); 
-        if(haCamposVazios.length> 0){
+        var erros = document.querySelector('#erros');
+        if(haCamposVazios.length > 0){
             event.preventDefault();
-            var erros = document.querySelector('#erros');
             erros.textContent = 'Os seguintes campos não estão preenchidos: ' + haCamposVazios;
         }
-        var buffer = document.querySelector("#buffer");
         var paciente = obtemPaciente(form);
+        var haInvalidades = verificaPacienteValido(paciente);
+        if(haInvalidades.length > 0){
+            event.preventDefault();
+            erros.textContent = "";
+            erros.textContent = 'Os seguintes campos apresentam inconsistências: ' + haInvalidades;    
+        }
+
+        var buffer = document.querySelector("#buffer");
         buffer.value = JSON.stringify(paciente);
-        console.log(buffer.value);
-        
-        
+
     });
     var campos = document.querySelectorAll("input, select"); //obtem todos os campos do fórmulario
     adicionaListenerCampos(campos); //adiona um listener em todos eles
