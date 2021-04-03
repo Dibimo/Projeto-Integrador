@@ -21,7 +21,7 @@
                 <input type="date"  name="data_nascimento" id="data_nascimento" class="campoLetristico">
                 
                 <label for="tipo_sexo">Sexo:</label>
-                <select name="tipo_sexo" id="tipo_sexo" class="campoLetristico">
+                <select name="tipo_sexo" id="tipo_sexo" class="campo">
                     <option value="">selecione</option>
                     <option value="0">Masculino</option>
                     <option value="1">Feminino</option>
@@ -35,7 +35,7 @@
                 <input type="text" name="altura" id="altura" class="campoNumerico">
 
                 <label for="cor">Cor:</label>
-                <select name="cor" id="cor" class="campoLetristico">                    
+                <select name="cor" id="cor" class="campo">                    
                     <option value="">selecione</option>
                     <option value="1">Branco</option>
                     <option value="2">Pardo</option>
@@ -67,7 +67,7 @@
                 <input type="text" name="naturalidade" id="naturalidade" class="campoLetristico">
 
                 <label for="estados">Estado:</label>
-                <select name="estados_nascenca" class="campoLetristico">
+                <select name="estados_nascenca" class="campo">
                     <option value="">selecione--</option>
                     <option value="ac">Acre</option>
                     <option value="al">Alagoas</option>
@@ -142,7 +142,7 @@
                 <input type="texto" name="cidade" id="cidade" class="campoLetristico">
             <p>
                 <label for="estados">Estado:</label>
-                <select name="estados_moradia" class="campoLetristico">
+                <select name="estados_moradia" class="campo">
                     <option value="">selecione--</option>
                     <option value="ac">Acre</option>
                     <option value="al">Alagoas</option>
