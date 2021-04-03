@@ -5,7 +5,7 @@
     //var_dump($paciente['dadosPessoais']['nome']);
     $paciente = new Paciente($pacienteDados);
     $_SESSION['paciente'] = $paciente;
-    header("Location: questionario.php");
+    header("Location: anamnese.php");
 
     die();
 ?>
