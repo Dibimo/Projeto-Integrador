@@ -28,8 +28,8 @@ function main() {
     var camposNumericos = document.querySelectorAll(".campoNumerico"); //obtem apenas os campos númericos
     defineEscopoCampos(camposNumericos,/[^0-9,.-]/); //adiciona um lister especifico para eles
     
-    var camposLetriticos = document.querySelectorAll(".campoLetristico");
-    defineEscopoCampos(camposLetriticos,/[^a-zA-Z ]/);
+    var camposLetriticos = document.querySelectorAll(".campoAlfabetico");
+    defineEscopoCampos(camposLetriticos,/[^a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÔÕÖÚÇÑ ]/);
 
 
     var campoCpf = document.querySelector("#cpf");

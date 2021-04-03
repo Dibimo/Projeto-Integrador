@@ -13,7 +13,7 @@
             
             <p>
                 <label for="nome_completo">Nome:</label>
-                <input type="text"  name="nome_completo" id="nome_completo" class="campoLetristico">
+                <input type="text"  name="nome_completo" id="nome_completo" class="campoAlfabetico">
             </p>
             
             <p>
@@ -45,10 +45,10 @@
                                
             <p>
                 <label for="escolaridade">Escolaridade</label>
-                <input type="text" name="escolaridade" id="escolaridade" class="campoLetristico">
+                <input type="text" name="escolaridade" id="escolaridade" class="campoAlfabetico">
 
                 <label for="profissao">Profissão</label>
-                <input type="text" name="profissao" id="profissao" class="campoLetristico">
+                <input type="text" name="profissao" id="profissao" class="campoAlfabetico">
             </p>
 
             <p>
@@ -71,7 +71,7 @@
 
             <p>
                 <label for="naturalidade">Naturalidade:</label>
-                <input type="text" name="naturalidade" id="naturalidade" class="campoLetristico">
+                <input type="text" name="naturalidade" id="naturalidade" class="campoAlfabetico">
 
                 <label for="estados">Estado:</label>
                 <select name="estados_nascenca" class="campo">
@@ -111,10 +111,10 @@
                 <label for="filiacao">Filiação</label> <br>
                 
                 <label for="pai">Pai</label>
-                <input type="text" name="pai" id="pai" class="campoLetristico">
+                <input type="text" name="pai" id="pai" class="campoAlfabetico">
                 
                 <label for="mae">Mãe</label>
-                <input type="text" name="mae" id="mae" class="campoLetristico">                
+                <input type="text" name="mae" id="mae" class="campoAlfabetico">                
             </p>
 
             <p>
@@ -124,7 +124,7 @@
 
             <p>
                 <label for="endereco">Endereco</label>
-                <input type="text" name="endereco" id="endereco" class="campoLetristico">
+                <input type="text" name="endereco" id="endereco" class="campoAlfabetico">
             </p>
 
             <p>
@@ -139,14 +139,14 @@
             
             <p>
                 <label for="bairro">Bairro</label>
-                <input type="texto" name="bairro" id="bairro" class="campoLetristico">
+                <input type="texto" name="bairro" id="bairro" class="campoAlfabetico">
             </p>
             <p>
                 <label for="cep">CEP</label>
                 <input type="texto" name="cep" id="cep" class="campoNumerico">
             </p>
                 <label for="cidade">Cidade</label>
-                <input type="texto" name="cidade" id="cidade" class="campoLetristico">
+                <input type="texto" name="cidade" id="cidade" class="campoAlfabetico">
             <p>
                 <label for="estados">Estado:</label>
                 <select name="estados_moradia" class="campo">
