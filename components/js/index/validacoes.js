@@ -31,6 +31,13 @@ function validacaoCPF(cpf) {
 
 }
 
+function validacaoCEP(cep) {
+    if((cep.length<8) (cep.length>8)){
+        return false; //cep invalido
+    }
+    return true; //cep valido
+}
+
 function verificaPacienteValido(paciente) {
     var invalidades = [];
 
@@ -38,6 +45,19 @@ function verificaPacienteValido(paciente) {
     if(!cpfValido){
         invalidades.push("CPF");
     }
+
+    var cepValido = validacaoCEP(paciente.cep);
+    if(!cepValido){
+        invalidades.push("CEP");
+    }
+
+    if(paciente.altura>3){
+        invalidades.push("altura");
+    }
+    if((paciente.peso <= 0) || (paciente.peso > 300)){
+        invalidades.push("peso");
+    }
+    
 
     return invalidades;
 
