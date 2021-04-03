@@ -23,8 +23,8 @@
                 <label for="tipo_sexo">Sexo:</label>
                 <select name="tipo_sexo" id="tipo_sexo" class="campo">
                     <option value="">selecione</option>
-                    <option value="0">Masculino</option>
-                    <option value="1">Feminino</option>
+                    <option value="m">Masculino</option>
+                    <option value="f">Feminino</option>
                 </select>                
             
                 <label for="peso">Peso (Kg):</label>                
@@ -37,14 +37,14 @@
                 <label for="cor">Cor:</label>
                 <select name="cor" id="cor" class="campo">                    
                     <option value="">selecione</option>
-                    <option value="1">Branco</option>
-                    <option value="2">Pardo</option>
-                    <option value="3">Negro</option>                    
+                    <option value="branco">Branco</option>
+                    <option value="pardo">Pardo</option>
+                    <option value="negro">Negro</option>                    
                 </select>
             </p>
                                
             <p>
-                <label for="escolaridade">escolaridade</label>
+                <label for="escolaridade">Escolaridade</label>
                 <input type="text" name="escolaridade" id="escolaridade" class="campoLetristico">
 
                 <label for="profissao">Profissão</label>
@@ -61,11 +61,11 @@
                 <label for="estado_civil">Estado Civil:</label>
                 <select name="estado_civil" id="estado_civil" class="campo">
                     <option value="">selecione</option>
-                    <option value="1">Solteiro</option>
-                    <option value="2">Casado</option>
-                    <option value="3">Separado</option>
-                    <option value="4">Divorcidado</option>
-                    <option value="5">Viúvo</option>
+                    <option value="solteiro">Solteiro</option>
+                    <option value="casado">Casado</option>
+                    <option value="separado">Separado</option>
+                    <option value="divorciado">Divorcidado</option>
+                    <option value="viuvo">Viúvo</option>
                 </select>
             </p>
 
