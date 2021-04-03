@@ -1,3 +1,32 @@
 .campo-nao-preenchido{
     box-shadow: 0 0 10px red;
 }
+
+.borda{
+    border: ridge;    
+    border-color: black;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-width: 2px;
+    font-size: 15px;
+}
+
+.imagem{
+    height:1,42cm;
+    width:6,47cm;
+
+}
+
+body{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align:justify;
+}
+
+h2{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
