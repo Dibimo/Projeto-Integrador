@@ -46,6 +46,36 @@
             return $this->cep;
         }
 
+ 
+        public function getEndereco(): string
+        {
+                return $this->endereco;
+        }
+ 
+        public function getComplemento(): string
+        {
+                return $this->complemento;
+        }
+
+        public function getCidade(): string
+        {
+                return $this->cidade;
+        }
+ 
+        public function getBairro(): string
+        {
+                return $this->bairro;
+        }
+
+        public function getEstado_moradia():string
+        {
+                return $this->estado_moradia;
+        }
+ 
+        public function getNumero(): string
+        {
+                return $this->numero;
+        }
 
     }
 
