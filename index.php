@@ -13,15 +13,15 @@
             
             <p>
                 <label for="nome_completo">Nome:</label>
-                <input type="text"  name="nome_completo" id="nome_completo" class="campo">
+                <input type="text"  name="nome_completo" id="nome_completo" class="campoLetristico">
             </p>
             
             <p>
                 <label for="data_nascimento">DN:</label>
-                <input type="date"  name="data_nascimento" id="data_nascimento" class="campo">
+                <input type="date"  name="data_nascimento" id="data_nascimento" class="campoLetristico">
                 
                 <label for="tipo_sexo">Sexo:</label>
-                <select name="tipo_sexo" id="tipo_sexo" class="campo">
+                <select name="tipo_sexo" id="tipo_sexo" class="campoLetristico">
                     <option value="">selecione</option>
                     <option value="0">Masculino</option>
                     <option value="1">Feminino</option>
@@ -35,7 +35,7 @@
                 <input type="text" name="altura" id="altura" class="campoNumerico">
 
                 <label for="cor">Cor:</label>
-                <select name="cor" id="cor" class="campo">                    
+                <select name="cor" id="cor" class="campoLetristico">                    
                     <option value="">selecione</option>
                     <option value="1">Branco</option>
                     <option value="2">Pardo</option>
@@ -45,29 +45,29 @@
                                
             <p>
                 <label for="escolaridade">escolaridade</label>
-                <input type="text" name="escolaridade" id="escolaridade" class="campo">
+                <input type="text" name="escolaridade" id="escolaridade" class="campoLetristico">
 
                 <label for="profissao">Profissão</label>
-                <input type="text" name="profissao" id="profissao" class="campo">
+                <input type="text" name="profissao" id="profissao" class="campoLetristico">
             </p>
 
             <p>
                 <label for="rg">RG</label>
-                <input type="text" name="rg" id="rg" class="campo">
+                <input type="text" name="rg" id="rg" class="campoLetristico">
 
                 <label for="cpf">CPF</label>
                 <input type="text" name="cpf" id="cpf" class="campoNumerico" maxlength="14">
 
                 <label for="estado_civil">Estado Civil:</label>
-                <input type="text" name="estado_civil" id="estado_civil" class="campo">
+                <input type="text" name="estado_civil" id="estado_civil" class="campoLetristico">
             </p>
 
             <p>
                 <label for="naturalidade">Naturalidade:</label>
-                <input type="text" name="naturalidade" id="naturalidade" class="campo">
+                <input type="text" name="naturalidade" id="naturalidade" class="campoLetristico">
 
                 <label for="estados">Estado:</label>
-                <select name="estados_nascenca" class="campo">
+                <select name="estados_nascenca" class="campoLetristico">
                     <option value="">selecione--</option>
                     <option value="ac">Acre</option>
                     <option value="al">Alagoas</option>
@@ -104,10 +104,10 @@
                 <label for="filiacao">Filiação</label> <br>
                 
                 <label for="pai">Pai</label>
-                <input type="text" name="pai" id="pai" class="campo">
+                <input type="text" name="pai" id="pai" class="campoLetristico">
                 
                 <label for="mae">Mãe</label>
-                <input type="text" name="mae" id="mae" class="campo">                
+                <input type="text" name="mae" id="mae" class="campoLetristico">                
             </p>
 
             <p>
@@ -117,7 +117,7 @@
 
             <p>
                 <label for="endereco">Endereco</label>
-                <input type="text" name="endereco" id="endereco" class="campo">
+                <input type="text" name="endereco" id="endereco" class="campoLetristico">
             </p>
 
             <p>
@@ -127,22 +127,22 @@
 
             <p>
                 <label for="complemento">Complemento</label>
-                <input type="texto" name="complemento" id="complemento" class="campo">
+                <input type="texto" name="complemento" id="complemento" class="campoLetristico">
             </p>
             
             <p>
                 <label for="bairro">Bairro</label>
-                <input type="texto" name="bairro" id="bairro" class="campo">
+                <input type="texto" name="bairro" id="bairro" class="campoLetristico">
             </p>
             <p>
                 <label for="cep">CEP</label>
                 <input type="texto" name="cep" id="cep" class="campoNumerico">
             </p>
                 <label for="cidade">Cidade</label>
-                <input type="texto" name="cidade" id="cidade" class="campo">
+                <input type="texto" name="cidade" id="cidade" class="campoLetristico">
             <p>
                 <label for="estados">Estado:</label>
-                <select name="estados_moradia" class="campo">
+                <select name="estados_moradia" class="campoLetristico">
                     <option value="">selecione--</option>
                     <option value="ac">Acre</option>
                     <option value="al">Alagoas</option>
@@ -294,7 +294,7 @@
                     Universidade do Sagrado Coração para, por intermédio de seus discentes, doentes (alunos e professores) e
                     funcionários do Curso de Odontologia, graduação e pós-graduação, fazer diagnóstico, após a realização ou
                     solicitação de exames clínicos e/ou de laboratórios, planejamento e execução do meu tratamento, de acordo
-                    com os conhecimentos enquadrados no campo da especialidade, dentro das disciplinas acadêmicas e materiais
+                    com os conhecimentos enquadrados no campoLetristico da especialidade, dentro das disciplinas acadêmicas e materiais
                     existentes.
                 </p>
         
