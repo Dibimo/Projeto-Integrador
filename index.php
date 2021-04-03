@@ -9,7 +9,7 @@
 </head>
 <body>
     <div>
-        <form id="formulario" action="components/php/send_database.php">
+        <form id="formulario" action="components/php/send_database.php" method="post">
             
             <p>
                 <label for="nome_completo">Nome:</label>
@@ -172,6 +172,9 @@
                     <option value="se">Sergipe</option>
                     <option value="to">Tocantins</option>
                 </select>
+            </p>
+            <p>
+                <input type="hidden" id="buffer" name="buffer">
             </p>
             <button id="botao-cadastrar">Cadastrar</button>
         </form>
