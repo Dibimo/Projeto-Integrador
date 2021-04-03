@@ -6,7 +6,7 @@ function adicionaListenerCampos(campos) {
 
     }
 }
-function adicionaListenerCamposNumericos(campos, expressao) {
+function defineEscopoCampos(campos, expressao) {
     for (let i = 0; i < campos.length; i++) {
         campos[i].addEventListener("input", function () {
             var texto = campos[i].value;
