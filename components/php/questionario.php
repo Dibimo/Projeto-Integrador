@@ -1,3 +1,10 @@
+<?php
+    require_once 'Paciente.php';
+    session_start();
+    $paciente = $_SESSION['paciente'];
+
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,12 +14,14 @@
     <div class="conteiner">
         <form id="formulario">
             <p>
-                <label for="nome_completo">Nome:</label>
-                <input type="text" name="nome_completo" id="nome_completo" class="campo">
+                <?php
+                    echo "<label>Nome: {$paciente->getNome()}</label>"
+                ?>
             </p>
             <p>
-                <label for="cod_cadastro">Cadastro:</label>
-                <input type="text" name="cod_cadastro" id="cod_cadastro" class="campoNumerico">
+                <?php
+                    echo "<label>Cadastro: {$paciente->getCpf()}</label>"
+                ?>
             </p>
             <p>
                 <label for="queixa_principal">Queixa Principal:</label>
