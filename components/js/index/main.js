@@ -19,8 +19,12 @@ function main() {
     adicionaListenerCampos(campos); //adiona um listener em todos eles
     
     var camposNumericos = document.querySelectorAll(".campoNumerico"); //obtem apenas os campos númericos
-    adicionaListenerCamposNumericos(camposNumericos); //adiciona um lister especifico para eles
+    adicionaListenerCamposNumericos(camposNumericos,/[^0-9,.-]/); //adiciona um lister especifico para eles
     
+    var camposLetriticos = document.querySelectorAll(".campoLetristico");
+    adicionaListenerCamposNumericos(camposLetriticos,/[^a-zA-Z ]/);
+
+
     var campoCpf = document.querySelector("#cpf");
     campoCpf.addEventListener("blur", function () {
         var texto = campoCpf.value.replace(/[.,-]/g,""); //recebendo o texto sem os caracteres de separação
