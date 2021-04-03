@@ -34,12 +34,16 @@
             $enderecoCompleto += $this->complemento.". ";
             $enderecoCompleto += $this->bairro.", ";
             $enderecoCompleto += $this->cidade.", ";
-            $enderecoCompleto += $this->estado_moradia.". ";
-            $enderecoCompleto = $this->cep.", ";
-
+            $enderecoCompleto += $this->estado_moradia;
 
             return $enderecoCompleto;
         }
+
+        public function getCep(): int
+        {
+            return $this->cep;
+        }
+
 
     }
 
