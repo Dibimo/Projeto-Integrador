@@ -505,7 +505,7 @@
                 <label for="planoTratamento">Plano de Tratamento:</label>
                 <textarea name="planoTratamento" id="planoTratamento" class="campo"></textarea>
             </p>            
-
+            <button id="enviar">Enviar</button>
         </form>
     </div>
     <script src="/components/js/anamnese/main.js"></script>
