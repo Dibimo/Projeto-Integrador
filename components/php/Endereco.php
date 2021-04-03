@@ -19,22 +19,24 @@
             int $numero,
             int $cep){
             $this->endereco = $endereco;   
-            $this->complemento = $complemento;   
-            $this->cidade = $cidade;   
-            $this->bairro = $bairro;   
-            $this->estado_moradia = $estado_moradia;   
             $this->numero = $numero;   
+            $this->complemento = $complemento;   
+            $this->bairro = $bairro;   
+            $this->cidade = $cidade;   
+            $this->estado_moradia = $estado_moradia;   
             $this->cep = $cep;   
         }
 
         public function toString(): string
         {
-            $enderecoCompleto = $this->endereco." ";
-            $enderecoCompleto = $this->numero.", ";
-            $enderecoCompleto += $this->complemento.". ";
-            $enderecoCompleto += $this->bairro.", ";
-            $enderecoCompleto += $this->cidade.", ";
-            $enderecoCompleto += $this->estado_moradia;
+            $enderecoCompleto = $this->endereco." ".
+            $this->numero. ", ".
+            $this->complemento.". ".
+            $this->bairro.", ".
+            $this->cidade."-".
+            $this->estado_moradia.". CEP: ".
+            $this->cep;
+            
 
             return $enderecoCompleto;
         }
