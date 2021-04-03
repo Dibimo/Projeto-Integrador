@@ -55,10 +55,6 @@
             );
         }
 
-        public function teste(): void
-        {
-            echo ($this->endereco->toString());
-        }
 
         public function getNome(): string
         {

@@ -4,6 +4,7 @@
     //var_dump($paciente['dadosPessoais']['nome']);
     $paciente = new Paciente($pacienteDados);
 
-    $paciente->teste();
+    header("Location: questionario.php");
 
+    die();
 ?>
