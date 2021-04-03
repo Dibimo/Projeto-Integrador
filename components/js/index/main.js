@@ -7,6 +7,7 @@ function main() {
         if(haCamposVazios.length > 0){
             event.preventDefault();
             erros.textContent = 'Os seguintes campos não estão preenchidos: ' + haCamposVazios;
+            return;
         }
         var paciente = obtemPaciente(form);
         var haInvalidades = verificaPacienteValido(paciente);
@@ -14,6 +15,7 @@ function main() {
             event.preventDefault();
             erros.textContent = "";
             erros.textContent = 'Os seguintes campos apresentam inconsistências: ' + haInvalidades;    
+            return;
         }
 
         var buffer = document.querySelector("#buffer");
