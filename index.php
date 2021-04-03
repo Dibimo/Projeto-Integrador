@@ -59,7 +59,14 @@
                 <input type="text" name="cpf" id="cpf" class="campoNumerico" maxlength="14">
 
                 <label for="estado_civil">Estado Civil:</label>
-                <input type="text" name="estado_civil" id="estado_civil" class="campoLetristico">
+                <select name="estado_civil" id="estado_civil" class="campo">
+                    <option value="">selecione</option>
+                    <option value="1">Solteiro</option>
+                    <option value="2">Casado</option>
+                    <option value="3">Separado</option>
+                    <option value="4">Divorcidado</option>
+                    <option value="5">Viúvo</option>
+                </select>
             </p>
 
             <p>
