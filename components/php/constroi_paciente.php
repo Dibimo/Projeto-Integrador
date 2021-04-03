@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require_once 'Paciente.php';
+    require_once 'Classes/Paciente.php';
     $pacienteDados = (json_decode( $_POST['buffer'],true));
     //var_dump($paciente['dadosPessoais']['nome']);
     $paciente = new Paciente($pacienteDados);
