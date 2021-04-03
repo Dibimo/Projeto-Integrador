@@ -60,6 +60,85 @@
             echo ($this->endereco->toString());
         }
 
+        public function getNome(): string
+        {
+            return $this->nome;
+        }
+
+        public function getData_nascimento()
+        {
+            return $this->data_nascimento;
+        }
+ 
+        public function getCpf(): string
+        {
+            return $this->cpf;
+        }
+
+        public function getSexo(): string
+        {
+            return $this->sexo;
+        }
+
+        public function getEscolaridade(): string
+        {
+            return $this->escolaridade;
+        }
+ 
+        public function getProfissao(): string
+        {
+            return $this->profissao;
+        }
+ 
+        public function getRg(): string
+        {
+            return $this->rg;
+        }
+ 
+        public function getEstado_civil(): string
+        {
+            return $this->estado_civil;
+        }
+ 
+        public function getNaturalidade(): string
+        {
+            return $this->naturalidade;
+        }
+
+        public function getNomeMae(): string
+        {
+            return $this->nomeMae;
+        }
+
+        public function getNomePai(): string
+        {
+            return $this->nomePai;
+        }
+ 
+        public function getContato(): int
+        {
+            return $this->contato;
+        }
+
+        public function getPeso(): float
+        {
+            return $this->peso;
+        }
+ 
+        public function getAltura(): float
+        {
+            return $this->altura;
+        }
+ 
+        public function getCor(): string
+        {
+            return $this->cor;
+        }
+
+        public function getEndereco(): Endereco
+        {
+            return $this->endereco;
+        }
     }
 
 
