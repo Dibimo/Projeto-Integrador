@@ -9,7 +9,7 @@
 </head>
 <body>
     <div>
-        <form id="formulario" action="components/php/send_database.php" method="post">
+        <form id="formulario" action="components/php/constroi_paciente.php" method="post">
             
             <p>
                 <label for="nome_completo">Nome:</label>
