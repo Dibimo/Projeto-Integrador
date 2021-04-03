@@ -509,6 +509,7 @@
         </form>
     </div>
     <script src="/components/js/anamnese/main.js"></script>
+    <script src="/components/js/anamnese/anamnese.js"></script>
     <script>main()</script>
 </body>
 </html>
