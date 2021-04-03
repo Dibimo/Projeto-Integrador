@@ -18,7 +18,7 @@
             
             <p>
                 <label for="data_nascimento">DN:</label>
-                <input type="date"  name="data_nascimento" id="data_nascimento" class="campoLetristico">
+                <input type="date"  name="data_nascimento" id="data_nascimento" class="campo">
                 
                 <label for="tipo_sexo">Sexo:</label>
                 <select name="tipo_sexo" id="tipo_sexo" class="campo">
@@ -53,7 +53,7 @@
 
             <p>
                 <label for="rg">RG</label>
-                <input type="text" name="rg" id="rg" class="campoLetristico">
+                <input type="text" name="rg" id="rg" class="campo">
 
                 <label for="cpf">CPF</label>
                 <input type="text" name="cpf" id="cpf" class="campoNumerico" maxlength="14">
@@ -127,7 +127,7 @@
 
             <p>
                 <label for="complemento">Complemento</label>
-                <input type="texto" name="complemento" id="complemento" class="campoLetristico">
+                <input type="texto" name="complemento" id="complemento" class="campo">
             </p>
             
             <p>
