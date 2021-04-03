@@ -8,7 +8,11 @@ function main() {
             var erros = document.querySelector('#erros');
             erros.textContent = 'Os seguintes campos não estão preenchidos: ' + haCamposVazios;
         }
-        obtemPaciente(form);
+        var buffer = document.querySelector("#buffer");
+        var paciente = obtemPaciente(form);
+        buffer.value = JSON.stringify(paciente);
+        console.log(buffer.value);
+        
         
     });
     var campos = document.querySelectorAll("input, select"); //obtem todos os campos do fórmulario
