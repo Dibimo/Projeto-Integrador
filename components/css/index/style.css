@@ -39,7 +39,7 @@ h2{
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    transition: 0.8s;
+    transition: 1s;
 }
 .botao:hover{
     color: white;
@@ -54,10 +54,10 @@ h2{
     height: 0%;
     background: #ef1d26;
     z-index: -1;
-    transition: 0.8s;
+    transition: 1s;
 }
 .botao:hover::before{
-    height: 180%;
+    height: 200%;
 
 }
 
