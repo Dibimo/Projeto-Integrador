@@ -122,12 +122,12 @@
                 <label for="pai">Pai</label>
                 <input type="text" name="pai" id="pai" class="campoAlfabetico obrigatorio">
                 <label for="paiNaturalidade">Naturalidade</label>
-                <input type="text" name="paiNaturalidade" id="paiNaturalidade" class="campoAlfabetico obrigatorio">
+                <input type="text" name="pai_naturalidade" id="paiNaturalidade" class="campoAlfabetico obrigatorio">
 
                 <label for="mae">Mãe</label>
                 <input type="text" name="mae" id="mae" class="campoAlfabetico obrigatorio">
                 <label for="maeNaturalidade">Naturalidade</label>
-                <input type="text" name="maeNaturalidade" id="maeNaturalidade" class="campoAlfabetico obrigatorio">
+                <input type="text" name="mae_naturalidade" id="maeNaturalidade" class="campoAlfabetico obrigatorio">
             </div>
 
             <div>
