@@ -1,14 +1,13 @@
 function main() {
     var botao = document.querySelector("#botao-cadastrar");
     botao.addEventListener("click", function (event) {
-        event.preventDefault();
         var form = document.querySelector("#formulario");
         var camposObrigatorios = document.querySelectorAll(".obrigatorio");
-        console.log(camposObrigatorios);
+        //verifica se há campo obrigatorios não preenchidos
         var haCamposVazios = verificaCamposVazios(camposObrigatorios); 
-        var erros = document.querySelector('#erros');
         if(haCamposVazios.length > 0){
             event.preventDefault();
+            var erros = document.querySelector('#erros');
             erros.textContent = 'Os seguintes campos não estão preenchidos: ' + haCamposVazios;
             return;
         }
@@ -16,11 +15,12 @@ function main() {
         var haInvalidades = verificaPacienteValido(paciente);
         if(haInvalidades.length > 0){
             event.preventDefault();
+            var erros = document.querySelector('#erros');
             erros.textContent = "";
             erros.textContent = 'Os seguintes campos apresentam inconsistências: ' + haInvalidades;    
             return;
         }
-
+        //se todos os dados forem validos
         var buffer = document.querySelector("#buffer");
         buffer.value = JSON.stringify(paciente);
 
