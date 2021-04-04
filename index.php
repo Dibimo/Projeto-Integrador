@@ -9,7 +9,7 @@
 </head>
 <body>
     <div>
-        <img src="/Assets/img_logo.png">
+        <img src="/Assets/img_logo.png" class="img_uni_logo">
         <form id="formulario" action="components/php/constroi_paciente.php" method="post" class="borda">
             
             <div>
