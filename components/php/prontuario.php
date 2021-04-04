@@ -4,8 +4,8 @@
     require_once 'Classes/Paciente.php';
 
     session_start();
-    $paciente = $_SESSION['paciente'];
-    $paciente->getNome();
+    //var_dump( $_SESSION['paciente']);
+    var_dump($_POST['paciente']);
 
     
 
