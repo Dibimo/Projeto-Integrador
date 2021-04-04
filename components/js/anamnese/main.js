@@ -2,7 +2,6 @@ function main(){
     var form = document.querySelector("#formulario");
     var botao = document.querySelector("#enviar");
     botao.addEventListener("click",function (event) {
-        event.preventDefault();
         obtemAnamnese(form);
     })
 
