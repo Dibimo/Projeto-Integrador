@@ -9,6 +9,7 @@
 </head>
 <body>
     <div>
+        <img src="/Assets/img_logo.png">
         <form id="formulario" action="components/php/constroi_paciente.php" method="post" class="borda">
             
             <div>
