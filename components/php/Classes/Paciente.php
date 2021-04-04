@@ -139,6 +139,16 @@
         {
             return $this->endereco;
         }
+
+        public function getNaturalidadeMae()
+        {
+                return $this->naturalidadeMae;
+        }
+ 
+        public function getNaturalidadePai()
+        {
+                return $this->naturalidadePai;
+        }
     }
 
 
