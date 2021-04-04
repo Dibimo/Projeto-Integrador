@@ -198,7 +198,7 @@
             <div>
                 <input type="hidden" id="buffer" name="buffer">
             </div>
-            <button id="botao-cadastrar">Cadastrar</button>
+            <button id="botao-cadastrar" class="botao">Cadastrar</button>
         </form>
         <div id="erros"></div>
         
