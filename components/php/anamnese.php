@@ -13,25 +13,25 @@
 <body>
     <div class="conteiner">
         <form id="formulario">
-            <p>
+            <div>
                 <?php
                     echo "<label>Nome: {$paciente->getNome()}</label>"
                 ?>
-            </p>
-            <p>
+            </div>
+            <div>
                 <?php
                     echo "<label>Cadastro: {$paciente->getCpf()}</label>"
                 ?>
-            </p>
-            <p>
+            </div>
+            <div>
                 <label for="queixa_principal">Queixa Principal:</label>
                 <textarea name="queixa_principal" id="queixa_principal" class="campo"></textarea>
-            </p>
-            <p>
+            </div>
+            <div>
                 <label for="hitorico_doenca">Historio da doença atual:</label>
                 <textarea name="hitorico_doenca" id="hitorico_doenca" class="campo"></textarea>
-            </p>
-            <p>
+            </div>
+            <div>
                 <ol>
                     <li>
                         <label for="hemorragia">Já teve hemorragia?</label>
@@ -192,11 +192,11 @@
                         </li>
                     </li>
                 </ol>
-            </p>
+            </div>
             <hr>
             <h3>Conduta da criança</h3>
             
-            <p>
+            <div>
                 <label for="doisPrimeiros">Durante os 2 primeiros anos de vida:</label>
                 <ul>
                     <li>
@@ -216,17 +216,17 @@
                         <label>Falou</label>
                     </li>
                 </ul>
-            </p>
+            </div>
             
-            <p>
+            <div>
                 <label for="hemorragia">No lar e na escola, teve/tem alguma dificuldade no aprendizado?</label>
                 <input type="radio" value="true" name="resposta_dificuldade">
                 <label for="true">Sim</label>
                 <input type="radio" value="false" name="resposta_dificuldade">
                 <label for="false">Não</label>
-            </p>
+            </div>
             
-            <p>
+            <div>
                 <label for="estadoAnimico">Estado anímico:</label>
                 <ul>
                     <li>
@@ -254,9 +254,9 @@
                         <label>Assustado</label>
                     </li>
                 </ul>
-            </p>
+            </div>
             
-            <p>
+            <div>
                 <label for="sono">Tem sono:</label>
                 <select name="sono">
                     <option value="">selecione--</option>
@@ -267,9 +267,9 @@
                     <option value="sonambulismo">Sonambulismo</option>
                     <option value="insonia">Insônia</option>
                 </select>
-            </p>
+            </div>
             
-            <p>
+            <div>
                 <label for="condutaPsicomotora">Conduta Psicomotora:</label>
                 <ul>
                     <li>
@@ -301,9 +301,9 @@
                         <label>Descontrole dos esfíncteres</label>
                     </li>
                 </ul>
-            </p>
+            </div>
 
-            <p>
+            <div>
                 <label for="alimentacao">Alimentação:</label>
                 <select name="alimentacao">
                     <option value="">selecione--</option>
@@ -311,9 +311,9 @@
                     <option value="supra">Supra normal</option>
                     <option value="rejeita">Rejeita</option>
                 </select>
-            </p>
+            </div>
 
-            <p>
+            <div>
                 <label for="sociabilidade">Sociabilidade:</label>
                 <select name="sociabilidade">
                     <option value="">selecione--</option>
@@ -321,9 +321,9 @@
                     <option value="agressiva">Agressiva</option>
                     <option value="isolada">Isolada</option>
                 </select>
-            </p>
+            </div>
 
-            <p>
+            <div>
                 <label for="conduta">Apresenta alguma patologia de conduta:</label>
                 <ul>
                     <li>
@@ -351,16 +351,16 @@
                         <label>Ciúmes</label>
                     </li>
                 </ul>
-            </p>
+            </div>
 
-            <p>
+            <div>
                 <label for="observacoes">Observações:</label>
                 <textarea name="observacoes" id="observacoes" class="campo"></textarea>
-            </p>
+            </div>
 
             <hr>
 
-            <p>
+            <div>
                 <label>Exame Físico:</label>
                 <ol>
                     <li>
@@ -476,35 +476,35 @@
                     </li>
                     
                 </ol>
-            </p>
+            </div>
 
-            <p>
+            <div>
                 <label for="alteracoesEncontradas">Queixa Principal:</label>
                 <textarea name="alteracoesEncontradas" id="alteracoesEncontradas" class="campo"></textarea>
-            </p>            
-            <p>
+            </div>            
+            <div>
 
-            </p>            
-            <p>
+            </div>            
+            <div>
                 <label for="diagnosticoPresuntivo">Diagnóstico presuntivo:</label>
                 <textarea name="diagnosticoPresuntivo" id="diagnosticoPresuntivo" class="campo"></textarea>
-            </p>            
-            <p>
+            </div>            
+            <div>
                 <label for="examesComplementares">Exames complementares:</label>
                 <textarea name="examesComplementares" id="examesComplementares" class="campo"></textarea>
-            </p>            
-            <p>
+            </div>            
+            <div>
                 <label for="diagnosticoDefinitivo">Diagnóstico definitivo:</label>
                 <textarea name="diagnosticoDefinitivo" id="diagnosticoDefinitivo" class="campo"></textarea>
-            </p>            
-            <p>
+            </div>            
+            <div>
                 <label for="tratamento">Tratamento/Proservação:</label>
                 <textarea name="tratamento" id="tratamento" class="campo"></textarea>
-            </p>            
-            <p>
+            </div>            
+            <div>
                 <label for="planoTratamento">Plano de Tratamento:</label>
                 <textarea name="planoTratamento" id="planoTratamento" class="campo"></textarea>
-            </p>            
+            </div>       
             <button id="enviar">Enviar</button>
         </form>
     </div>
