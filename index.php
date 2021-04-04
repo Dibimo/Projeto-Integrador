@@ -11,12 +11,12 @@
     <div>
         <form id="formulario" action="components/php/constroi_paciente.php" method="post">
             
-            <p>
+            <div>
                 <label for="nome_completo">Nome:</label>
                 <input type="text"  name="nome_completo" id="nome_completo" class="campoAlfabetico">
-            </p>
+            </div>
             
-            <p>
+            <div>
                 <label for="data_nascimento">DN:</label>
                 <input type="date"  name="data_nascimento" id="data_nascimento" class="campo">
                 
@@ -41,17 +41,17 @@
                     <option value="pardo">Pardo</option>
                     <option value="negro">Negro</option>                    
                 </select>
-            </p>
+            </div>
                                
-            <p>
+            <div>
                 <label for="escolaridade">Escolaridade</label>
                 <input type="text" name="escolaridade" id="escolaridade" class="campoAlfabetico">
 
                 <label for="profissao">Profissão</label>
                 <input type="text" name="profissao" id="profissao" class="campoAlfabetico">
-            </p>
+            </div>
 
-            <p>
+            <div>
                 <label for="rg">RG</label>
                 <input type="text" name="rg" id="rg" class="campo">
 
@@ -67,9 +67,9 @@
                     <option value="divorciado">Divorcidado</option>
                     <option value="viuvo">Viúvo</option>
                 </select>
-            </p>
+            </div>
 
-            <p>
+            <div>
                 <label for="naturalidade">Naturalidade:</label>
                 <input type="text" name="naturalidade" id="naturalidade" class="campoAlfabetico">
 
@@ -103,11 +103,10 @@
                     <option value="sp">São Paulo</option>
                     <option value="se">Sergipe</option>
                     <option value="to">Tocantins</option>
-                </select>
-                
-            </p>
+                </select>                
+            </div>
 
-            <p>
+            <div>
                 <label for="filiacao">Filiação</label> <br>
                 
                 <label for="pai">Pai</label>
@@ -115,77 +114,80 @@
                 
                 <label for="mae">Mãe</label>
                 <input type="text" name="mae" id="mae" class="campoAlfabetico">                
-            </p>
+            </div>
 
-            <p>
+            <div>
                 <label for="contato">Contato (tel/cel)</label>
                 <input type="text" name="contato" id="contato" class="campoNumerico">
-            </p>
+            </div>
 
-            <p>
+            <div>
                 <label for="endereco">Endereco</label>
                 <input type="text" name="endereco" id="endereco" class="campoAlfabetico">
-            </p>
+            </div>
 
-            <p>
+            <div>
                 <label for="numero">Número</label>
                 <input type="texto" name="numero" id="numero" class="campoNumerico">
-            </p>
+            </div>
 
-            <p>
+            <div>
                 <label for="complemento">Complemento</label>
                 <input type="texto" name="complemento" id="complemento" class="campo">
-            </p>
+            </div>
             
-            <p>
+            <div>
                 <label for="bairro">Bairro</label>
                 <input type="texto" name="bairro" id="bairro" class="campoAlfabetico">
-            </p>
-            <p>
+            </div>
+            
+            <div>
                 <label for="cep">CEP</label>
                 <input type="texto" name="cep" id="cep" class="campoNumerico">
-            </p>
+            </div>
                 <label for="cidade">Cidade</label>
                 <input type="texto" name="cidade" id="cidade" class="campoAlfabetico">
-            <p>
-                <label for="estados">Estado:</label>
-                <select name="estados_moradia" class="campo">
-                    <option value="">selecione--</option>
-                    <option value="ac">Acre</option>
-                    <option value="al">Alagoas</option>
-                    <option value="ap">Amapá</option>
-                    <option value="am">Amazonas</option>
-                    <option value="ba">Bahia</option>
-                    <option value="ce">Ceará</option>
-                    <option value="df">Distrito Federal</option>
-                    <option value="es">Espírito Santo</option>
-                    <option value="go">Goiás</option>
-                    <option value="ma">Maranhão</option>
-                    <option value="mt">Mato Grosso</option>
-                    <option value="ms">Mato Grosso do Sul</option>
-                    <option value="mg">Minas Gerais</option>
-                    <option value="pa">Pará</option>
-                    <option value="pb">Paraíba</option>
-                    <option value="pr">Paraná</option>
-                    <option value="pe">Pernambuco</option>
-                    <option value="pi">Piauí</option>
-                    <option value="rj">Rio de Janeiro</option>
-                    <option value="rn">Rio Grande do Norte</option>
-                    <option value="rs">Rio Grande do Sul</option>
-                    <option value="ro">Rondônia</option>
-                    <option value="rr">Roraima</option>
-                    <option value="sc">Santa Catarina</option>
-                    <option value="sp">São Paulo</option>
-                    <option value="se">Sergipe</option>
-                    <option value="to">Tocantins</option>
-                </select>
-            </p>
-            <p>
+                <div>
+                    <label for="estados">Estado:</label>
+                    <select name="estados_moradia" class="campo">
+                        <option value="">selecione--</option>
+                        <option value="ac">Acre</option>
+                        <option value="al">Alagoas</option>
+                        <option value="ap">Amapá</option>
+                        <option value="am">Amazonas</option>
+                        <option value="ba">Bahia</option>
+                        <option value="ce">Ceará</option>
+                        <option value="df">Distrito Federal</option>
+                        <option value="es">Espírito Santo</option>
+                        <option value="go">Goiás</option>
+                        <option value="ma">Maranhão</option>
+                        <option value="mt">Mato Grosso</option>
+                        <option value="ms">Mato Grosso do Sul</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="pa">Pará</option>
+                        <option value="pb">Paraíba</option>
+                        <option value="pr">Paraná</option>
+                        <option value="pe">Pernambuco</option>
+                        <option value="pi">Piauí</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="rn">Rio Grande do Norte</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                        <option value="ro">Rondônia</option>
+                        <option value="rr">Roraima</option>
+                        <option value="sc">Santa Catarina</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="se">Sergipe</option>
+                        <option value="to">Tocantins</option>
+                    </select>
+                </div>
+            </div>
+            <div>
                 <input type="hidden" id="buffer" name="buffer">
-            </p>
+            </div>
             <button id="botao-cadastrar">Cadastrar</button>
+
         </form>
-        <p id="erros"></p>
+        <div id="erros"></div>
         
         <script src="/components/js/index/main.js"></script>
         <script src="/components/js/index/listeners.js"></script>
