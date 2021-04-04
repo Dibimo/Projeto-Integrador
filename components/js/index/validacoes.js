@@ -4,7 +4,7 @@ function verificaCamposVazios(campos) {
         if (campos[i].value == "") { //há pelo menos um campo vazio
             campos[i].classList.add("campo-nao-preenchido");
             var nomeCampo = campos[i].name;
-            nomeCampo.replace("_"," ");
+            nomeCampo = nomeCampo.replace("_"," ");
             camposVazios.push(nomeCampo.replace(nomeCampo[0],nomeCampo[0].toUpperCase()));
         }
 
