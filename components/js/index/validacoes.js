@@ -3,7 +3,8 @@ function verificaCamposVazios(campos) {
     for (let i = 0; i < campos.length; i++) { //menos 1 para pular o botão --> achar solução mais inteligente
         if (campos[i].value == "") { //há pelo menos um campo vazio
             campos[i].classList.add("campo-nao-preenchido");
-            camposVazios.push(campos[i].name);
+            var nomeCampo = campos[i].name;
+            camposVazios.push(nomeCampo.replace(nomeCampo[0],nomeCampo[0].toUpperCase()));
         }
 
     }
