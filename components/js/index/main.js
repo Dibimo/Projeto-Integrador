@@ -1,8 +1,10 @@
 function main() {
     var botao = document.querySelector("#botao-cadastrar");
     botao.addEventListener("click", function (event) {
+        event.preventDefault();
         var form = document.querySelector("#formulario");
-        var camposObrigatorios = document.querySelectorAll(".origatorio");
+        var camposObrigatorios = document.querySelectorAll(".obrigatorio");
+        console.log(camposObrigatorios);
         var haCamposVazios = verificaCamposVazios(camposObrigatorios); 
         var erros = document.querySelector('#erros');
         if(haCamposVazios.length > 0){

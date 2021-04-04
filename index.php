@@ -19,24 +19,24 @@
             
             <div>
                 <label for="data_nascimento">DN:</label>
-                <input type="date"  name="data_nascimento" id="data_nascimento" class="campo origatorio">
+                <input type="date"  name="data_nascimento" id="data_nascimento" class="campo obrigatorio">
                 
                 <label for="sexo">Sexo:</label>
-                <select name="sexo" id="sexo" class="campo origatorio">
+                <select name="sexo" id="sexo" class="campo obrigatorio">
                     <option value="">selecione</option>
                     <option value="m">Masculino</option>
                     <option value="f">Feminino</option>
                 </select>                
             
                 <label for="peso">Peso (Kg):</label>                
-                <input type="text" name="peso" id="peso" class="campoNumerico origatorio"> 
+                <input type="text" name="peso" id="peso" class="campoNumerico obrigatorio"> 
                 
 
                 <label for="altura">Altura</label>
-                <input type="text" name="altura" id="altura" class="campoNumerico origatorio">
+                <input type="text" name="altura" id="altura" class="campoNumerico obrigatorio">
 
                 <label for="cor">Cor:</label>
-                <select name="cor" id="cor" class="campo origatorio">                    
+                <select name="cor" id="cor" class="campo obrigatorio">                    
                     <option value="">selecione</option>
                     <option value="branco">Branco</option>
                     <option value="pardo">Pardo</option>
@@ -46,7 +46,7 @@
                                
             <div>
                 <label for="escolaridade">Escolaridade</label>
-                <select name="escolaridade" id="cor" class="campo origatorio">                    
+                <select name="escolaridade" id="cor" class="campo obrigatorio">                    
                     <option value="">selecione</option>
                     <option value="infantil">Educação Infantil</option>
                     <option value="fundamental">Ensino Fundamental</option>
@@ -58,18 +58,18 @@
                 </select>
 
                 <label for="profissao">Profissão</label>
-                <input type="text" name="profissao" id="profissao" class="campoAlfabetico origatorio">
+                <input type="text" name="profissao" id="profissao" class="campoAlfabetico obrigatorio">
             </div>
 
             <div>
                 <label for="rg">RG</label>
-                <input type="text" name="rg" id="rg" class="campo origatorio">
+                <input type="text" name="rg" id="rg" class="campo obrigatorio">
 
                 <label for="cpf">CPF</label>
-                <input type="text" name="cpf" id="cpf" class="campoNumerico origatorio">
+                <input type="text" name="cpf" id="cpf" class="campoNumerico obrigatorio">
 
                 <label for="estado_civil">Estado Civil:</label>
-                <select name="estado_civil" id="estado_civil" class="campo origatorio">
+                <select name="estado_civil" id="estado_civil" class="campo obrigatorio">
                     <option value="">selecione</option>
                     <option value="solteiro">Solteiro</option>
                     <option value="casado">Casado</option>
@@ -81,10 +81,10 @@
 
             <div>
                 <label for="naturalidade">Naturalidade:</label>
-                <input type="text" name="naturalidade" id="naturalidade" class="campoAlfabetico origatorio">
+                <input type="text" name="naturalidade" id="naturalidade" class="campoAlfabetico obrigatorio">
 
                 <label for="estados">Estado:</label>
-                <select name="estados_nascenca" class="campo origatorio">
+                <select name="estados_nascenca" class="campo obrigatorio">
                     <option value="">selecione--</option>
                     <option value="ac">Acre</option>
                     <option value="al">Alagoas</option>
@@ -120,29 +120,29 @@
                 <label for="filiacao">Filiação</label> <br>
                 
                 <label for="pai">Pai</label>
-                <input type="text" name="pai" id="pai" class="campoAlfabetico origatorio">
+                <input type="text" name="pai" id="pai" class="campoAlfabetico obrigatorio">
                 <label for="paiNaturalidade">Naturalidade</label>
-                <input type="text" name="paiNaturalidade" id="paiNaturalidade" class="campoAlfabetico origatorio">
+                <input type="text" name="paiNaturalidade" id="paiNaturalidade" class="campoAlfabetico obrigatorio">
 
                 <label for="mae">Mãe</label>
-                <input type="text" name="mae" id="mae" class="campoAlfabetico origatorio">
+                <input type="text" name="mae" id="mae" class="campoAlfabetico obrigatorio">
                 <label for="maeNaturalidade">Naturalidade</label>
-                <input type="text" name="maeNaturalidade" id="maeNaturalidade" class="campoAlfabetico origatorio">
+                <input type="text" name="maeNaturalidade" id="maeNaturalidade" class="campoAlfabetico obrigatorio">
             </div>
 
             <div>
                 <label for="contato">Contato (tel/cel)</label>
-                <input type="text" name="contato" id="contato" class="campoNumerico origatorio">
+                <input type="text" name="contato" id="contato" class="campoNumerico obrigatorio">
             </div>
 
             <div>
                 <label for="endereco">Endereco</label>
-                <input type="text" name="endereco" id="endereco" class="campoAlfabetico origatorio">
+                <input type="text" name="endereco" id="endereco" class="campoAlfabetico obrigatorio">
             </div>
 
             <div>
                 <label for="numero">Número</label>
-                <input type="texto" name="numero" id="numero" class="campoNumerico origatorio">
+                <input type="texto" name="numero" id="numero" class="campoNumerico obrigatorio">
             </div>
 
             <div>
@@ -152,18 +152,18 @@
             
             <div>
                 <label for="bairro">Bairro</label>
-                <input type="texto" name="bairro" id="bairro" class="campoAlfabetico origatorio">
+                <input type="texto" name="bairro" id="bairro" class="campoAlfabetico obrigatorio">
             </div>
             
             <div>
                 <label for="cep">CEP</label>
-                <input type="texto" name="cep" id="cep" class="campoNumerico origatorio">
+                <input type="texto" name="cep" id="cep" class="campoNumerico obrigatorio">
             </div>
                 <label for="cidade">Cidade</label>
-                <input type="texto" name="cidade" id="cidade" class="campoAlfabetico origatorio">
+                <input type="texto" name="cidade" id="cidade" class="campoAlfabetico obrigatorio">
                 <div>
                     <label for="estados">Estado:</label>
-                    <select name="estados_moradia" class="campo origatorio">
+                    <select name="estados_moradia" class="campo obrigatorio">
                         <option value="">selecione--</option>
                         <option value="ac">Acre</option>
                         <option value="al">Alagoas</option>
