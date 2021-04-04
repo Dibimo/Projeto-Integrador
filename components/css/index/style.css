@@ -32,13 +32,14 @@ h2{
 
 .botao{
     border: 1px solid #ef1d26;
-    cursor: pointer;
+    padding: 10px 20px;
     background: none;
     font-size: 20px;
-    transition: 0.8s;
+    color: #ef1d26;
+    cursor: pointer;
     position: relative;
     overflow: hidden;
-    color: #ef1d26;
+    transition: 0.8s;
 }
 .botao:hover{
     color: white;
