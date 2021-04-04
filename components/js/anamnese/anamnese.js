@@ -19,8 +19,9 @@ function obtemAnamnese(form) {
         hepatite: form.resposta_hepatite.value,
         varicela: form.resposta_varicela.value,
         aids: form.resposta_aids.value,
-        outra: form.outra.value
-        
+        outra: form.outra.value,
+        fumante: form.resposta_fumante.value,
+        frequenciaFumo: form.frequencia.value
     }
     console.log(anamnese);
 }
