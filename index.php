@@ -121,9 +121,13 @@
                 
                 <label for="pai">Pai</label>
                 <input type="text" name="pai" id="pai" class="campoAlfabetico origatorio">
-                
+                <label for="paiNaturalidade">Naturalidade</label>
+                <input type="text" name="paiNaturalidade" id="paiNaturalidade" class="campoAlfabetico origatorio">
+
                 <label for="mae">Mãe</label>
-                <input type="text" name="mae" id="mae" class="campoAlfabetico origatorio">                
+                <input type="text" name="mae" id="mae" class="campoAlfabetico origatorio">
+                <label for="maeNaturalidade">Naturalidade</label>
+                <input type="text" name="maeNaturalidade" id="maeNaturalidade" class="campoAlfabetico origatorio">
             </div>
 
             <div>
