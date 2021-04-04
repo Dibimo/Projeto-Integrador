@@ -1,9 +1,9 @@
-function verificaCamposVazios(form) {
+function verificaCamposVazios(campos) {
     var camposVazios = [];
-    for (let i = 0; i < form.length-2; i++) { //menos 1 para pular o botão --> achar solução mais inteligente
-        if (form[i].value == "") { //há pelo menos um campo vazio
-            form[i].classList.add("campo-nao-preenchido");
-            camposVazios.push(form[i].name);
+    for (let i = 0; i < campos.length; i++) { //menos 1 para pular o botão --> achar solução mais inteligente
+        if (campos[i].value == "") { //há pelo menos um campo vazio
+            campos[i].classList.add("campo-nao-preenchido");
+            camposVazios.push(campos[i].name);
         }
 
     }
