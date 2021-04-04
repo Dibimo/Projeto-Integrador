@@ -40,6 +40,9 @@ h2{
     overflow: hidden;
     color: #ef1d26;
 }
+.botao:hover{
+    color: white;
+}
 .botao::before{
     bottom: 0;
     border-radius: 50% 50% 0 0;
@@ -51,9 +54,6 @@ h2{
     background: #ef1d26;
     z-index: -1;
     transition: 0.8s;
-}
-.botao:hover{
-    color: white;
 }
 .botao:hover::before{
     height: 180%;
