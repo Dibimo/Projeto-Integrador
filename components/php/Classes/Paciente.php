@@ -11,8 +11,10 @@
         private string $rg;
         private string $estado_civil;
         private string $naturalidade;
-        private string $nomeMae;
         private string $nomePai;
+        private string $nomeMae;
+        private string $naturalidadePai;
+        private string $naturalidadeMae;
         private int $contato;
         private int $cpf;
 
@@ -34,8 +36,10 @@
             $this->rg = $dados['dadosPessoais']['rg'];
             $this->estado_civil = $dados['dadosPessoais']['estado_civil'];
             $this->naturalidade = $dados['dadosPessoais']['naturalidade'];
-            $this->nomeMae = $dados['dadosPessoais']['mae'];
             $this->nomePai = $dados['dadosPessoais']['pai'];
+            $this->nomeMae = $dados['dadosPessoais']['mae'];
+            $this->naturalidadePai = $dados['dadosPessoais']['naturalidadePai'];
+            $this->naturalidadeMae = $dados['dadosPessoais']['naturalidadeMae'];
             $this->cpf = $dados['dadosPessoais']['cpf'];
 
             //dados fisicos
