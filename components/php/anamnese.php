@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="conteiner">
-        <form id="formulario">
+        <form id="formulario" method="post" action="prontuario.php">
             <div>
                 <?php
                     echo "<label>Nome: {$paciente->getNome()}</label>"
@@ -504,7 +504,12 @@
             <div>
                 <label for="planoTratamento">Plano de Tratamento:</label>
                 <textarea name="planoTratamento" id="planoTratamento" class="campo"></textarea>
-            </div>       
+            </div>    
+            <?php
+
+                echo "<input type='hidden' value='{$paciente->getNome()}' name ='paciente'>"
+
+            ?>   
             <button id="enviar">Enviar</button>
         </form>
     </div>
