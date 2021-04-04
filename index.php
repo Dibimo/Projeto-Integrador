@@ -20,8 +20,8 @@
                 <label for="data_nascimento">DN:</label>
                 <input type="date"  name="data_nascimento" id="data_nascimento" class="campo origatorio">
                 
-                <label for="tipo_sexo">Sexo:</label>
-                <select name="tipo_sexo" id="tipo_sexo" class="campo origatorio">
+                <label for="sexo">Sexo:</label>
+                <select name="sexo" id="sexo" class="campo origatorio">
                     <option value="">selecione</option>
                     <option value="m">Masculino</option>
                     <option value="f">Feminino</option>
