@@ -46,7 +46,16 @@
                                
             <div>
                 <label for="escolaridade">Escolaridade</label>
-                <input type="text" name="escolaridade" id="escolaridade" class="campoAlfabetico origatorio">
+                <select name="escolaridade" id="cor" class="campo origatorio">                    
+                    <option value="">selecione</option>
+                    <option value="infantil">Educação Infantil</option>
+                    <option value="fundamental">Ensino Fundamental</option>
+                    <option value="medio">Ensino Medio</option>                    
+                    <option value="superior">Enseino Superior</option>                    
+                    <option value="posGraduacao">Pós graduação</option>                    
+                    <option value="mestrado">Mestrado</option>                    
+                    <option value="doutorado">Doutorado</option>                    
+                </select>
 
                 <label for="profissao">Profissão</label>
                 <input type="text" name="profissao" id="profissao" class="campoAlfabetico origatorio">
