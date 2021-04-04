@@ -14,8 +14,8 @@ function obtemPaciente(form) {
             contato: form.contato.value,
             pai: form.pai.value,
             mae: form.mae.value,
-            paiNaturalidade: form.paiNaturalidade.value,
-            maeNaturalidade: form.maeNaturalidade.value
+            naturalidadePai: form.paiNaturalidade.value,
+            naturalidadeMae: form.maeNaturalidade.value
         },
         dadosFisicos: {
             peso: substituiVirgulaPorPonto(form.peso.value),
