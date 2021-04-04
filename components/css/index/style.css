@@ -11,10 +11,9 @@
     font-size: 15px;
 }
 
-.imagem{
+.img_uni_logo{
     height:1,42cm;
     width:6,47cm;
-
 }
 
 body{
@@ -29,4 +28,4 @@ h2{
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-}
+}   
