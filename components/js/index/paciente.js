@@ -3,7 +3,7 @@ function obtemPaciente(form) {
         dadosPessoais: {
             nome: form.nome_completo.value,
             data_nascimento: form.data_nascimento.value,
-            sexo: form.tipo_sexo.value,
+            sexo: form.sexo.value,
             escolaridade: form.escolaridade.value,
             profissao: form.profissao.value,
             rg: removeNaoNumericos(form.rg.value),
