@@ -253,19 +253,19 @@ $paciente = $_SESSION['paciente'];
                 <label for="doisPrimeiros">Durante os 2 primeiros anos de vida:</label>
                 <ul>
                     <li>
-                        <input type="checkbox" name="sentou" id="sentou" value="false">
+                        <input type="checkbox" name="sentou" id="sentou" value="sentou">
                         <label>Sentou-se</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="engatinhou" id="engatinhou" value="false">
+                        <input type="checkbox" name="engatinhou" id="engatinhou" value="engatinhou">
                         <label>Engatinhou</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="andou" id="andou" value="false">
+                        <input type="checkbox" name="andou" id="andou" value="andou">
                         <label>Andou</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="falou" id="falou" value="false">
+                        <input type="checkbox" name="falou" id="falou" value="falou">
                         <label>Falou</label>
                     </li>
                 </ul>
@@ -283,27 +283,27 @@ $paciente = $_SESSION['paciente'];
                 <label for="estadoAnimico">Estado anímico:</label>
                 <ul>
                     <li>
-                        <input type="checkbox" name="alegre" id="alegre" value="false">
+                        <input type="checkbox" name="alegre" id="alegre" value="alegre">
                         <label>Alegre</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="triste" id="triste" value="false">
+                        <input type="checkbox" name="triste" id="triste" value="triste">
                         <label>Triste</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="timido" id="timido" value="false">
+                        <input type="checkbox" name="timido" id="timido" value="timido">
                         <label>Timido</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="tranquilo" id="tranquilo" value="false">
+                        <input type="checkbox" name="tranquilo" id="tranquilo" value="tranquilo">
                         <label>Tranquilo</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="inquieto" id="inquieto" value="false">
+                        <input type="checkbox" name="inquieto" id="inquieto" value="inquieto">
                         <label>Inquieto</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="assustado" id="assustado" value="false">
+                        <input type="checkbox" name="assustado" id="assustado" value="assustado">
                         <label>Assustado</label>
                     </li>
                 </ul>
@@ -326,31 +326,31 @@ $paciente = $_SESSION['paciente'];
                 <label for="condutaPsicomotora">Conduta Psicomotora:</label>
                 <ul>
                     <li>
-                        <input type="checkbox" name="postura_normal" id="postura_normal" value="false">
+                        <input type="checkbox" name="postura_normal" id="postura_normal" value="postura_normal">
                         <label>Postura normal </label>
                     </li>
                     <li>
-                        <input type="checkbox" name="postura_alterada" id="postura_alterada" value="false">
+                        <input type="checkbox" name="postura_alterada" id="postura_alterada" value="postura_alterada">
                         <label>Postura Alterada</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="fonacao_normal" id="fonacao_normal" value="false">
+                        <input type="checkbox" name="fonacao_normal" id="fonacao_normal" value="fonacao_normal">
                         <label>Fonoção Normal</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="disturbios_fala" id="disturbios_fala" value="false">
+                        <input type="checkbox" name="disturbios_fala" id="disturbios_fala" value="disturbios_fala">
                         <label>Distúrbios da fala</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="paralisia" id="paralisia" value="">
+                        <input type="checkbox" name="paralisia" id="paralisia" value="paralisia">
                         <label>Alguma paralisia</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="enurese" id="enurese" value="false">
+                        <input type="checkbox" name="enurese" id="enurese" value="enurese">
                         <label>Enurese Noturna</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="esfincteres" id="esfincteres" value="false">
+                        <input type="checkbox" name="esfincteres" id="esfincteres" value="esfincteres">
                         <label>Descontrole dos esfíncteres</label>
                     </li>
                 </ul>
@@ -380,27 +380,27 @@ $paciente = $_SESSION['paciente'];
                 <label for="conduta">Apresenta alguma patologia de conduta:</label>
                 <ul>
                     <li>
-                        <input type="checkbox" name="tiques" id="tiques" value="false">
+                        <input type="checkbox" name="tiques" id="tiques" value="tiques">
                         <label>Tiques</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="fobias" id="fobias" value="false">
+                        <input type="checkbox" name="fobias" id="fobias" value="fobias">
                         <label>Fobias</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="ansiedade" id="ansiedade" value="false">
+                        <input type="checkbox" name="ansiedade" id="ansiedade" value="ansiedade">
                         <label>Ansiedade</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="medo" id="medo" value="false">
+                        <input type="checkbox" name="medo" id="medo" value="medo">
                         <label>Medo</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="birra" id="birra" value="false">
+                        <input type="checkbox" name="birra" id="birra" value="birra">
                         <label>Birra</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="ciumes" id="ciumes" value="false">
+                        <input type="checkbox" name="ciumes" id="ciumes" value="ciumes">
                         <label>Ciúmes</label>
                     </li>
                 </ul>
@@ -568,7 +568,6 @@ $paciente = $_SESSION['paciente'];
     </div>
     <script src="/components/js/anamnese/main.js"></script>
     <script src="/components/js/anamnese/anamnese.js"></script>
-    <script src="/components/js/anamnese/listeners.js"></script>
     <script>
         main()
     </script>

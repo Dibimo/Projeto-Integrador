@@ -21,8 +21,7 @@ function obtemAnamnese(form) {
         aids: form.resposta_aids.value,
         outra: form.outra.value,
         fumante: form.resposta_fumante.value,
-        frequenciaFumo: form.frequencia.value,
-        sentou: form.sentou.value
+        frequenciaFumo: form.frequencia.value
     }
     console.log(anamnese);
 }
