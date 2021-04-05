@@ -82,4 +82,5 @@ function obtemAnamnese(form) {
         
     }
     console.log(anamnese);
+    return anamnese;
 }
