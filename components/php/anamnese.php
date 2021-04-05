@@ -1,7 +1,7 @@
 <?php
-require_once 'Classes/Paciente.php';
-session_start();
-$paciente = $_SESSION['paciente'];
+    require_once 'Classes/Paciente.php';
+    session_start();
+    $paciente = $_SESSION['paciente'];
 
 ?>
 <!DOCTYPE html>
@@ -532,7 +532,7 @@ $paciente = $_SESSION['paciente'];
             </div>
 
             <div>
-                <label for="alteracoesEncontradas">Queixa Principal:</label>
+                <label for="alteracoesEncontradas">Alterações encontradas:</label>
                 <textarea name="alteracoesEncontradas" id="alteracoesEncontradas" class="campo"></textarea>
             </div>
             <div>
@@ -558,11 +558,9 @@ $paciente = $_SESSION['paciente'];
                 <label for="planoTratamento">Plano de Tratamento:</label>
                 <textarea name="planoTratamento" id="planoTratamento" class="campo"></textarea>
             </div>
-            <?php
-
-            echo "<input type='hidden' value='{$paciente->getNome()}' name ='paciente'>"
-
-            ?>
+            <div>
+                <input type="hidden" name="buffer" id="buffer">
+            </div>
             <button id="enviar">Enviar</button>
         </form>
     </div>
