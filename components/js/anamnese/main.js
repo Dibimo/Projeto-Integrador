@@ -1,9 +1,12 @@
 function main(){
     var form = document.querySelector("#formulario");
     var botao = document.querySelector("#enviar");
+    var buffer = document.querySelector("#buffer");
     botao.addEventListener("click",function (event) {
-        event.preventDefault();
-        obtemAnamnese(form);
+        // event.preventDefault();
+        var anamnese = obtemAnamnese(form);
+        buffer.value = JSON.stringify(anamnese);
+
     })
 
     var radios = document.querySelectorAll('input[type="radio"]');
