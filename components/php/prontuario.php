@@ -23,8 +23,9 @@
     <title>Document</title>
 </head>
 <body>
-
-    <table>
+    
+    <button id="adicionar">+</button>
+    <table id="prontuarioTabela">
         <thead>
             <tr>
                 <th>Data do procedimento</th>
@@ -42,6 +43,8 @@
             </tr>
         </tbody>
     </table>
-    
+
+    <script src="/components/js/prontuario/main.js"></script>
+    <script> main() </script>
 </body>
 </html>
