@@ -202,18 +202,18 @@ $paciente = $_SESSION['paciente'];
                     </li>
                     <li>
                         <label for="historia_gestacao">Nasceu de parto</label>
-                        <input type="radio" value="normal" name="resposta_parto">
+                        <input type="radio" value="normal" name="resposta_tipo_parto">
                         <label for="forceps">Normal</label>
-                        <input type="radio" value="forceps" name="resposta_parto">
+                        <input type="radio" value="forceps" name="resposta_tipo_parto">
                         <label for="cesariana">A Fórceps</label>
-                        <input type="radio" value="cesariana" name="resposta_parto">
+                        <input type="radio" value="cesariana" name="resposta_tipo_parto">
                         <label for="false">Cesariana</label>
                     </li>
                     <li>
                         <label for="historia_gestacao">A criança teve algum problema no parto?</label>
-                        <input type="radio" value="true" name="resposta_parto">
+                        <input type="radio" value="true" name="resposta_problema_parto">
                         <label for="true">Sim</label>
-                        <input type="radio" value="false" name="resposta_parto">
+                        <input type="radio" value="false" name="resposta_problema_parto">
                         <label for="false">Não</label>
                     </li>
                     <li>
