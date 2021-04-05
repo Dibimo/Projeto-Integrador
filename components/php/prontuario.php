@@ -44,6 +44,11 @@
         </tbody>
     </table>
 
+    <hr>
+
+    <h2>Anamnese</h2>
+    
+
     <script src="/components/js/prontuario/main.js"></script>
     <script> main() </script>
 </body>
