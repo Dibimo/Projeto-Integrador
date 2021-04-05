@@ -225,23 +225,23 @@ $paciente = $_SESSION['paciente'];
                     </li>
                     <li>
                         <label for="historia_gestacao">Já lhe foi dito para não tomar anestesia local?</label>
-                        <input type="radio" value="true" name="resposta_parto">
+                        <input type="radio" value="true" name="resposta_anestesia">
                         <label for="true">Sim</label>
-                        <input type="radio" value="false" name="resposta_parto">
+                        <input type="radio" value="false" name="resposta_anestesia">
                         <label for="false">Não</label>
                     </li>
                     <li>
                         <label for="historia_gestacao">Já teve ou viveu com alguém que tivesse doença grave e contagiosa?</label>
-                        <input type="radio" value="true" name="resposta_parto">
+                        <input type="radio" value="true" name="resposta_doenca_grave">
                         <label for="true">Sim</label>
-                        <input type="radio" value="false" name="resposta_parto">
+                        <input type="radio" value="false" name="resposta_doenca_grave">
                         <label for="false">Não</label>
                     </li>
                     <li>
                         <label for="historia_gestacao">A criança já foi vacinada?</label>
-                        <input type="radio" value="true" name="resposta_parto">
+                        <input type="radio" value="true" name="resposta_vacinada">
                         <label for="true">Sim</label>
-                        <input type="radio" value="false" name="resposta_parto">
+                        <input type="radio" value="false" name="resposta_vacinada">
                         <label for="false">Não</label>
                     </li>
                 </ol>
