@@ -22,5 +22,9 @@ function main(){
             }
             frequencia.style.display = 'none';
         })
-    })
+    });
+
+    var checkboxs = document.querySelectorAll('input[type="checkbox"]');
+    adicionaListeresCheckBoxs(checkboxs);
+
 }
