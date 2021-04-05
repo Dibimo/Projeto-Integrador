@@ -27,7 +27,8 @@
         private bool $fumante;
         private string $frequencia;
         private string $historiaGestacao;
-        private string $parto;
+        private string $tipoParto;
+        private bool $problemaParto;
         private string $amamentacao;
         private bool $anestesia;
         private bool $doencaGrave;
