@@ -33,31 +33,13 @@ h2{
 .botao{
     border: 1px solid #ef1d26;
     padding: 10px 20px;
-    background: none;
+    background: #ef1d26;
     font-size: 20px;
-    color: #ef1d26;
+    color: white;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     transition: 1s;
 }
-.botao:hover{
-    color: white;
-}
-.botao::before{
-    bottom: 0;
-    border-radius: 50% 50% 0 0;
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    background: #ef1d26;
-    z-index: -1;
-    transition: 1s;
-}
-.botao:hover::before{
-    height: 200%;
 
-}
 

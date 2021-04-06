@@ -54,7 +54,7 @@
 
                 <div>
                     <label for="escolaridade">Escolaridade</label>
-                    <select name="escolaridade" id="cor" class="campo obrigatorio">
+                    <select name="escolaridade" id="escolaridade" class="campo obrigatorio">
                         <option value="">selecione</option>
                         <option value="infantil">Educação Infantil</option>
                         <option value="fundamental">Ensino Fundamental</option>
@@ -125,7 +125,7 @@
                 </div>
 
                 <div>
-                    <label for="filiacao">Filiação</label> <br></br>
+                    <label for="filiacao">Filiação</label> <br>
 
                     <label for="pai">Pai</label>
                     <input type="text" name="pai" id="pai" class="campoAlfabetico obrigatorio">
@@ -150,25 +150,27 @@
 
                 <div>
                     <label for="numero">Número</label>
-                    <input type="texto" name="numero" id="numero" class="campoNumerico obrigatorio">
+                    <input type="text" name="numero" id="numero" class="campoNumerico obrigatorio">
                 </div>
 
                 <div>
                     <label for="complemento">Complemento</label>
-                    <input type="texto" name="complemento" id="complemento" class="campo">
+                    <input type="text" name="complemento" id="complemento" class="campo">
                 </div>
 
                 <div>
                     <label for="bairro">Bairro</label>
-                    <input type="texto" name="bairro" id="bairro" class="campoAlfabetico obrigatorio">
+                    <input type="text" name="bairro" id="bairro" class="campoAlfabetico obrigatorio">
                 </div>
 
                 <div>
                     <label for="cep">CEP</label>
-                    <input type="texto" name="cep" id="cep" class="campoNumerico obrigatorio">
+                    <input type="text" name="cep" id="cep" class="campoNumerico obrigatorio">
                 </div>
-                <label for="cidade">Cidade</label>
-                <input type="texto" name="cidade" id="cidade" class="campoAlfabetico obrigatorio">
+                <div>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade" class="campoAlfabetico obrigatorio">
+                </div>
                 <div>
                     <label for="estados">Estado:</label>
                     <select name="estados_moradia" class="campo obrigatorio">
@@ -203,15 +205,13 @@
                     </select>
                 </div>
 
-                <h2><strong>(obrigatório o preenchimento ser realizado pela recepção)</strong></h2>
-
                 <div>
                     <input type="hidden" id="buffer" name="buffer">
                 </div>
 
-                <br></br>
+                <br>
 
-                <div style="padding-left: 3%;">
+                <div >
                     <button id="botao-cadastrar" class="botao">Cadastrar</button>
                 </div>
                 <div id="erros"></div>
