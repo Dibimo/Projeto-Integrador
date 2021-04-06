@@ -82,6 +82,88 @@
         private string $examesComplementares;
         private string $diagnosticoDefinitivo;
         private string $planoTratamento;
+
+        public function __construct($dados)
+        {
+            $this->queixaPrincipal = $dados['queixa_principal'];
+            $this->historiaGestacao = $dados['hitorico_doenca'];
+            $this->hemorragia = $dados['resposta_hemorragia'];
+            $this->alergia = $dados['resposta_alergia'];
+            $this->reumatismo = $dados['resposta_reumatismo'];
+            $this->cardiovascular = $dados['resposta_cardiovascular'];
+            $this->gastrite = $dados['resposta_gastrite'];
+            $this->diabetico = $dados['resposta_diabetico'];
+            $this->desmaio = $dados['resposta_desmaio'];
+            $this->tratamento = $dados['resposta_tratamento'];
+            $this->medicamento = $dados['resposta_medicamento'];
+            $this->operacao = $dados['resposta_operacao'];
+            $this->manias = $dados['resposta_manias'];
+            $this->depressao = $dados['resposta_depressao'];
+            $this->tuberculose = $dados['resposta_tuberculose'];
+            $this->sarampo = $dados['resposta_sarampo'];
+            $this->sifilis = $dados['resposta_sifilis'];
+            $this->caxumba = $dados['resposta_caxumba'];
+            $this->hepatite = $dados['resposta_hepatite'];
+            $this->varicela = $dados['resposta_varicela'];
+            $this->aids = $dados['resposta_aids'];
+            $this->outra = $dados['outra'];
+            $this->fumante = $dados['resposta_fumante'];
+            $this->frequencia = $dados['frequencia'];
+            $this->gestacao = $dados['historia_gestacao'];
+            $this->tipoParto = $dados['resposta_tipo_parto'];
+            $this->problemaParto = $dados['resposta_problema_parto'];
+            $this->amamentacao = $dados['resposta_amamentacao'];
+            $this->anestesia = $dados['resposta_anestesia'];
+            $this->doencaGrave = $dados['resposta_doenca_grave'];
+            $this->vacinada = $dados['resposta_vacinada'];
+            $this->sentou = $dados['sentou'];
+            $this->engatinhou = $dados['engatinhou'];
+            $this->andou = $dados['andou'];
+            $this->falou = $dados['falou'];
+            $this->dificuldade = $dados['resposta_dificuldade'];
+            $this->alegre = $dados['alegre'];
+            $this->triste = $dados['triste'];
+            $this->timido = $dados['timido'];
+            $this->tranquilo = $dados['tranquilo'];
+            $this->inquieto = $dados['inquieto'];
+            $this->assustado = $dados['assustado'];
+            $this->sono  = $dados['sono'];
+            $this->normal = $dados['postura_normal'];
+            $this->alterada = $dados['postura_alterada'];
+            $this->normal = $dados['fonacao_normal'];
+            $this->fala = $dados['disturbios_fala'];
+            $this->paralisia = $dados['paralisia'];
+            $this->enurese = $dados['enurese'];
+            $this->esfincteres = $dados['esfincteres'];
+            $this->alimentacao = $dados['alimentacao'];
+            $this->sociabilidade = $dados['sociabilidade'];
+            $this->tiques = $dados['tiques'];
+            $this->fobias = $dados['fobias'];
+            $this->ansiedade = $dados['ansiedade'];
+            $this->medo = $dados['medo'];
+            $this->birra = $dados['birra'];
+            $this->ciumes = $dados['ciumes'];
+            $this->observacoes = $dados['observacoes'];
+            $this->labios = $dados['resposta_labios'];
+            $this->mucosaJugal = $dados['resposta_mucosaJugal'];
+            $this->lingua = $dados['resposta_lingua'];
+            $this->soalho = $dados['resposta_soalho'];
+            $this->palatoDuro = $dados['resposta_palatoDuro'];
+            $this->garganta = $dados['resposta_garganta'];
+            $this->palatoMole = $dados['resposta_palatoMole'];
+            $this->mucosaAlveolar = $dados['resposta_mucosaAlveolar'];
+            $this->gengivas = $dados['resposta_gengivas'];
+            $this->glandulasSalivares = $dados['resposta_glandulasSalivares'];
+            $this->linfonodos = $dados['resposta_linfonodos'];
+            $this->atm = $dados['resposta_atm'];
+            $this->muscMastigadores = $dados['resposta_muscMastigadores'];
+            $this->oclusao = $dados['resposta_oclusao'];
+            $this->alteracoesEncontradas = $dados['alteracoesEncontradas'];
+            $this->diagnosticoPresuntivo = $dados['diagnosticoPresuntivo'];
+            $this->examesComplementares = $dados['examesComplementares'];
+            $this->diagnosticoDefinitivo = $dados['diagnosticoDefinitivo'];
+            $this->planoTratamento = $dados['planoTratamento'];
+        }
         
         public function getPlanoTratamento()
         {
