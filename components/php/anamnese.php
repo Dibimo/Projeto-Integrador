@@ -1,7 +1,7 @@
 <?php
-    require_once 'Classes/Paciente.php';
-    session_start();
-    $paciente = $_SESSION['paciente'];
+require_once 'Classes/Paciente.php';
+session_start();
+$paciente = $_SESSION['paciente'];
 
 ?>
 <!DOCTYPE html>
@@ -201,7 +201,7 @@
                         <textarea name="historia_gestacao" id="historia_gestacao"></textarea>
                     </li>
                     <li>
-                        <label for="historia_gestacao">Nasceu de parto</label>
+                        <label for="reposta_tipo_parto">Nasceu de parto</label>
                         <input type="radio" value="normal" name="resposta_tipo_parto">
                         <label for="forceps">Normal</label>
                         <input type="radio" value="forceps" name="resposta_tipo_parto">
@@ -210,35 +210,35 @@
                         <label for="false">Cesariana</label>
                     </li>
                     <li>
-                        <label for="historia_gestacao">A criança teve algum problema no parto?</label>
+                        <label for="resposta_problema_parto">A criança teve algum problema no parto?</label>
                         <input type="radio" value="true" name="resposta_problema_parto">
                         <label for="true">Sim</label>
                         <input type="radio" value="false" name="resposta_problema_parto">
                         <label for="false">Não</label>
                     </li>
                     <li>
-                        <label for="historia_gestacao">A amamentação foi: </label>
-                        <input type="radio" value="true" name="resposta_amamentacao">
+                        <label for="resposta_amamentacao">A amamentação foi: </label>
+                        <input type="radio" value="natural" name="resposta_amamentacao">
                         <label for="true">Natural</label>
-                        <input type="radio" value="false" name="resposta_amamentacao">
+                        <input type="radio" value="mamadeira" name="resposta_amamentacao">
                         <label for="false">Mamadeira</label>
                     </li>
                     <li>
-                        <label for="historia_gestacao">Já lhe foi dito para não tomar anestesia local?</label>
+                        <label for="resposta_anestesia">Já lhe foi dito para não tomar anestesia local?</label>
                         <input type="radio" value="true" name="resposta_anestesia">
                         <label for="true">Sim</label>
                         <input type="radio" value="false" name="resposta_anestesia">
                         <label for="false">Não</label>
                     </li>
                     <li>
-                        <label for="historia_gestacao">Já teve ou viveu com alguém que tivesse doença grave e contagiosa?</label>
+                        <label for="resposta_doenca_grave">Já teve ou viveu com alguém que tivesse doença grave e contagiosa?</label>
                         <input type="radio" value="true" name="resposta_doenca_grave">
                         <label for="true">Sim</label>
                         <input type="radio" value="false" name="resposta_doenca_grave">
                         <label for="false">Não</label>
                     </li>
                     <li>
-                        <label for="historia_gestacao">A criança já foi vacinada?</label>
+                        <label for="resposta_vacinada">A criança já foi vacinada?</label>
                         <input type="radio" value="true" name="resposta_vacinada">
                         <label for="true">Sim</label>
                         <input type="radio" value="false" name="resposta_vacinada">
