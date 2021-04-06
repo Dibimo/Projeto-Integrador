@@ -1,5 +1,6 @@
 <?php
     require_once 'Endereco.php';
+    require_once 'Anamnese.php';
     class Paciente
     {
         //dados pessoais
@@ -24,6 +25,8 @@
         private string $cor;
         //endereco completo
         private Endereco $endereco;
+
+        private Anamnese $anamnese;
 
         public function __construct($dados)
         {
@@ -148,6 +151,17 @@
         public function getNaturalidadePai()
         {
                 return $this->naturalidadePai;
+        }
+
+        public function getAnamnese()
+        {
+            return $this->anamnese;
+        }
+
+        public function setAnamnese($dados)
+        {
+            $this->anamnese = new Anamnese($dados);
+
         }
     }
 
