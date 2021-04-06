@@ -203,7 +203,6 @@
 
                     <h2><strong>(obrigatório o preenchimento ser realizado pela recepção)</strong></h2>
 
-                </div>
                 <div>
                     <input type="hidden" id="buffer" name="buffer">
                 </div>
@@ -213,12 +212,11 @@
                 <div style="padding-left: 3%;">
                     <button id="botao-cadastrar" class="botao">Cadastrar</button>
                 </div>
+                <div id="erros"></div>
             </form>
 
         </div>
 
-        <div id="erros"></div>
-        
         <script src="/components/js/index/main.js"></script>
         <script src="/components/js/index/listeners.js"></script>
         <script src="/components/js/index/validacoes.js"></script>
