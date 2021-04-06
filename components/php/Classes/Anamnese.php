@@ -26,6 +26,7 @@
         private string $outra;
         private bool   $fumante;
         private string $frequencia;
+        
         private string $historiaGestacao;
         private string $tipoParto;
         private bool   $problemaParto;
@@ -61,6 +62,7 @@
         private bool   $birra;
         private bool   $ciumes;
         private string $observacoes;
+
         private string $labios;
         private string $mucosaJugal;
         private string $lingua;
