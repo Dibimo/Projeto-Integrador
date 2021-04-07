@@ -11,7 +11,7 @@ create table pacientes(
     profissao varchar(25) not null,
     rg varchar(25) not null,
     cpf varchar(11) not null,
-    estadoCivil varchar(10) not null,
+    estado_civil varchar(10) not null,
     natu varchar(50) not null,
     estado_nasc varchar(2) not null,
     tel_contato varchar(11) not null,
@@ -154,4 +154,6 @@ create table teste (nome char(10));
 insert into teste values('carol');
 insert into teste values('diogo');
 insert into teste values('leo');
-drop table teste;
+drop table pacientes;
+truncate pacientes;
+select nome from teste;
