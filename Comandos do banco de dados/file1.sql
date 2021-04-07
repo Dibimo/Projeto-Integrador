@@ -150,4 +150,8 @@ select * from enderecos;
 
 select * from pacientes where (cpf=36700137645);
 
-
+create table teste (nome char(10));
+insert into teste values('carol');
+insert into teste values('diogo');
+insert into teste values('leo');
+drop table teste;
