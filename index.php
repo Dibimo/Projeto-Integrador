@@ -18,7 +18,7 @@
 
         <div style="padding-right: 3%; padding-left: 3%;">
 
-            <form id="formulario" action="components/php/constroi_paciente.php" method="post" class="borda">
+            <form id="formulario" action="components/php/Paginas/constroi_paciente.php" method="post" class="borda">
 
                 <div>
                     <label for="nome_completo">Nome:</label>
