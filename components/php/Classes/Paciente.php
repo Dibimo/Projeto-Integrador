@@ -10,6 +10,7 @@
         private string $sexo;
         private string $escolaridade;
         private string $profissao;
+        private string $estado_nascenca;
         private string $rg;
         private string $estado_civil;
         private string $naturalidade;
@@ -37,6 +38,7 @@
             $this->nome = $dados['dadosPessoais']['nome'];
             $this->data_nascimento = $dados['dadosPessoais']['data_nascimento'];
             $this->sexo = $dados['dadosPessoais']['sexo'];
+            $this->estado_nascenca = $dados['dadosPessoais']['estado_nascenca'];
             $this->escolaridade = $dados['dadosPessoais']['escolaridade'];
             $this->profissao = $dados['dadosPessoais']['profissao'];
             $this->rg = $dados['dadosPessoais']['rg'];
@@ -176,6 +178,11 @@
         {
             $this->prontuario[] = new Procedimento($nome,$data);
 
+        }
+
+        public function getEstado_nascenca()
+        {
+            return $this->estado_nascenca;
         }
     }
 
