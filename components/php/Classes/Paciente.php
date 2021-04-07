@@ -1,6 +1,7 @@
 <?php
     require_once 'Endereco.php';
     require_once 'Anamnese.php';
+    require_once 'Procedimento.php';
     class Paciente
     {
         //dados pessoais
@@ -27,6 +28,8 @@
         private Endereco $endereco;
 
         private Anamnese $anamnese;
+
+        private Procedimento $prontuario;
 
         public function __construct($dados)
         {
@@ -143,17 +146,17 @@
             return $this->endereco;
         }
 
-        public function getNaturalidadeMae()
+        public function getNaturalidadeMae(): string
         {
                 return $this->naturalidadeMae;
         }
  
-        public function getNaturalidadePai()
+        public function getNaturalidadePai(): string
         {
                 return $this->naturalidadePai;
         }
 
-        public function getAnamnese()
+        public function getAnamnese(): Anamnese
         {
             return $this->anamnese;
         }
@@ -161,6 +164,17 @@
         public function setAnamnese($dados)
         {
             $this->anamnese = new Anamnese($dados);
+
+        }
+
+        public function getProntuario()
+        {
+            return $this->prontuario;
+        }
+
+        public function setProntuario($nome,$data)
+        {
+            $this->prontuario[] = new Procedimento($nome,$data);
 
         }
     }
