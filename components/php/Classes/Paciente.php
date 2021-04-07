@@ -40,6 +40,7 @@
             $this->sexo = $dados['dadosPessoais']['sexo'];
             $this->estado_nascenca = $dados['dadosPessoais']['estado_nascenca'];
             $this->escolaridade = $dados['dadosPessoais']['escolaridade'];
+            $this->contato = $dados['dadosPessoais']['contato'];
             $this->profissao = $dados['dadosPessoais']['profissao'];
             $this->rg = $dados['dadosPessoais']['rg'];
             $this->estado_civil = $dados['dadosPessoais']['estado_civil'];
