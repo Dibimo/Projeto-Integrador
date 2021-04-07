@@ -28,7 +28,8 @@ create table pacientes(
 );
 
 create table enderecos(
-	cpf_paciente varchar(11) not null,
+	nome_paciente varchar (11) not null,
+    cpf_paciente varchar(11) not null,
     rua varchar(50) not null,
     numero varchar(5) not null,
     complemento varchar(20) not null,
@@ -36,12 +37,13 @@ create table enderecos(
     cep varchar(8) not null,
     cidade varchar(50) not null,
     estado_mora varchar(2) not null,
-    constraint paciEndereco foreign key (cpf_paciente) references pacientes(cpf),
+    constraint paciEndereco foreign key (nome_paciente,cpf_paciente) references pacientes(nome_paciente,cpf),
     primary key (cpf_paciente)
 );
 
 create table anamnese_geral(
 	cpf_paciente varchar(11) not null,
+	nome_paciente varchar(11) not null,
     queix_princ varchar(100) not null,
     historico varchar (500) not null,
     hemorragia varchar (3) not null,
@@ -87,15 +89,15 @@ create table anamnese_geral(
     examec varchar(100) not null,
     diagnosd varchar(100) not null,
     planotrat varchar(100) not null,
-    constraint anamEndereco foreign key (cpf_paciente) references pacientes(cpf),
+    constraint anamEndereco foreign key (nome_paciente,cpf_paciente) references pacientes(nome,cpf),
     primary key (cpf_paciente)
 );
 
 
 
 create table anamnese_infantil(
-
-	
+	nome_paciente varchar(100),
+	cpf_paciente varchar(11),
 	historiag varchar(100),
 	tipoparto varchar(9),
     problemap varchar(3),
@@ -131,8 +133,8 @@ create table anamnese_infantil(
     medo varchar(3),
     birra varchar(3),
     ciumes varchar(3),
-    observacoes varchar(100)
-    
+    observacoes varchar(100),
+    constraint anamEndereco foreign key (nome_paciente,cpf_paciente) references pacientes(nome,cpf)
 );
 
 
