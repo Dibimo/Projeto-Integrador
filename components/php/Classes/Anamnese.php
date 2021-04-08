@@ -3,64 +3,64 @@
     class Anamnese
     {
         private string $queixaPrincipal;
-        private string $hitoricoDoenca;
-        private bool   $hemorragia;
-        private bool   $reumatismo;
-        private bool   $alergia;
-        private bool   $cardiovascular;
-        private bool   $gastrite;
-        private bool   $diabetico;
-        private bool   $desmaio;
-        private bool   $tratamento;
-        private bool   $medicamento;
-        private bool   $operacao;
-        private bool   $manias;
-        private bool   $depressao;
-        private bool   $tuberculose;
-        private bool   $sarampo;
-        private bool   $sifilis;
-        private bool   $caxumba;
-        private bool   $hepatite;
-        private bool   $varicela;
-        private bool   $aids;
+        private string $historicoDoenca;
+        private string   $hemorragia;
+        private string   $reumatismo;
+        private string   $alergia;
+        private string   $cardiovascular;
+        private string   $gastrite;
+        private string   $diabetico;
+        private string   $desmaio;
+        private string   $tratamento;
+        private string   $medicamento;
+        private string   $operacao;
+        private string   $manias;
+        private string   $depressao;
+        private string   $tuberculose;
+        private string   $sarampo;
+        private string   $sifilis;
+        private string   $caxumba;
+        private string   $hepatite;
+        private string   $varicela;
+        private string   $aids;
         private string $outra;
-        private bool   $fumante;
+        private string   $fumante;
         private string $frequencia;
         
         private string $historiaGestacao;
         private string $tipoParto;
-        private bool   $problemaParto;
+        private string   $problemaParto;
         private string $amamentacao;
-        private bool   $anestesia;
-        private bool   $doencaGrave;
-        private bool   $vacinada;
-        private bool   $sentou;
-        private bool   $engatinhou;
-        private bool   $andou;
-        private bool   $falou;
-        private bool   $dificuldade;
-        private bool   $alegre;
-        private bool   $triste;
-        private bool   $timido;
-        private bool   $tranquilo;
-        private bool   $inquieto;
-        private bool   $assustado;
+        private string   $anestesia;
+        private string   $doencaGrave;
+        private string   $vacinada;
+        private string   $sentou;
+        private string   $engatinhou;
+        private string   $andou;
+        private string   $falou;
+        private string   $dificuldade;
+        private string   $alegre;
+        private string   $triste;
+        private string   $timido;
+        private string   $tranquilo;
+        private string   $inquieto;
+        private string   $assustado;
         private string $sono;
-        private bool   $posturaNormal;
-        private bool   $posturaAlterada;
-        private bool   $fonacaoNormal;
-        private bool   $disturbiosFala;
-        private bool   $paralisia;
-        private bool   $enurese;
-        private bool   $esfincteres;
+        private string   $posturaNormal;
+        private string   $posturaAlterada;
+        private string   $fonacaoNormal;
+        private string   $disturbiosFala;
+        private string   $paralisia;
+        private string   $enurese;
+        private string   $esfincteres;
         private string $alimentacao;
         private string $sociabilidade;
-        private bool   $tiques;
-        private bool   $fobias;
-        private bool   $ansiedade;
-        private bool   $medo;
-        private bool   $birra;
-        private bool   $ciumes;
+        private string   $tiques;
+        private string   $fobias;
+        private string   $ansiedade;
+        private string   $medo;
+        private string   $birra;
+        private string   $ciumes;
         private string $observacoes;
 
         private string $labios;
@@ -86,64 +86,64 @@
         public function __construct($dados)
         {
             $this->queixaPrincipal = $dados['queixa_principal'];
-            $this->historiaGestacao = $dados['hitorico_doenca'];
-            $this->hemorragia = $dados['resposta_hemorragia'];
-            $this->alergia = $dados['resposta_alergia'];
-            $this->reumatismo = $dados['resposta_reumatismo'];
-            $this->cardiovascular = $dados['resposta_cardiovascular'];
-            $this->gastrite = $dados['resposta_gastrite'];
-            $this->diabetico = $dados['resposta_diabetico'];
-            $this->desmaio = $dados['resposta_desmaio'];
-            $this->tratamento = $dados['resposta_tratamento'];
-            $this->medicamento = $dados['resposta_medicamento'];
-            $this->operacao = $dados['resposta_operacao'];
-            $this->manias = $dados['resposta_manias'];
-            $this->depressao = $dados['resposta_depressao'];
-            $this->tuberculose = $dados['resposta_tuberculose'];
-            $this->sarampo = $dados['resposta_sarampo'];
-            $this->sifilis = $dados['resposta_sifilis'];
-            $this->caxumba = $dados['resposta_caxumba'];
-            $this->hepatite = $dados['resposta_hepatite'];
-            $this->varicela = $dados['resposta_varicela'];
-            $this->aids = $dados['resposta_aids'];
+            $this->historicoDoenca = $dados['hitorico_doenca'];
+            $this->hemorragia = $this->traduzResultado($dados['resposta_hemorragia']);
+            $this->reumatismo = $this->traduzResultado($dados['resposta_reumatismo']);
+            $this->alergia = $this->traduzResultado($dados['resposta_alergia']);
+            $this->cardiovascular = $this->traduzResultado($dados['resposta_cardiovascular']);
+            $this->gastrite = $this->traduzResultado($dados['resposta_gastrite']);
+            $this->diabetico = $this->traduzResultado($dados['resposta_diabetico']);
+            $this->desmaio = $this->traduzResultado($dados['resposta_desmaio']);
+            $this->tratamento = $this->traduzResultado($dados['resposta_tratamento']);
+            $this->medicamento = $this->traduzResultado($dados['resposta_medicamento']);
+            $this->operacao = $this->traduzResultado($dados['resposta_operacao']);
+            $this->manias = $this->traduzResultado($dados['resposta_manias']);
+            $this->depressao = $this->traduzResultado($dados['resposta_depressao']);
+            $this->tuberculose = $this->traduzResultado($dados['resposta_tuberculose']);
+            $this->sarampo = $this->traduzResultado($dados['resposta_sarampo']);
+            $this->sifilis = $this->traduzResultado($dados['resposta_sifilis']);
+            $this->caxumba = $this->traduzResultado($dados['resposta_caxumba']);
+            $this->hepatite = $this->traduzResultado($dados['resposta_hepatite']);
+            $this->varicela = $this->traduzResultado($dados['resposta_varicela']);
+            $this->aids = $this->traduzResultado($dados['resposta_aids']);
             $this->outra = $dados['outra'];
-            $this->fumante = $dados['resposta_fumante'];
+            $this->fumante = $this->traduzResultado($dados['resposta_fumante']);
             $this->frequencia = $dados['frequencia'];
-            $this->gestacao = $dados['historia_gestacao'];
+            $this->historiaGestacao =$dados['historia_gestacao'];
             $this->tipoParto = $dados['resposta_tipo_parto'];
-            $this->problemaParto = $dados['resposta_problema_parto'];
+            $this->problemaParto = $this->traduzResultado($dados['resposta_problema_parto']);
             $this->amamentacao = $dados['resposta_amamentacao'];
-            $this->anestesia = $dados['resposta_anestesia'];
-            $this->doencaGrave = $dados['resposta_doenca_grave'];
-            $this->vacinada = $dados['resposta_vacinada'];
-            $this->sentou = $dados['sentou'];
-            $this->engatinhou = $dados['engatinhou'];
-            $this->andou = $dados['andou'];
-            $this->falou = $dados['falou'];
-            $this->dificuldade = $dados['resposta_dificuldade'];
-            $this->alegre = $dados['alegre'];
-            $this->triste = $dados['triste'];
-            $this->timido = $dados['timido'];
-            $this->tranquilo = $dados['tranquilo'];
-            $this->inquieto = $dados['inquieto'];
-            $this->assustado = $dados['assustado'];
+            $this->anestesia = $this->traduzResultado($dados['resposta_anestesia']);
+            $this->doencaGrave = $this->traduzResultado($dados['resposta_doenca_grave']);
+            $this->vacinada = $this->traduzResultado($dados['resposta_vacinada']);
+            $this->sentou = $this->traduzResultado($dados['sentou']);
+            $this->engatinhou = $this->traduzResultado($dados['engatinhou']);
+            $this->andou = $this->traduzResultado($dados['andou']);
+            $this->falou = $this->traduzResultado($dados['falou']);
+            $this->dificuldade = $this->traduzResultado($dados['resposta_dificuldade']);
+            $this->alegre = $this->traduzResultado($dados['alegre']);
+            $this->triste = $this->traduzResultado($dados['triste']);
+            $this->timido = $this->traduzResultado($dados['timido']);
+            $this->tranquilo = $this->traduzResultado($dados['tranquilo']);
+            $this->inquieto = $this->traduzResultado($dados['inquieto']);
+            $this->assustado = $this->traduzResultado($dados['assustado']);
             $this->sono  = $dados['sono'];
-            $this->normal = $dados['postura_normal'];
-            $this->alterada = $dados['postura_alterada'];
-            $this->normal = $dados['fonacao_normal'];
-            $this->fala = $dados['disturbios_fala'];
-            $this->paralisia = $dados['paralisia'];
-            $this->enurese = $dados['enurese'];
-            $this->esfincteres = $dados['esfincteres'];
-            $this->alimentacao = $dados['alimentacao'];
-            $this->sociabilidade = $dados['sociabilidade'];
-            $this->tiques = $dados['tiques'];
-            $this->fobias = $dados['fobias'];
-            $this->ansiedade = $dados['ansiedade'];
-            $this->medo = $dados['medo'];
-            $this->birra = $dados['birra'];
-            $this->ciumes = $dados['ciumes'];
-            $this->observacoes = $dados['observacoes'];
+            $this->posturaNormal = $this->traduzResultado($dados['postura_normal']);
+            $this->posturaAlterada = $this->traduzResultado($dados['postura_alterada']);
+            $this->fonacaoNormal = $this->traduzResultado($dados['fonacao_normal']);
+            $this->disturbiosFala = $this->traduzResultado($dados['disturbios_fala']);
+            $this->paralisia = $this->traduzResultado($dados['paralisia']);
+            $this->enurese = $this->traduzResultado($dados['enurese']);
+            $this->esfincteres = $this->traduzResultado($dados['esfincteres']);
+            $this->alimentacao = $this->traduzResultado($dados['alimentacao']);
+            $this->sociabilidade = $this->traduzResultado($dados['sociabilidade']);
+            $this->tiques = $this->traduzResultado($dados['tiques']);
+            $this->fobias = $this->traduzResultado($dados['fobias']);
+            $this->ansiedade = $this->traduzResultado($dados['ansiedade']);
+            $this->medo = $this->traduzResultado($dados['medo']);
+            $this->birra = $this->traduzResultado($dados['birra']);
+            $this->ciumes = $this->traduzResultado($dados['ciumes']);
+            $this->observacoes = $this->traduzResultado($dados['observacoes']);
             $this->labios = $dados['resposta_labios'];
             $this->mucosaJugal = $dados['resposta_mucosaJugal'];
             $this->lingua = $dados['resposta_lingua'];
@@ -545,14 +545,26 @@
             return $this->hemorragia;
         }
  
-        public function getHitoricoDoenca()
+        public function getHistoricoDoenca()
         {
-            return $this->hitoricoDoenca;
+            return $this->historicoDoenca;
         }
  
         public function getQueixaPrincipal()
         {
             return $this->queixaPrincipal;
+        }
+
+
+        private function traduzResultado(string $texto): string
+        {
+            if($texto =='true'){
+                return 'sim';
+            }else if($texto == 'false'){
+                return 'não';
+            }else{
+                return $texto;
+            }
         }
     }
 
