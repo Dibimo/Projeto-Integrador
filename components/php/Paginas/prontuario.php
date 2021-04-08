@@ -1,16 +1,14 @@
 <?php
 
-
-    require_once 'Classes/Paciente.php';
-    require_once 'Classes/Anamnese.php';
+    require_once dirname(__DIR__, 1) . '\\Classes\\Paciente.php';
+    require_once dirname(__DIR__, 1) . '\\Classes\\Anamnese.php';
+    require_once dirname(__DIR__,1). '\\Funcao\\manipular_banco.php';
 
     session_start();
-    $paciente = $_SESSION['paciente'];
-    // echo ($paciente->getCpf()."\n");
-    // //var_dump( $_SESSION['paciente']);
-    // var_dump($_POST['buffer']);
-
-    
+    $paciente = $_SESSION['paciente']; //recebe paciente anterior
+    $anamneseDados = (json_decode($_POST['buffer'], true));
+    //inserePaciente($paciente);
+    $paciente->setAnamnese($anamneseDados); //salvando respostas no objeto
 
 ?>
 <!DOCTYPE html>
@@ -36,20 +34,15 @@
         </thead>
         
         <tbody>
-            <tr>
-                <td>Não sei</td>
-                <td>Não sei</td>
-                <td>Não sei</td>
-            </tr>
+            
         </tbody>
     </table>
 
-    <hr>
-
-    <h2>Anamnese</h2>
-    
-
     <script src="/components/js/prontuario/main.js"></script>
-    <script> main() </script>
+    <script> 
+        main();
+        var procedimento = <?=obtemProntuario($paciente->getCpf())?>;
+        alert(procedimento.procedimento);
+    </script>
 </body>
 </html>
