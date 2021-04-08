@@ -3,18 +3,10 @@ function main(){
     var botao = document.querySelector("#enviar");
     var buffer = document.querySelector("#buffer");
     botao.addEventListener("click",function (event) {
-        // event.preventDefault();
         var anamnese = obtemAnamnese(form);
         buffer.value = JSON.stringify(anamnese);
-
     })
 
-    var radios = document.querySelectorAll('input[type="radio"]');
-    radios.forEach(function (radio) {
-        radio.addEventListener("click",function (){
-            console.log(radio.value);
-        });
-    });
 
     var radioFumante = document.querySelectorAll('input[name="resposta_fumante"]');
     radioFumante.forEach(function (radio) {
