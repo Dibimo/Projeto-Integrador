@@ -223,6 +223,7 @@
         <script src="/components/js/index/listeners.js"></script>
         <script src="/components/js/index/validacoes.js"></script>
         <script src="/components/js/index/paciente.js"></script>
+        <script src="/components/js/public/validacoes.js"></script>
         <script>
             main();
         </script>
