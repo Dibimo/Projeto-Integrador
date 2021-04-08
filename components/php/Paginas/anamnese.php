@@ -1,5 +1,5 @@
 <?php
-require_once 'Classes/Paciente.php';
+require_once dirname(__DIR__, 1) . '\\Classes\\Paciente.php';
 session_start();
 $paciente = $_SESSION['paciente'];
 
@@ -10,6 +10,7 @@ $paciente = $_SESSION['paciente'];
 <head>
     <meta charset="UTF-8">
     <title>Questionario</title>
+    <link rel="stylesheet" href="/components/css/public/style.css">
 </head>
 
 <body>
@@ -37,9 +38,9 @@ $paciente = $_SESSION['paciente'];
                 <ol>
                     <li>
                         <label for="hemorragia">Já teve hemorragia?</label>
-                        <input type="radio" value="true" name="resposta_hemorragia">
+                        <input type="radio" value="true" name="resposta_hemorragia" class="campo obrigatorio">
                         <label for="true">Sim</label>
-                        <input type="radio" value="false" name="resposta_hemorragia">
+                        <input type="radio" value="false" name="resposta_hemorragia" class="campo obrigatorio">
                         <label for="false">Não</label>
                     </li>
                     <li>
@@ -567,6 +568,7 @@ $paciente = $_SESSION['paciente'];
     <script src="/components/js/anamnese/main.js"></script>
     <script src="/components/js/anamnese/anamnese.js"></script>
     <script src="/components/js/anamnese/listeners.js"></script>
+    <script src="/components/js/public/validacoes.js"></script>
     <script>
         main()
     </script>
