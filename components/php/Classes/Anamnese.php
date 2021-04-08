@@ -23,14 +23,14 @@
         private string   $hepatite;
         private string   $varicela;
         private string   $aids;
-        private string $outra;
+        private string   $outra;
         private string   $fumante;
-        private string $frequencia;
+        private string   $frequencia;
         
-        private string $historiaGestacao;
-        private string $tipoParto;
+        private string   $historiaGestacao;
+        private string   $tipoParto;
         private string   $problemaParto;
-        private string $amamentacao;
+        private string   $amamentacao;
         private string   $anestesia;
         private string   $doencaGrave;
         private string   $vacinada;
@@ -45,7 +45,7 @@
         private string   $tranquilo;
         private string   $inquieto;
         private string   $assustado;
-        private string $sono;
+        private string   $sono;
         private string   $posturaNormal;
         private string   $posturaAlterada;
         private string   $fonacaoNormal;
@@ -53,35 +53,35 @@
         private string   $paralisia;
         private string   $enurese;
         private string   $esfincteres;
-        private string $alimentacao;
-        private string $sociabilidade;
+        private string   $alimentacao;
+        private string   $sociabilidade;
         private string   $tiques;
         private string   $fobias;
         private string   $ansiedade;
         private string   $medo;
         private string   $birra;
         private string   $ciumes;
-        private string $observacoes;
+        private string   $observacoes;
 
-        private string $labios;
-        private string $mucosaJugal;
-        private string $lingua;
-        private string $soalho;
-        private string $palatoDuro;
-        private string $garganta;
-        private string $palatoMole;
-        private string $mucosaAlveolar;
-        private string $gengivas;
-        private string $glandulasSalivares;
-        private string $linfonodos;
-        private string $atm;
-        private string $muscMastigadores;
-        private string $oclusao;
-        private string $alteracoesEncontradas;
-        private string $diagnosticoPresuntivo;
-        private string $examesComplementares;
-        private string $diagnosticoDefinitivo;
-        private string $planoTratamento;
+        private string   $labios;
+        private string   $mucosaJugal;
+        private string   $lingua;
+        private string   $soalho;
+        private string   $palatoDuro;
+        private string   $garganta;
+        private string   $palatoMole;
+        private string   $mucosaAlveolar;
+        private string   $gengivas;
+        private string   $glandulasSalivares;
+        private string   $linfonodos;
+        private string   $atm;
+        private string   $muscMastigadores;
+        private string   $oclusao;
+        private string   $alteracoesEncontradas;
+        private string   $diagnosticoPresuntivo;
+        private string   $examesComplementares;
+        private string   $diagnosticoDefinitivo;
+        private string   $planoTratamento;
 
         public function __construct($dados)
         {
