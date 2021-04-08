@@ -27,6 +27,8 @@ create table pacientes(
     primary key (cpf,rg)
 );
 
+select * from pacientes where cpf='36700137845';
+
 create table enderecos(
 	nome_paciente varchar (11) not null,
     cpf_paciente varchar(11) not null,
@@ -37,13 +39,15 @@ create table enderecos(
     cep varchar(8) not null,
     cidade varchar(50) not null,
     estado_mora varchar(2) not null,
-    constraint paciEndereco foreign key (nome_paciente,cpf_paciente) references pacientes(nome_paciente,cpf),
+    foreign key (cpf_paciente) references pacientes(cpf),
     primary key (cpf_paciente)
 );
 
+drop table enderecos;
+
 create table anamnese_geral(
 	cpf_paciente varchar(11) not null,
-	nome_paciente varchar(11) not null,
+	nome_paciente varchar(50) not null,
     queix_princ varchar(100) not null,
     historico varchar (500) not null,
     hemorragia varchar (3) not null,
@@ -89,15 +93,15 @@ create table anamnese_geral(
     examec varchar(100) not null,
     diagnosd varchar(100) not null,
     planotrat varchar(100) not null,
-    constraint anamEndereco foreign key (nome_paciente,cpf_paciente) references pacientes(nome,cpf),
+    constraint anamPaciente foreign key (cpf_paciente) references pacientes(cpf),
     primary key (cpf_paciente)
 );
 
 
 
 create table anamnese_infantil(
-	nome_paciente varchar(100),
-	cpf_paciente varchar(11),
+	nome_paciente varchar(100) not null,
+	cpf_paciente varchar(11) not null,
 	historiag varchar(100),
 	tipoparto varchar(9),
     problemap varchar(3),
@@ -116,7 +120,7 @@ create table anamnese_infantil(
     tranquilo varchar(3),
     inquieto varchar(3),
     assustado varchar(3),
-    anestesia varchar(3),
+    anestesia1 varchar(3),
     sono varchar(15),
     posturanor varchar(3),
     posturaalt varchar(3),
@@ -134,7 +138,8 @@ create table anamnese_infantil(
     birra varchar(3),
     ciumes varchar(3),
     observacoes varchar(100),
-    constraint anamEndereco foreign key (nome_paciente,cpf_paciente) references pacientes(nome,cpf)
+    constraint anamEndereco foreign key (cpf_paciente) references pacientes(cpf),
+    primary key (cpf_paciente)
 );
 
 
@@ -143,7 +148,7 @@ create table anamnese_infantil(
 
 show tables;
 
-drop table enderecos;
+drop table anamnese_geral;
 
 select * from pacientes;
 select * from enderecos;
@@ -157,3 +162,4 @@ insert into teste values('leo');
 drop table pacientes;
 truncate pacientes;
 select nome from teste;
+drop database BANCO_PACIENTES;
