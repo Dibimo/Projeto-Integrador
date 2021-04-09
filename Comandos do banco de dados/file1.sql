@@ -27,10 +27,10 @@ create table pacientes(
     primary key (cpf,rg)
 );
 
-select * from pacientes where cpf='36700137845';
+select * from pacientes where cpf='1067001107845';
 
 create table enderecos(
-	nome_paciente varchar (11) not null,
+	nome_paciente varchar (50) not null,
     cpf_paciente varchar(11) not null,
     rua varchar(50) not null,
     numero varchar(5) not null,
@@ -43,6 +43,8 @@ create table enderecos(
     primary key (cpf_paciente)
 );
 
+
+
 drop table enderecos;
 
 create table anamnese_geral(
@@ -50,43 +52,43 @@ create table anamnese_geral(
 	nome_paciente varchar(50) not null,
     queix_princ varchar(100) not null,
     historico varchar (500) not null,
-    hemorragia varchar (3) not null,
-    reumatismo varchar (3) not null,
-    alergia varchar(3) not null,
-    cardio varchar(3) not null,
-    gastriste varchar(3) not null,
-    diabetico varchar(3) not null,
-    desmaio varchar(3) not null,
-    tratamento varchar(3) not null,
-    medicamento varchar(3) not null,
-    opercao varchar(3) not null,
-    manias varchar(3) not null,
-    depressao varchar(3) not null,
-    tuberculose varchar(3) not null,
-    sarampo varchar(3) not null,
-    sifilis varchar(3) not null,
-    caxumba varchar(3) not null,
-    hepatite varchar(3) not null,
-	varicela varchar(3) not null,
-    aids varchar(3) not null,
+    hemorragia varchar (10) not null,
+    reumatismo varchar (10) not null,
+    alergia varchar(10) not null,
+    cardio varchar(10) not null,
+    gastriste varchar(10) not null,
+    diabetico varchar(10) not null,
+    desmaio varchar(10) not null,
+    tratamento varchar(10) not null,
+    medicamento varchar(10) not null,
+    opercao varchar(10) not null,
+    manias varchar(10) not null,
+    depressao varchar(10) not null,
+    tuberculose varchar(10) not null,
+    sarampo varchar(10) not null,
+    sifilis varchar(10) not null,
+    caxumba varchar(10) not null,
+    hepatite varchar(10) not null,
+	varicela varchar(10) not null,
+    aids varchar(10) not null,
     outra varchar(50) not null,
-    fumante varchar(3) not null,
+    fumante varchar(10) not null,
     fuman_freque varchar(100) not null,
     
-    labios varchar(3) not null,
-    mucosaj varchar(3) not null,
-    lingua varchar(3) not null,
-    soalho varchar(3) not null,
-    palatod varchar(3) not null,
-    garganta varchar(3) not null,
-    palatom varchar(3) not null,
-    mucosaa varchar(3) not null,
-    gengiva varchar(3) not null,
-    glandulas varchar(3) not null,
-    linfonodo varchar(3) not null,
-    atm varchar(3) not null,
-    muscmas varchar(3) not null,
-    oclusao varchar(3) not null,
+    labios varchar(10) not null,
+    mucosaj varchar(10) not null,
+    lingua varchar(10) not null,
+    soalho varchar(10) not null,
+    palatod varchar(10) not null,
+    garganta varchar(10) not null,
+    palatom varchar(10) not null,
+    mucosaa varchar(10) not null,
+    gengiva varchar(10) not null,
+    glandulas varchar(10) not null,
+    linfonodo varchar(10) not null,
+    atm varchar(10) not null,
+    muscmas varchar(10) not null,
+    oclusao varchar(10) not null,
     
     alteracoes varchar(100) not null,
     diagnosp varchar(100) not null,
@@ -100,66 +102,73 @@ create table anamnese_geral(
 
 
 create table anamnese_infantil(
-	nome_paciente varchar(100) not null,
+	nome_paciente varchar(50) not null,
 	cpf_paciente varchar(11) not null,
 	historiag varchar(100),
 	tipoparto varchar(9),
-    problemap varchar(3),
+    problemap varchar(10),
     amamentacao varchar(9),
-    anestesia varchar(3),
-    doenca_grave varchar(3),
-    vacinada varchar(3),
-    sentou varchar(3),
-    engatinhou varchar(3),
-    andou varchar(3),
-    falou varchar(3),
-    dificuldade varchar(3),
-    alegre varchar(3),
-    triste varchar(3),
-    timido varchar(3),
-    tranquilo varchar(3),
-    inquieto varchar(3),
-    assustado varchar(3),
-    anestesia1 varchar(3),
+    anestesia varchar(10),
+    doenca_grave varchar(10),
+    vacinada varchar(10),
+    sentou varchar(10),
+    engatinhou varchar(10),
+    andou varchar(10),
+    falou varchar(10),
+    dificuldade varchar(10),
+    alegre varchar(10),
+    triste varchar(10),
+    timido varchar(10),
+    tranquilo varchar(10),
+    inquieto varchar(10),
+    assustado varchar(10),
     sono varchar(15),
-    posturanor varchar(3),
-    posturaalt varchar(3),
-    fonacaonor varchar(3),
-    disturb_fala varchar(3),
-    paralisia varchar(3),
-    enurese varchar(3),
-    ctrl_esfinct varchar(3),
+    posturanor varchar(10),
+    posturaalt varchar(10),
+    fonacaonor varchar(10),
+    disturb_fala varchar(10),
+    paralisia varchar(10),
+    enurese varchar(10),
+    ctrl_esfinct varchar(10),
     alimentacao varchar(7),
     social varchar(9), 
-    tiques varchar(3),
-    fobias varchar(3),
-    ansiedade varchar(3),
-    medo varchar(3),
-    birra varchar(3),
-    ciumes varchar(3),
+    tiques varchar(10),
+    fobias varchar(10),
+    ansiedade varchar(10),
+    medo varchar(10),
+    birra varchar(10),
+    ciumes varchar(10),
     observacoes varchar(100),
     constraint anamEndereco foreign key (cpf_paciente) references pacientes(cpf),
     primary key (cpf_paciente)
 );
 
+create table prontuarios(
+	cpf_paciente varchar(11),
+    data_procedimento date,
+    procedimento varchar(50),
+    foreign key (cpf_paciente) references pacientes(cpf)
+);
 
-
+insert into prontuarios values('10054547016','2021-04-08','Procedimento 2');
 
 
 show tables;
 
 drop table anamnese_geral;
 
-select * from pacientes;
+select * from prontuarios;
 select * from enderecos;
+select * from anamnese_geral;
+select * from anamnese_infantil;
 
-select * from pacientes where (cpf=36700137645);
+select * from pacientes;
 
 create table teste (nome char(10));
 insert into teste values('carol');
 insert into teste values('diogo');
 insert into teste values('leo');
-drop table pacientes;
+drop table enderecos;
 truncate pacientes;
 select nome from teste;
 drop database BANCO_PACIENTES;
