@@ -7,8 +7,8 @@
         private string $cidade;
         private string $bairro;
         private string $estado_moradia;
-        private int $numero;
-        private int $cep;
+        private int    $numero;
+        private int    $cep;
 
         public function __construct(
             string $endereco,
