@@ -124,6 +124,25 @@ function inserePaciente(Paciente $paciente)
     
     
     ";
+
+    $comandosSQL[] = "INSERT INTO enderecos
+        VALUES(
+            '{$paciente->getNome()}',
+            '{$paciente->getCpf()}',
+            '{$paciente->getEndereco()->getEndereco()}',
+            '{$paciente->getEndereco()->getNumero()}',
+            '{$paciente->getEndereco()->getComplemento()}',
+            '{$paciente->getEndereco()->getBairro()}',
+            '{$paciente->getEndereco()->getCep()}',
+            '{$paciente->getEndereco()->getCidade()}',
+            '{$paciente->getEndereco()->getEstado_moradia()}'
+        );
+    ";
+    for ($i=0; $i < count($comandosSQL); $i++) { 
+        $conexao->query($comandosSQL[$i]);
+        echo $conexao->error;
+    }
+
 }
 
 function verificaPacienteExistente(string $cpf)
