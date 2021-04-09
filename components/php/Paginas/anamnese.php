@@ -15,7 +15,7 @@ $paciente = $_SESSION['paciente'];
 
 <body>
     <div class="conteiner">
-        <form id="formulario" method="post" action="prontuario.php">
+        <form id="formulario" method="post" action="send_to_database.php">
             <div>
                 <?php
                 echo "<label>Nome: {$paciente->getNome()}</label>"
