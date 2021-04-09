@@ -343,7 +343,7 @@ $paciente = $_SESSION['paciente'];
                         <label>Distúrbios da fala</label>
                     </li>
                     <li>
-                        <input type="checkbox" name="paralisia" id="paralisia" value="">
+                        <input type="checkbox" name="paralisia" id="paralisia" value="false">
                         <label>Alguma paralisia</label>
                     </li>
                     <li>
