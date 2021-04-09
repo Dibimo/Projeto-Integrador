@@ -2,8 +2,8 @@
 
     class Anamnese
     {
-        private string $queixaPrincipal;
-        private string $historicoDoenca;
+        private string   $queixaPrincipal;
+        private string   $historicoDoenca;
         private string   $hemorragia;
         private string   $reumatismo;
         private string   $alergia;
@@ -26,7 +26,26 @@
         private string   $outra;
         private string   $fumante;
         private string   $frequencia;
-        
+        private string   $labios;
+        private string   $mucosaJugal;
+        private string   $lingua;
+        private string   $soalho;
+        private string   $palatoDuro;
+        private string   $garganta;
+        private string   $palatoMole;
+        private string   $mucosaAlveolar;
+        private string   $gengivas;
+        private string   $glandulasSalivares;
+        private string   $linfonodos;
+        private string   $atm;
+        private string   $muscMastigadores;
+        private string   $oclusao;
+        private string   $alteracoesEncontradas;
+        private string   $diagnosticoPresuntivo;
+        private string   $examesComplementares;
+        private string   $diagnosticoDefinitivo;
+        private string   $planoTratamento;
+
         private string   $historiaGestacao;
         private string   $tipoParto;
         private string   $problemaParto;
@@ -62,26 +81,6 @@
         private string   $birra;
         private string   $ciumes;
         private string   $observacoes;
-
-        private string   $labios;
-        private string   $mucosaJugal;
-        private string   $lingua;
-        private string   $soalho;
-        private string   $palatoDuro;
-        private string   $garganta;
-        private string   $palatoMole;
-        private string   $mucosaAlveolar;
-        private string   $gengivas;
-        private string   $glandulasSalivares;
-        private string   $linfonodos;
-        private string   $atm;
-        private string   $muscMastigadores;
-        private string   $oclusao;
-        private string   $alteracoesEncontradas;
-        private string   $diagnosticoPresuntivo;
-        private string   $examesComplementares;
-        private string   $diagnosticoDefinitivo;
-        private string   $planoTratamento;
 
         public function __construct($dados)
         {
