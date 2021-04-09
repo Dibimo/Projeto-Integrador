@@ -1,15 +1,17 @@
 <?php
 
-    require_once dirname(__DIR__, 1) . '\\Classes\\Paciente.php';
-    require_once dirname(__DIR__, 1) . '\\Classes\\Anamnese.php';
     require_once dirname(__DIR__,1). '\\Funcao\\manipular_banco.php';
-
-    // session_start();
-    // $paciente = $_SESSION['paciente']; //recebe paciente anterior
-    // $anamneseDados = (json_decode($_POST['buffer'], true));
-    // //inserePaciente($paciente);
-    // $paciente->setAnamnese($anamneseDados); //salvando respostas no objeto
-    $prontuario = obtemProntuario('10054547016');
+    if(verificaPacienteExistente('36700137845')){
+        // echo 'existe';
+        // echo '<script> var dadosPessoais = ""+'.obtemDadosTabela('36700137845','pacientes')."</script>";
+        $dadosPessoais = obtemDadosTabela('36700137845','pacientes');
+        var_dump(json_encode(obtemDadosTabela('36700137845','enderecos')));
+        // var_dump(obtemDadosTabela('36700137845','anamnese_geral'));
+        // var_dump(obtemDadosTabela('36700137845','anamnese_infantil'));
+    }else{
+        // echo 'não existe';
+    }
+    // $prontuario = obtemProntuario('10054547016');
 
 ?>
 <!DOCTYPE html>
@@ -42,23 +44,19 @@
     <script src="/components/js/prontuario/main.js"></script>
     <script> 
         main();
-        var prontuario ="" + <?php echo $prontuario; ?>;
-        
-        // var dadosTratados = prontuario.replace('"10054547016"',"");
-        // var dadosTratados = prontuario.replace('"cpf_paciente"',"");
-        // var dadosTratados = prontuario.replace('',"");
-        // var dadosTratados = prontuario.replace('"data_procedimento"',"");
-        var dadosTratados = prontuario.replace(/[":]/g,"");
-        dadosTratados = dadosTratados.replace(/[,]/g," ");
-        dadosTratados = dadosTratados.replace(/10054547016 /g,"");
-        dadosTratados = dadosTratados.replace(/data_procedimento/g,"");
-        dadosTratados = dadosTratados.replace(/cpf_paciente/g,"");
-        dadosTratados = dadosTratados.replace(/procedimento/g,"");
-        dadosTratados = dadosTratados.replace(/} {/g,"--");
-        dadosTratados = dadosTratados.replace(/[{}]/g,"");
-        dadosTratados = dadosTratados.split('--');
-
-        console.log(dadosTratados);
+        // var prontuario ="" + <?php //echo $prontuario; ?>;
+        var manipulavel = <?=(obtemDadosTabela('36700137845', 'enderecos'));?>;
+        // var dadosTratados = prontuario.replace(/[":]/g,"");
+        // dadosTratados = dadosTratados.replace(/[,]/g," ");
+        // dadosTratados = dadosTratados.replace(/10054547016 /g,"");
+        // dadosTratados = dadosTratados.replace(/data_procedimento/g,"");
+        // dadosTratados = dadosTratados.replace(/cpf_paciente/g,"");
+        // dadosTratados = dadosTratados.replace(/procedimento/g,"");
+        // dadosTratados = dadosTratados.replace(/} {/g,"--");
+        // dadosTratados = dadosTratados.replace(/[{}]/g,"");
+        // dadosTratados = dadosTratados.split('--');
+        // var manipulavel = JSON.parse(prontuario);
+        console.log(manipulavel);
     </script>
 </body> 
 </html>
