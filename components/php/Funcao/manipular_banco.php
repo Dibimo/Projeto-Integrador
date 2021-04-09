@@ -148,7 +148,7 @@ function inserePaciente(Paciente $paciente)
 function verificaPacienteExistente(string $cpf)
 {
     $conexao = novaConexao();
-    $comandoSQL = "SELECT * FROM  pacientes where cpf='{$cpf}'";
+    $comandoSQL = "SELECT * FROM  pacientes where cpf_paciente='{$cpf}';";
     $resultado = mysqli_query($conexao, $comandoSQL);
     $linha = mysqli_fetch_assoc($resultado);
     
@@ -156,6 +156,16 @@ function verificaPacienteExistente(string $cpf)
         return true; //já existe
     }
     return false; //não existe
+}
+
+function obtemDadosTabela(string $cpf, string $tabela){
+    $conexao = novaConexao();
+    $comandoSQL = "SELECT * FROM {$tabela} where cpf_paciente='{$cpf}';";
+    $resultado = mysqli_query($conexao, $comandoSQL); //executa dados da tabela
+    $linha = mysqli_fetch_assoc($resultado); //recebe a linha do bando de dados
+    $jsonResultado = json_encode($linha); //transforma em JSON
+    return $jsonResultado; //retorna o JSON obtido
+    
 }
 
 function obtemProntuario(int $cpfPaciente)
