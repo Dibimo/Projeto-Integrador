@@ -30,7 +30,6 @@
 
         private Anamnese $anamnese;
 
-        private Procedimento $prontuario;
 
         public function __construct($dados)
         {
@@ -167,17 +166,6 @@
         public function setAnamnese($dados)
         {
             $this->anamnese = new Anamnese($dados);
-
-        }
-
-        public function getProntuario()
-        {
-            return $this->prontuario;
-        }
-
-        public function setProntuario($nome,$data)
-        {
-            $this->prontuario[] = new Procedimento($nome,$data);
 
         }
 
