@@ -27,11 +27,12 @@ if (verificaPacienteExistente('36700137845')) {
 <body>
     <h1>Dados do paciente</h1>
     <div id="dadosPessoais">
+        <h3>Dados Pessoais</h3>
         <div><label class="campoPessoal" name="nome_paciente">Nome: </label> </div>
         <div><label class="campoPessoal" name="data_nascimento">Data de Nascimento: </label> </div>
         <div><label class="campoPessoal" name="sexo">Sexo: </label></div>
         <div><label class="campoPessoal" name="escolaridade">Escolaridade: </label></div>
-        <div><label class="campoPessoal" name="profissao">Profissao: </label></div>
+        <div><label class="campoPessoal" name="profissao">Profissão: </label></div>
         <div><label class="campoPessoal" name="rg_paciente">RG: </label></div>
         <div><label class="campoPessoal" name="cpf_paciente">CPF: </label></div>
         <div><label class="campoPessoal" name="estado_civil">Estado Civil: </label></div>
@@ -48,6 +49,7 @@ if (verificaPacienteExistente('36700137845')) {
     </div>
     <hr>
     <div id="dadosEndereco">
+        <h3>Endereço</h3>
         <div><label class="campoEndereco">Rua: </label></div>
         <div><label class="campoEndereco">Numero: </label></div>
         <div><label class="campoEndereco">Complemento: </label></div>
@@ -56,10 +58,97 @@ if (verificaPacienteExistente('36700137845')) {
         <div><label class="campoEndereco">Cidade: </label></div>
         <div><label class="campoEndereco">Estado de Residência: </label></div>
     </div>
+    <hr>
     <div id="dadosAnamnese">
+        <h3>Anamnese Geral</h3>
+        <div><label class="campoAnamneseG">Queixa Principal: </label></div>
+        <div><label class="campoAnamneseG">Historico da Doença: </label></div>
+        <div><label class="campoAnamneseG">Hemorragia: </label></div>
+        <div><label class="campoAnamneseG">Reumatismo: </label></div>
+        <div><label class="campoAnamneseG">Alergia: </label></div>
+        <div><label class="campoAnamneseG">Cardio: </label></div>
+        <div><label class="campoAnamneseG">Gastriste: </label></div>
+        <div><label class="campoAnamneseG">Diabetico: </label></div>
+        <div><label class="campoAnamneseG">Desmaio: </label></div>
+        <div><label class="campoAnamneseG">Tratamento: </label></div>
+        <div><label class="campoAnamneseG">Medicamento: </label></div>
+        <div><label class="campoAnamneseG">Opercão: </label></div>
+        <div><label class="campoAnamneseG">Manias: </label></div>
+        <div><label class="campoAnamneseG">Depressão: </label></div>
+        <div><label class="campoAnamneseG">Tuberculose: </label></div>
+        <div><label class="campoAnamneseG">Sarampo: </label></div>
+        <div><label class="campoAnamneseG">Sifilis: </label></div>
+        <div><label class="campoAnamneseG">Caxumba: </label></div>
+        <div><label class="campoAnamneseG">Hepatite: </label></div>
+        <div><label class="campoAnamneseG">Varicela: </label></div>
+        <div><label class="campoAnamneseG">AIDS: </label></div>
+        <div><label class="campoAnamneseG">Outra: </label></div>
+        <div><label class="campoAnamneseG">Fumante: </label></div>
+        <div><label class="campoAnamneseG">Frequencia de fumo: </label></div>
+        <h3>Conduta da Criança</h3>
+        <div><label class="campoAnamneseI">Historia da Gestação: </label></div>
+        <div><label class="campoAnamneseI">Tipo de parto: </label></div>
+        <div><label class="campoAnamneseI">Houveram problemas no parto: </label></div>
+        <div><label class="campoAnamneseI">Amamentação: </label></div>
+        <div><label class="campoAnamneseI">Já foi dito para não tomar anestesia: </label></div>
+        <div><label class="campoAnamneseI">Já teve doença grave: </label></div>
+        <div><label class="campoAnamneseI">Já foi vacinada: </label></div>
+        <h4>Durente os dois primeiros anos</h4>
+        <div><label class="campoAnamneseI">Sentou: </label></div>
+        <div><label class="campoAnamneseI">Engatinhou: </label></div>
+        <div><label class="campoAnamneseI">Andou: </label></div>
+        <div><label class="campoAnamneseI">Falou: </label></div>
 
+        <div><label class="campoAnamneseI">Dificuldades de aprendizado: </label></div>
+        <h4>Estado normal</h4>
+        <div><label class="campoAnamneseI">Alegre: </label></div>
+        <div><label class="campoAnamneseI">Triste: </label></div>
+        <div><label class="campoAnamneseI">Timido: </label></div>
+        <div><label class="campoAnamneseI">Tranquilo: </label></div>
+        <div><label class="campoAnamneseI">Inquieto: </label></div>
+        <div><label class="campoAnamneseI">Assustado: </label></div>
+
+        <div><label class="campoAnamneseI">Sono: </label></div>
+        <div><label class="campoAnamneseI">Postura Normal: </label></div>
+        <div><label class="campoAnamneseI">Postura Alterada: </label></div>
+        <div><label class="campoAnamneseI">Fonação normal: </label></div>
+        <div><label class="campoAnamneseI">Disturbios de fala: </label></div>
+        <div><label class="campoAnamneseI">Paralisia: </label></div>
+        <div><label class="campoAnamneseI">Enurese: </label></div>
+        <div><label class="campoAnamneseI">Controle os esfincteres: </label></div>
+        <div><label class="campoAnamneseI">Alimentacão: </label></div>
+        <div><label class="campoAnamneseI">Social: </label></div>
+        <div><label class="campoAnamneseI">Tiques: </label></div>
+        <div><label class="campoAnamneseI">Fobias: </label></div>
+        <div><label class="campoAnamneseI">Ansiedade: </label></div>
+        <div><label class="campoAnamneseI">Medo: </label></div>
+        <div><label class="campoAnamneseI">Birra: </label></div>
+        <div><label class="campoAnamneseI">Cíumes: </label></div>
+        <div><label class="campoAnamneseI">Observacões: </label></div>
+
+        <hr>
+        <h3>Avaliação fisica</h3>
+        <div><label class="campoAnamneseG">Labios: </label></div>
+        <div><label class="campoAnamneseG">Mucosaj: </label></div>
+        <div><label class="campoAnamneseG">Lingua: </label></div>
+        <div><label class="campoAnamneseG">Soalho: </label></div>
+        <div><label class="campoAnamneseG">Palatod: </label></div>
+        <div><label class="campoAnamneseG">Garganta: </label></div>
+        <div><label class="campoAnamneseG">Palatom: </label></div>
+        <div><label class="campoAnamneseG">Mucosaa: </label></div>
+        <div><label class="campoAnamneseG">Gengiva: </label></div>
+        <div><label class="campoAnamneseG">Glandulas: </label></div>
+        <div><label class="campoAnamneseG">Linfonodo: </label></div>
+        <div><label class="campoAnamneseG">ATM: </label></div>
+        <div><label class="campoAnamneseG">Muscmas: </label></div>
+        <div><label class="campoAnamneseG">Oclusão: </label></div>
+        <div><label class="campoAnamneseG">Alterações: </label></div>
+        <div><label class="campoAnamneseG">Diagnostico Presuntivo: </label></div>
+        <div><label class="campoAnamneseG">Exames complementares: </label></div>
+        <div><label class="campoAnamneseG">Diagnostico Definitivo: </label></div>
+        <div><label class="campoAnamneseG">Plano de Tratamento: </label></div>
     </div>
-    
+
     <hr>
     <button id="adicionar">+</button>
     <table id="prontuarioTabela">
@@ -82,8 +171,15 @@ if (verificaPacienteExistente('36700137845')) {
         main();
         var dadosPessoais = <?= (obtemDadosTabela('36700137845', 'pacientes')); ?>;
         var endereco = <?= (obtemDadosTabela('36700137845', 'enderecos')); ?>;
+        var anamneseGeral = <?= (obtemDadosTabela('36700137845', 'anamnese_geral')); ?>;
+        var anamneseInfantil = <?= (obtemDadosTabela('36700137845', 'anamnese_infantil')); ?>;
+
+        console.log(anamneseInfantil);
+
         insereDados(dadosPessoais, ".campoPessoal");
-        insereDados(endereco,".campoEndereco",['nome_paciente','cpf_paciente']);
+        insereDados(endereco, ".campoEndereco", ['nome_paciente', 'cpf_paciente']);
+        insereDados(anamneseGeral, ".campoAnamneseG", ['nome_paciente', 'cpf_paciente']);
+        insereDados(anamneseInfantil, ".campoAnamneseI", ['nome_paciente', 'cpf_paciente']);
     </script>
 </body>
 
