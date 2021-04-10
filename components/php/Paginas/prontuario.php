@@ -27,8 +27,8 @@ if (verificaPacienteExistente('36700137845')) {
 <body>
     <h1>Dados do paciente</h1>
     <div id="dadosPessoais">
-        <div><label class="campoPessoal" name="nome_paciente">Nome:</label> </div>
-        <div><label class="campoPessoal" name="data_nascimento">Data de Nascimento:</label> </div>
+        <div><label class="campoPessoal" name="nome_paciente">Nome: </label> </div>
+        <div><label class="campoPessoal" name="data_nascimento">Data de Nascimento: </label> </div>
         <div><label class="campoPessoal" name="sexo">Sexo: </label></div>
         <div><label class="campoPessoal" name="escolaridade">Escolaridade: </label></div>
         <div><label class="campoPessoal" name="profissao">Profissao: </label></div>
@@ -46,6 +46,20 @@ if (verificaPacienteExistente('36700137845')) {
         <div><label class="campoPessoal" name="altura">Altura: </label></div>
         <div><label class="campoPessoal" name="cor">Cor: </label></div>
     </div>
+    <hr>
+    <div id="dadosEndereco">
+        <div><label class="campoEndereco">Rua: </label></div>
+        <div><label class="campoEndereco">Numero: </label></div>
+        <div><label class="campoEndereco">Complemento: </label></div>
+        <div><label class="campoEndereco">Bairro: </label></div>
+        <div><label class="campoEndereco">Cep: </label></div>
+        <div><label class="campoEndereco">Cidade: </label></div>
+        <div><label class="campoEndereco">Estado de Residência: </label></div>
+    </div>
+    <div id="dadosAnamnese">
+
+    </div>
+    
     <hr>
     <button id="adicionar">+</button>
     <table id="prontuarioTabela">
@@ -66,11 +80,10 @@ if (verificaPacienteExistente('36700137845')) {
     <script src="/components/js/prontuario/main.js"></script>
     <script>
         main();
-        var manipulavel = <?= (obtemDadosTabela('36700137845', 'pacientes')); ?>;
-
-        console.log(manipulavel);
-        // console.log(Object.keys(manipulavel))
-        insereDadosPessoais(manipulavel);
+        var dadosPessoais = <?= (obtemDadosTabela('36700137845', 'pacientes')); ?>;
+        var endereco = <?= (obtemDadosTabela('36700137845', 'enderecos')); ?>;
+        insereDados(dadosPessoais, ".campoPessoal");
+        insereDados(endereco,".campoEndereco",['nome_paciente','cpf_paciente']);
     </script>
 </body>
 
