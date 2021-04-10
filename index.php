@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    <div style="background-color: rgb(255, 253, 253);">
+    <div>
 
         <img src="/Assets/img_logo.png" height="200" width="300" style="padding-left: 30px;">
 
         <!-- Título do Form-->        
         <h2><strong>FICHA DE IDENTIFICAÇÃO DO PACIENTE</strong></h2>
 
-        <div style="padding-right: 3%; padding-left: 3%;">
+        <div style="padding-right: 3%; padding-left: 3%; background-color: rgb(255, 253, 253);">
 
             <!-- Início do Form-->
             <form id="formulario" action="components/php/Paginas/constroi_paciente.php" method="post" class="borda">
