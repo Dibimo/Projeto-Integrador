@@ -1,38 +1,32 @@
 function main() {
-    var botao = document.querySelector("#adicionar");
-    var tabela = document.querySelector("#prontuarioTabela");
-    botao.addEventListener("click",function () {
-        var linha = document.createElement("tr");
-        var elemento = document.createElement("td");
-        elemento.textContent = "Não sei";
-        var elemento2 = document.createElement("td");
-        elemento2.textContent = "Não sei";
-        var elemento3 = document.createElement("td");
-        elemento3.textContent = "Não sei";
-        linha.appendChild(
-            elemento
-        );
-        linha.appendChild(
-            elemento2
-        );
-        linha.appendChild(
-            elemento3
-        );
-        tabela.appendChild(linha);
+    var botao = document.querySelector("#botaoAdicionar");
+    botao.addEventListener("click",function (event) {
+        event.preventDefault();
     });
 }
 
-function montaProntuario() {
-    // var prontuario ="" + <?php //echo $prontuario; ?>;
-    // var dadosTratados = prontuario.replace(/[":]/g,"");
-    // dadosTratados = dadosTratados.replace(/[,]/g," ");
-    // dadosTratados = dadosTratados.replace(/10054547016 /g,"");
-    // dadosTratados = dadosTratados.replace(/data_procedimento/g,"");
-    // dadosTratados = dadosTratados.replace(/cpf_paciente/g,"");
-    // dadosTratados = dadosTratados.replace(/procedimento/g,"");
-    // dadosTratados = dadosTratados.replace(/} {/g,"--");
-    // dadosTratados = dadosTratados.replace(/[{}]/g,"");
-    // dadosTratados = dadosTratados.split('--');
+function montaProntuario(prontuarioBruto){ 
+    var quandidadeProcedimentos = prontuarioBruto.length;
+    for (let i = 0; i < quandidadeProcedimentos; i++) {
+        procedimento = JSON.parse(prontuarioBruto[i]);
+        montaLinhaTabela(procedimento);
+        
+    }
+}
+
+function montaLinhaTabela(prontuario) {
+    var tabela = document.querySelector("#prontuarioTabela");
+    delete prontuario['cpf_paciente'];
+    var linha = document.createElement("tr");
+    var dataProcedimento = document.createElement("td");
+    var procedimentoTexto = document.createElement("td");
+    dataProcedimento.textContent = prontuario['data_procedimento'];
+    procedimentoTexto.textContent = prontuario['procedimento'];
+    
+    linha.appendChild(dataProcedimento);
+    linha.appendChild(procedimentoTexto);
+    tabela.appendChild(linha);
+
 }
 
 function insereDados(dados,nomeSecao,excoes) {
