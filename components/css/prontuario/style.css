@@ -9,5 +9,5 @@ th {
 
 table {
     width: 45%;
-    border-collapse: collapse;
+    border-collapse:initial ;
 }
