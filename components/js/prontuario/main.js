@@ -35,13 +35,17 @@ function montaProntuario() {
     // dadosTratados = dadosTratados.split('--');
 }
 
-function insereDadosPessoais(dadosPessoais) {
-    var secao = document.querySelectorAll(".campoPessoal");
-    console.log(secao);
-    var chaves = Object.keys(dadosPessoais);
-    console.log(chaves);
+function insereDados(dados,nomeSecao,excoes) {
+    var secao = document.querySelectorAll(nomeSecao);
+    if(excoes !== undefined){
+        for (let i = 0; i < excoes.length; i++) {
+            delete dados[excoes[i]];
+        }
+    }
+    var chaves = Object.keys(dados);
     for (let i = 0; i < secao.length; i++) {
-        secao[i].textContent = secao[i].textContent + dadosPessoais[chaves[i]];
+        secao[i].textContent = secao[i].textContent + dados[chaves[i]];
         
     }
+    
 }
