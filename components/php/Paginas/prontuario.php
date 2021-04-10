@@ -1,17 +1,6 @@
 <?php
-
 require_once dirname(__DIR__, 1) . '\\Funcao\\manipular_banco.php';
-if (verificaPacienteExistente('36700137845')) {
-    // echo 'existe';
-    // echo '<script> var dadosPessoais = ""+'.obtemDadosTabela('36700137845','pacientes')."</script>";
-    // var_dump(json_encode(obtemDadosTabela('36700137845','enderecos')));
-    // var_dump(obtemDadosTabela('36700137845','anamnese_geral'));
-    // var_dump(obtemDadosTabela('36700137845','anamnese_infantil'));
-} else {
-    // echo 'não existe';
-}
-// $prontuario = obtemProntuario('10054547016');
-
+$cpf = '36700137845';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -150,7 +139,14 @@ if (verificaPacienteExistente('36700137845')) {
     </div>
 
     <hr>
-    <button id="adicionar">+</button>
+    <form>
+        <label for="">Data do procedimento</label>
+        <input type="text" name="dataProcedimento">
+        <label for="">Procedimento realizado</label>
+        <input type="text" name="procedimento">
+        <input type="hidden" name="buffer">
+        <button id="botaoAdicionar">+</button>
+    </form>
     <table id="prontuarioTabela">
         <thead>
             <tr>
@@ -165,16 +161,18 @@ if (verificaPacienteExistente('36700137845')) {
 
         </tbody>
     </table>
-
     <script src="/components/js/prontuario/main.js"></script>
     <script>
         main();
-        var dadosPessoais = <?= (obtemDadosTabela('36700137845', 'pacientes')); ?>;
-        var endereco = <?= (obtemDadosTabela('36700137845', 'enderecos')); ?>;
-        var anamneseGeral = <?= (obtemDadosTabela('36700137845', 'anamnese_geral')); ?>;
-        var anamneseInfantil = <?= (obtemDadosTabela('36700137845', 'anamnese_infantil')); ?>;
+        var cpf = <?= $cpf ?>;
+        var prontuarioBruto = <?= obtemProntuario($cpf); ?>;
+        var dadosPessoais = <?= (obtemDadosTabela($cpf, 'pacientes')); ?>;
+        var endereco = <?= (obtemDadosTabela($cpf, 'enderecos')); ?>;
+        var anamneseGeral = <?= (obtemDadosTabela($cpf, 'anamnese_geral')); ?>;
+        var anamneseInfantil = <?= (obtemDadosTabela($cpf, 'anamnese_infantil')); ?>;
 
-        console.log(anamneseInfantil);
+        // console.log(JSON.parse(prontuarioBruto));
+        montaProntuario(prontuarioBruto);
 
         insereDados(dadosPessoais, ".campoPessoal");
         insereDados(endereco, ".campoEndereco", ['nome_paciente', 'cpf_paciente']);
