@@ -11,3 +11,7 @@ table {
     width: 45%;
     border-collapse:initial ;
 }
+
+.novoProcedimento{
+    color: rgb(95, 153, 8);
+}
