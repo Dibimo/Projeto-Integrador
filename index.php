@@ -31,29 +31,29 @@
                                 
                 <div>
                     <label for="nome_completo">Nome:</label>
-                    <input type="text" name="nome_completo" id="nome_completo" class="campoAlfabetico obrigatorio">
+                    <input type="text" name="nome_completo" id="nome_completo" class="campoAlfabetico obrigatorio" style="height: 5%; width: 91%; font-size: 20px;">
                 </div>
 
                 <div>
                     <label for="data_nascimento">DN:</label>
-                    <input type="date" name="data_nascimento" id="data_nascimento" class="campo obrigatorio">
+                    <input type="date" name="data_nascimento" id="data_nascimento" class="campo obrigatorio" style="height : 5%; width: 19%; font-size: 20px;">
 
                     <label for="sexo">Sexo:</label>
-                    <select name="sexo" id="sexo" class="campo obrigatorio">
+                    <select name="sexo" id="sexo" class="campo obrigatorio" style="height : 5%; width: 15%; font-size: 20px;">
                         <option value="">selecione</option>
                         <option value="m">Masculino</option>
                         <option value="f">Feminino</option>
                     </select>
 
                     <label for="peso">Peso (Kg):</label>
-                    <input type="text" name="peso" id="peso" class="campoNumerico obrigatorio">
+                    <input type="text" name="peso" id="peso" class="campoNumerico obrigatorio" style="height : 5%; width: 7%; font-size: 20px;">
 
 
                     <label for="altura">Altura</label>
-                    <input type="text" name="altura" id="altura" class="campoNumerico obrigatorio">
+                    <input type="text" name="altura" id="altura" class="campoNumerico obrigatorio" style="height : 5%; width: 7%; font-size: 20px;">
 
                     <label for="cor">Cor:</label>
-                    <select name="cor" id="cor" class="campo obrigatorio">
+                    <select name="cor" id="cor" class="campo obrigatorio" style="height : 5%; width: 13%; font-size: 20px;">
                         <option value="">selecione</option>
                         <option value="branco">Branco</option>
                         <option value="pardo">Pardo</option>
@@ -63,7 +63,7 @@
 
                 <div>
                     <label for="escolaridade">Escolaridade</label>
-                    <select name="escolaridade" id="escolaridade" class="campo obrigatorio">
+                    <select name="escolaridade" id="escolaridade" class="campo obrigatorio" style="height : 5%; width: 25%; font-size: 20px;">
                         <option value="">selecione</option>
                         <option value="infantil">Educação Infantil</option>
                         <option value="fundamental">Ensino Fundamental</option>
@@ -75,18 +75,18 @@
                     </select>
 
                     <label for="profissao">Profissão</label>
-                    <input type="text" name="profissao" id="profissao" class="campoAlfabetico obrigatorio">
+                    <input type="text" name="profissao" id="profissao" class="campoAlfabetico obrigatorio" style="height : 5%; width: 49%; font-size: 20px;">
                 </div>
 
                 <div>
                     <label for="rg">RG</label>
-                    <input type="text" name="rg" id="rg" class="campo obrigatorio">
+                    <input type="text" name="rg" id="rg" class="campo obrigatorio" style="height : 5%; width: 25%; font-size: 20px;">
 
                     <label for="cpf">CPF</label>
-                    <input type="text" name="cpf" id="cpf" class="campoNumerico obrigatorio">
+                    <input type="text" name="cpf" id="cpf" class="campoNumerico obrigatorio" style="height : 5%; width: 25%; font-size: 20px;">
 
                     <label for="estado_civil">Estado Civil:</label>
-                    <select name="estado_civil" id="estado_civil" class="campo obrigatorio">
+                    <select name="estado_civil" id="estado_civil" class="campo obrigatorio" style="height : 5%; width: 24%; font-size: 20px;">
                         <option value="">selecione</option>
                         <option value="solteiro">Solteiro</option>
                         <option value="casado">Casado</option>
@@ -98,10 +98,10 @@
 
                 <div>
                     <label for="naturalidade">Naturalidade:</label>
-                    <input type="text" name="naturalidade" id="naturalidade" class="campoAlfabetico obrigatorio">
+                    <input type="text" name="naturalidade" id="naturalidade" class="campoAlfabetico obrigatorio" style="height : 5%; width: 51.5%; font-size: 20px;">
 
                     <label for="estados">Estado:</label>
-                    <select name="estados_nascenca" class="campo obrigatorio">
+                    <select name="estados_nascenca" class="campo obrigatorio" style="height : 5%; width: 24%; font-size: 20px;">
                         <option value="">selecione--</option>
                         <option value="ac">Acre</option>
                         <option value="al">Alagoas</option>
@@ -134,55 +134,55 @@
                 </div>
 
                 <div>
-                    <label for="filiacao">Filiação</label> <br>
+                    <label for="filiacao">Filiação</label>
+
+                    <br>
 
                     <label for="pai">Pai</label>
-                    <input type="text" name="pai" id="pai" class="campoAlfabetico obrigatorio">
+                    <input type="text" name="pai" id="pai" class="campoAlfabetico obrigatorio" style="height : 5%; width: 56%; font-size: 20px;">
                     <label for="paiNaturalidade">Naturalidade</label>
-                    <input type="text" name="pai_naturalidade" id="paiNaturalidade" class="campoAlfabetico obrigatorio">
+                    <input type="text" name="pai_naturalidade" id="paiNaturalidade" class="campoAlfabetico obrigatorio" style="height : 5%; width: 23%; font-size: 20px;">
 
                     <label for="mae">Mãe</label>
-                    <input type="text" name="mae" id="mae" class="campoAlfabetico obrigatorio">
+                    <input type="text" name="mae" id="mae" class="campoAlfabetico obrigatorio" style="height : 5%; width: 55%; font-size: 20px;">
                     <label for="maeNaturalidade">Naturalidade</label>
-                    <input type="text" name="mae_naturalidade" id="maeNaturalidade" class="campoAlfabetico obrigatorio">
+                    <input type="text" name="mae_naturalidade" id="maeNaturalidade" class="campoAlfabetico obrigatorio" style="height : 5%; width: 24%; font-size: 20px">                    
                 </div>
 
                 <div>
                     <label for="contato">Contato (tel/cel)</label>
-                    <input type="text" name="contato" id="contato" class="campoNumerico obrigatorio">
+                    <input type="text" name="contato" id="contato" class="campoNumerico obrigatorio" style="height : 5%; width: 82.5%; font-size: 20px;">
                 </div>
 
                 <div>
-                    <label for="endereco">Endereco</label>
-                    <input type="text" name="endereco" id="endereco" class="campoAlfabetico obrigatorio">
-                </div>
-
-                <div>
+                    <label for="endereco">Endereço</label>
+                    <input type="text" name="endereco" id="endereco" class="campoAlfabetico obrigatorio" style="height : 5%; width: 70%; font-size: 20px;">
+                
                     <label for="numero">Número</label>
-                    <input type="text" name="numero" id="numero" class="campoNumerico obrigatorio">
+                    <input type="text" name="numero" id="numero" class="campoNumerico obrigatorio" style="height : 5%; width: 8.5%; font-size: 20px;">
                 </div>
 
                 <div>
                     <label for="complemento">Complemento</label>
-                    <input type="text" name="complemento" id="complemento" class="campo">
+                    <input type="text" name="complemento" id="complemento" class="campo" style="height : 5%; width: 40%; font-size: 20px;">
+                
+                    <label for="bairro">Bairro</label>
+                    <input type="text" name="bairro" id="bairro" class="campoAlfabetico obrigatorio" style="height : 5%; width: 36.1%; font-size: 20px;">
                 </div>
 
-                <div>
-                    <label for="bairro">Bairro</label>
-                    <input type="text" name="bairro" id="bairro" class="campoAlfabetico obrigatorio">
-                </div>
+               
 
                 <div>
                     <label for="cep">CEP</label>
-                    <input type="text" name="cep" id="cep" class="campoNumerico obrigatorio">
+                    <input type="text" name="cep" id="cep" class="campoNumerico obrigatorio" style="height : 5%; width: 93.8%; font-size: 20px;">
                 </div>
+                
                 <div>
                     <label for="cidade">Cidade</label>
-                    <input type="text" name="cidade" id="cidade" class="campoAlfabetico obrigatorio">
-                </div>
-                <div>
+                    <input type="text" name="cidade" id="cidade" class="campoAlfabetico obrigatorio" style="height : 5%; width: 58.3%; font-size: 20px;">
+
                     <label for="estados">Estado:</label>
-                    <select name="estados_moradia" class="campo obrigatorio">
+                    <select name="estados_moradia" class="campo obrigatorio" style="height : 5%; width: 24%; font-size: 20px;">
                         <option value="">selecione--</option>
                         <option value="ac">Acre</option>
                         <option value="al">Alagoas</option>
@@ -213,6 +213,7 @@
                         <option value="to">Tocantins</option>
                     </select>
                 </div>
+               
 
                 <div>
                     <input type="hidden" id="buffer" name="buffer">
