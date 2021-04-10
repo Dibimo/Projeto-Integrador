@@ -139,12 +139,13 @@ $cpf = '36700137845';
     </div>
 
     <hr>
+    <h1>Prontuario</h1>
     <form>
-        <label for="">Data do procedimento</label>
-        <input type="text" name="dataProcedimento">
-        <label for="">Procedimento realizado</label>
-        <input type="text" name="procedimento">
-        <input type="hidden" name="buffer">
+        <label for="dataProcedimento">Data do procedimento</label>
+        <input type="date" name="dataProcedimento" id="dataProcedimento">
+        <label for="procedimento">Procedimento realizado</label>
+        <input type="text" name="procedimento" id="procedimentoTexto">
+        <input type="hidden" if="buffer">
         <button id="botaoAdicionar">+</button>
     </form>
     <table id="prontuarioTabela">
