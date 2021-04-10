@@ -2,6 +2,14 @@ function main() {
     var botao = document.querySelector("#botaoAdicionar");
     botao.addEventListener("click",function (event) {
         event.preventDefault();
+        var data_procedimentoTexto = document.querySelector('#dataProcedimento');
+        var procedimentoTexto = document.querySelector('#procedimentoTexto');
+
+        var novoProcedimento = {
+            data_procedimento: data_procedimentoTexto.value,
+            procedimento: procedimentoTexto.value
+        }
+        montaLinhaTabela(novoProcedimento,"novoProcedimento");
     });
 }
 
@@ -14,17 +22,20 @@ function montaProntuario(prontuarioBruto){
     }
 }
 
-function montaLinhaTabela(prontuario) {
+function montaLinhaTabela(procendimento,classe) {
     var tabela = document.querySelector("#prontuarioTabela");
-    delete prontuario['cpf_paciente'];
+    delete procendimento['cpf_paciente'];
     var linha = document.createElement("tr");
     var dataProcedimento = document.createElement("td");
     var procedimentoTexto = document.createElement("td");
-    dataProcedimento.textContent = prontuario['data_procedimento'];
-    procedimentoTexto.textContent = prontuario['procedimento'];
+    dataProcedimento.textContent = procendimento['data_procedimento'];
+    procedimentoTexto.textContent = procendimento['procedimento'];
     
     linha.appendChild(dataProcedimento);
     linha.appendChild(procedimentoTexto);
+    if(classe !== undefined){
+        linha.classList.add(classe);
+    }
     tabela.appendChild(linha);
 
 }
