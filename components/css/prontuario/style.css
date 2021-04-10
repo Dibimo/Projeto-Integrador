@@ -15,3 +15,6 @@ table {
 .novoProcedimento{
     color: rgb(95, 153, 8);
 }
+.novoProcedimento:hover{
+    cursor:pointer;
+}

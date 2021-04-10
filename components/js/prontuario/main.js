@@ -33,8 +33,11 @@ function montaLinhaTabela(procendimento,classe) {
     
     linha.appendChild(dataProcedimento);
     linha.appendChild(procedimentoTexto);
-    if(classe !== undefined){
+    if(classe !== undefined){ //caso linha a ser construida seja uma insercão, adiciona-se um destaque
         linha.classList.add(classe);
+        linha.addEventListener("dblclick",function(){ //evento para a remoção da linha caso hajam erros de digitação
+            tabela.removeChild(linha);
+        });
     }
     tabela.appendChild(linha);
 
