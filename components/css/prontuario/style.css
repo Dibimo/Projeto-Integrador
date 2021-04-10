@@ -17,4 +17,6 @@ table {
 }
 .novoProcedimento:hover{
     cursor:pointer;
+    color: rgb(153, 13, 8);
+    transition: 0.5s;
 }
