@@ -15,12 +15,20 @@
 
         <img src="/Assets/img_logo.png" height="200" width="300" style="padding-left: 30px;">
 
+        <!-- Título do Form-->        
         <h2><strong>FICHA DE IDENTIFICAÇÃO DO PACIENTE</strong></h2>
 
         <div style="padding-right: 3%; padding-left: 3%;">
 
+            <!-- Início do Form-->
             <form id="formulario" action="components/php/Paginas/constroi_paciente.php" method="post" class="borda">
 
+                
+                <!-- 
+                    Por padrão, todo tag <div>, dentro deste Form, representa um linha do Form
+                    Fora exceções, toda tag <div> possui pelo menos uma tag <label> e outra <input>
+                -->
+                                
                 <div>
                     <label for="nome_completo">Nome:</label>
                     <input type="text" name="nome_completo" id="nome_completo" class="campoAlfabetico obrigatorio">
@@ -216,6 +224,8 @@
                     <button id="botao-cadastrar" class="botao">Cadastrar</button>
                 </div>
                 <div id="erros"></div>
+            
+            <!-- Final do Form-->
             </form>
 
         </div>
