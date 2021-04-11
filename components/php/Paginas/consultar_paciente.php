@@ -7,7 +7,7 @@
     <title>Consultar paciente</title>
 </head>
 <body>
-    <h1>Informe o CPF do paciênte</h1>
+    <h1>Informe o CPF do paciente</h1>
     
     <label>Pesquisar</label>
     <input type="text" name="pesquisa" id="pesquisa" placeholder="00000000000">
