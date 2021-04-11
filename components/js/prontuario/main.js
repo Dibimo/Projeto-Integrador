@@ -1,4 +1,4 @@
-function main() {
+function main(cpf) {
     var botao = document.querySelector("#botaoAdicionar");
     botao.addEventListener("click",function (event) {
         event.preventDefault();
@@ -11,6 +11,15 @@ function main() {
         }
         montaLinhaTabela(novoProcedimento,"novoProcedimento");
     });
+
+    var botaoSalvar = document.querySelector("#salvarProcedimentos");
+    botaoSalvar.addEventListener("click",function () {
+        var procedimentos = document.querySelectorAll('.novoProcedimentoTexto');
+        var datas = document.querySelectorAll('.novaData');
+        for (let i = 0; i < procedimentos.length; i++) {
+            salvarProcedimento(datas[i].textContent,procedimentos[i].textContent,cpf);
+        }
+    })
 }
 
 function montaProntuario(prontuarioBruto){ 
@@ -38,6 +47,8 @@ function montaLinhaTabela(procendimento,classe) {
         linha.addEventListener("dblclick",function(){ //evento para a remoção da linha caso hajam erros de digitação
             tabela.removeChild(linha);
         });
+        dataProcedimento.classList.add('novaData');
+        procedimentoTexto.classList.add('novoProcedimentoTexto');
     }
     tabela.appendChild(linha);
 
@@ -57,3 +68,16 @@ function insereDados(dados,nomeSecao,excoes) {
     }
     
 }
+
+function salvarProcedimento(dataProcedimento,procedimentoTexto,cpfPaciente) {
+    var xml = new XMLHttpRequest();
+    var dados = new FormData();
+    dados.append('cpf_paciente',cpfPaciente);
+    dados.append('dataProcedimento',dataProcedimento);
+    dados.append('procedimentoTexto',procedimentoTexto);
+
+    xml.open('POST','../../php/Funcoes/atualiza_prontuario.php',true);
+    xml.send(dados);
+
+}
+
