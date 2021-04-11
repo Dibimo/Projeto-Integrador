@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="/components/css/consultar_paciente/animacao_buscando.css">
     <title>Consultar paciente</title>
 </head>
 <body>
@@ -11,9 +11,9 @@
     
     <label>Pesquisar</label>
     <input type="text" name="pesquisa" id="pesquisa" placeholder="00000000000">
-    <label id="resposta"></label>
+    <label id="resposta"><div class="lds-facebook"><div></div><div></div><div></div></div></label>
 
-
+    
     <script src="/components/js/consultar_paciente/main.js"></script>
     <script>main();</script>
 </body>
