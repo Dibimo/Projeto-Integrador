@@ -21,7 +21,7 @@
         <div style="padding-right: 3%; padding-left: 3%; background-color: rgb(255, 253, 253);">
 
             <!-- Início do Form-->
-            <form id="formulario" action="components/php/Paginas/constroi_paciente.php" method="post" class="borda">
+            <form id="formulario" action="components/php/Funcoes/constroi_paciente.php" method="post" class="borda">
 
                 
                 <!-- 

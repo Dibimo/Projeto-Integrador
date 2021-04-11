@@ -1,6 +1,9 @@
 <?php
-require_once dirname(__DIR__, 1) . '\\Funcao\\manipular_banco.php';
-$cpf = '36700137845';
+require_once dirname(__DIR__, 1) . '\\Funcoes\\manipular_banco.php';
+require_once dirname(__DIR__, 1) . '\\Classes\\Paciente.php';
+session_start();
+$paciente = $_SESSION['paciente'];
+$cpf = $paciente->getCpf();
 ?>
 <!DOCTYPE html>
 <html lang="en">
