@@ -173,7 +173,6 @@ function obtemProntuario(int $cpfPaciente)
     $conexao = novaConexao();
     $comandoSQL = "SELECT * FROM  prontuarios where cpf_paciente='{$cpfPaciente}'";
     $resultado = mysqli_query($conexao, $comandoSQL);
-    // $jsonResultado = json_encode(mysqli_fetch_assoc($resultado));
     $jsonResultado = Array();
     while ($linha = mysqli_fetch_assoc($resultado)) {
         $jsonResultado[] = json_encode($linha);
