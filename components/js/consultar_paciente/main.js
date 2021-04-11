@@ -4,17 +4,18 @@ function main() {
         var cpfInput = pesquisa.value;
         
         if (cpfInput!= '') {
-            var dados = {
-                cpfPesquisado: cpfInput
-            }
-            console.log(dados);
-            var request = new XMLHttpRequest();
-            request.open('POST','../../php/Paginas/busca_cpf.php');
-            request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-            request.send(cpfInput);
-            request.onreadystatechange = function (){
-                console.log(request.responseText);
-            }
+            var xml = new XMLHttpRequest();
+            var dados = new FormData();
+            dados.append('cpf',cpfInput);
+            xml.onreadystatechange = function () {
+                
+                if(xml.readyState == 4 && xml.status==200){
+                    console.log(xml.responseText);
+                }
+            };
+
+            xml.open('POST','../../php/Paginas/busca_cpf.php',true);
+            xml.send(dados);
         }
     });
 }
