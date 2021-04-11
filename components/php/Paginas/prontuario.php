@@ -2,8 +2,7 @@
 require_once dirname(__DIR__, 1) . '\\Funcoes\\manipular_banco.php';
 require_once dirname(__DIR__, 1) . '\\Classes\\Paciente.php';
 session_start();
-$paciente = $_SESSION['paciente'];
-$cpf = $paciente->getCpf();
+$cpf = $_SESSION['cpf'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
