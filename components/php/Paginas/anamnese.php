@@ -1,7 +1,8 @@
 <?php
-require_once dirname(__DIR__, 1) . '\\Classes\\Paciente.php';
-session_start();
-$paciente = $_SESSION['paciente'];
+//LEMBRAR DE TROCAR
+// require_once dirname(__DIR__, 1) . '\\Classes\\Paciente.php';
+// session_start();
+// $paciente = $_SESSION['paciente'];
 
 ?>
 <!DOCTYPE html>
@@ -18,12 +19,14 @@ $paciente = $_SESSION['paciente'];
         <form id="formulario" method="post" action="send_to_database.php">
             <div>
                 <?php
-                echo "<label>Nome: {$paciente->getNome()}</label>"
+                // echo "<label>Nome: {$paciente->getNome()}</label>"
+                echo "<label>Nome: Diogo Bissoli Moreno</label>"
                 ?>
             </div>
             <div>
                 <?php
-                echo "<label>Cadastro: {$paciente->getCpf()}</label>"
+                // echo "<label>Cadastro: {$paciente->getCpf()}</label>"
+                echo "<label>Cadastro: 000.000.000-00</label>"
                 ?>
             </div>
             <div>
