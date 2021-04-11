@@ -76,7 +76,7 @@ $cpf = $_SESSION['cpf'];
         <div><label class="campoAnamneseG">Outra: </label></div>
         <div><label class="campoAnamneseG">Fumante: </label></div>
         <div><label class="campoAnamneseG">Frequencia de fumo: </label></div>
-        <h3>Conduta da Criança</h3>
+        <h3 class="AnamneseI">Conduta da Criança</h3>
         <div><label class="campoAnamneseI">Historia da Gestação: </label></div>
         <div><label class="campoAnamneseI">Tipo de parto: </label></div>
         <div><label class="campoAnamneseI">Houveram problemas no parto: </label></div>
@@ -84,14 +84,14 @@ $cpf = $_SESSION['cpf'];
         <div><label class="campoAnamneseI">Já foi dito para não tomar anestesia: </label></div>
         <div><label class="campoAnamneseI">Já teve doença grave: </label></div>
         <div><label class="campoAnamneseI">Já foi vacinada: </label></div>
-        <h4>Durente os dois primeiros anos</h4>
+        <h4 class="AnamneseI">Durente os dois primeiros anos</h4>
         <div><label class="campoAnamneseI">Sentou: </label></div>
         <div><label class="campoAnamneseI">Engatinhou: </label></div>
         <div><label class="campoAnamneseI">Andou: </label></div>
         <div><label class="campoAnamneseI">Falou: </label></div>
 
         <div><label class="campoAnamneseI">Dificuldades de aprendizado: </label></div>
-        <h4>Estado normal</h4>
+        <h4 class="AnamneseI">Estado normal</h4>
         <div><label class="campoAnamneseI">Alegre: </label></div>
         <div><label class="campoAnamneseI">Triste: </label></div>
         <div><label class="campoAnamneseI">Timido: </label></div>
@@ -120,18 +120,18 @@ $cpf = $_SESSION['cpf'];
         <hr>
         <h3>Avaliação fisica</h3>
         <div><label class="campoAnamneseG">Labios: </label></div>
-        <div><label class="campoAnamneseG">Mucosaj: </label></div>
-        <div><label class="campoAnamneseG">Lingua: </label></div>
-        <div><label class="campoAnamneseG">Soalho: </label></div>
-        <div><label class="campoAnamneseG">Palatod: </label></div>
+        <div><label class="campoAnamneseG">Mucosa Jugal: </label></div>
+        <div><label class="campoAnamneseG">Língua: </label></div>
+        <div><label class="campoAnamneseG">Soalho da boca: </label></div>
+        <div><label class="campoAnamneseG">Palato Duro: </label></div>
         <div><label class="campoAnamneseG">Garganta: </label></div>
-        <div><label class="campoAnamneseG">Palatom: </label></div>
-        <div><label class="campoAnamneseG">Mucosaa: </label></div>
+        <div><label class="campoAnamneseG">Palato Mole: </label></div>
+        <div><label class="campoAnamneseG">Mucosa Alveolar: </label></div>
         <div><label class="campoAnamneseG">Gengiva: </label></div>
-        <div><label class="campoAnamneseG">Glandulas: </label></div>
+        <div><label class="campoAnamneseG">Glândulas Salivares: </label></div>
         <div><label class="campoAnamneseG">Linfonodo: </label></div>
         <div><label class="campoAnamneseG">ATM: </label></div>
-        <div><label class="campoAnamneseG">Muscmas: </label></div>
+        <div><label class="campoAnamneseG">Musculos Mastigadores: </label></div>
         <div><label class="campoAnamneseG">Oclusão: </label></div>
         <div><label class="campoAnamneseG">Alterações: </label></div>
         <div><label class="campoAnamneseG">Diagnostico Presuntivo: </label></div>
@@ -174,13 +174,16 @@ $cpf = $_SESSION['cpf'];
         var endereco = <?= (obtemDadosTabela($cpf, 'enderecos')); ?>;
         var anamneseGeral = <?= (obtemDadosTabela($cpf, 'anamnese_geral')); ?>;
         var anamneseInfantil = <?= (obtemDadosTabela($cpf, 'anamnese_infantil')); ?>;
-
         montaProntuario(prontuarioBruto);
 
         insereDados(dadosPessoais, ".campoPessoal");
         insereDados(endereco, ".campoEndereco", ['nome_paciente', 'cpf_paciente']);
         insereDados(anamneseGeral, ".campoAnamneseG", ['nome_paciente', 'cpf_paciente']);
-        insereDados(anamneseInfantil, ".campoAnamneseI", ['nome_paciente', 'cpf_paciente']);
+        if (anamneseInfantil === null) { //se anamneseInfantil for nulo quer dizer que não há linhas na tabela
+            removeAnamneseInfatil(); //logo, os campos destinados a isso podem ser removidos
+        } else {
+            insereDados(anamneseInfantil, ".campoAnamneseI", ['nome_paciente', 'cpf_paciente']);
+        }
     </script>
 </body>
 

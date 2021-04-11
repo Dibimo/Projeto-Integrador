@@ -68,6 +68,7 @@ function insereDados(dados,nomeSecao,excoes) {
     }
     var chaves = Object.keys(dados);
     for (let i = 0; i < secao.length; i++) {
+        console.log(secao.length);
         secao[i].textContent = secao[i].textContent + dados[chaves[i]];
         
     }
@@ -84,5 +85,12 @@ function salvarProcedimento(dataProcedimento,procedimentoTexto,cpfPaciente) {
     xml.open('POST','../../php/Funcoes/atualiza_prontuario.php',true);
     xml.send(dados);
 
+}
+
+function removeAnamneseInfatil() {
+    var campos = document.querySelectorAll(".AnamneseI, .campoAnamneseI");
+    campos.forEach(element => {
+        element.style.display = "none";
+    });
 }
 
