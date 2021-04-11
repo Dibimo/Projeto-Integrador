@@ -1,6 +1,6 @@
 function main() {
-    var pesquisa = document.querySelector("#pesquisa");
     pesquisa.addEventListener("input",function () {
+        var pesquisa = document.querySelector("#pesquisa");
         var resposta = document.querySelector("#resposta");
         var cpfInput = pesquisa.value;
 
@@ -15,16 +15,10 @@ function main() {
                 }
             };
 
-            xml.open('POST','../../php/Funcoes/busca_cpf.php',true);
+            xml.open('POST','../../php/Paginas/busca_cpf.php',true);
             xml.send(dados);
         }else{
             resposta.textContent = '';
         }
     });
-
-    var botaoCastro = document.querySelector("#irParaCadastro");
-    botaoCastro.addEventListener("click",function () {
-        window.location.href = '../../../index.php'
-    })
-
 }
