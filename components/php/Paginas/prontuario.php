@@ -175,7 +175,6 @@ $cpf = $_SESSION['cpf'];
         var anamneseGeral = <?= (obtemDadosTabela($cpf, 'anamnese_geral')); ?>;
         var anamneseInfantil = <?= (obtemDadosTabela($cpf, 'anamnese_infantil')); ?>;
 
-        // console.log(JSON.parse(prontuarioBruto));
         montaProntuario(prontuarioBruto);
 
         insereDados(dadosPessoais, ".campoPessoal");

@@ -1,3 +1,7 @@
+var removerComDuploClick = function () { //evento para a remoção da linha caso hajam erros de digitação
+    tabela.removeChild(linha);
+}
+
 function main(cpf) {
     var botao = document.querySelector("#botaoAdicionar");
     botao.addEventListener("click",function (event) {
@@ -16,8 +20,11 @@ function main(cpf) {
     botaoSalvar.addEventListener("click",function () {
         var procedimentos = document.querySelectorAll('.novoProcedimentoTexto');
         var datas = document.querySelectorAll('.novaData');
+        var linhas = document.querySelectorAll('.novoProcedimento');
         for (let i = 0; i < procedimentos.length; i++) {
             salvarProcedimento(datas[i].textContent,procedimentos[i].textContent,cpf);
+            linhas[i].removeEventListener("dblclick",removerComDuploClick);
+            linhas[i].classList.remove('novoProcedimento');
         }
     })
 }
@@ -44,9 +51,7 @@ function montaLinhaTabela(procendimento,classe) {
     linha.appendChild(procedimentoTexto);
     if(classe !== undefined){ //caso linha a ser construida seja uma insercão, adiciona-se um destaque
         linha.classList.add(classe);
-        linha.addEventListener("dblclick",function(){ //evento para a remoção da linha caso hajam erros de digitação
-            tabela.removeChild(linha);
-        });
+        linha.addEventListener("dblclick",removerComDuploClick);
         dataProcedimento.classList.add('novaData');
         procedimentoTexto.classList.add('novoProcedimentoTexto');
     }
