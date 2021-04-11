@@ -11,7 +11,9 @@
     
     <label>Pesquisar</label>
     <input type="text" name="pesquisa" id="pesquisa" placeholder="00000000000">
-    
+    <label id="resposta"></label>
+
+
     <script src="/components/js/consultar_paciente/main.js"></script>
     <script>main();</script>
 </body>
