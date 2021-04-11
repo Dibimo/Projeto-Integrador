@@ -11,8 +11,11 @@
     
     <label>Pesquisar</label>
     <input type="text" name="pesquisa" id="pesquisa" placeholder="00000000000">
-    <label id="resposta"><div class="lds-facebook"><div></div><div></div><div></div></div></label>
-
+    <label id="resposta"></label>
+    <!--<div class="lds-facebook"><div></div><div></div><div></div></div>-->
+    <hr>
+    <h1>Cadastrar paciente</h1>
+    <button id="irParaCadastro">Cadastrar</button>
     
     <script src="/components/js/consultar_paciente/main.js"></script>
     <script>main();</script>
