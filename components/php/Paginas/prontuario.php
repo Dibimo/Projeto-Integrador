@@ -164,10 +164,11 @@ $cpf = $_SESSION['cpf'];
 
         </tbody>
     </table>
+    <button id="salvarProcedimentos">Salvar</button>
     <script src="/components/js/prontuario/main.js"></script>
     <script>
-        main();
         var cpf = <?= $cpf ?>;
+        main(cpf);
         var prontuarioBruto = <?= obtemProntuario($cpf); ?>;
         var dadosPessoais = <?= (obtemDadosTabela($cpf, 'pacientes')); ?>;
         var endereco = <?= (obtemDadosTabela($cpf, 'enderecos')); ?>;
