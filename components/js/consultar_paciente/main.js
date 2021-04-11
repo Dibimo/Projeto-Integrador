@@ -15,7 +15,7 @@ function main() {
                 }
             };
 
-            xml.open('POST','../../php/Paginas/busca_cpf.php',true);
+            xml.open('POST','../../php/Funcoes/busca_cpf.php',true);
             xml.send(dados);
         }else{
             resposta.textContent = '';
