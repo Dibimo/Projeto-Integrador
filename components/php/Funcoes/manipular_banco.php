@@ -182,6 +182,20 @@ function obtemProntuario(int $cpfPaciente)
     return $jsonResultado;
 }
 
+function atualizaProntuario(string $cpf, string $dataProcedimento, string $procedimentoTexto)
+{
+    $conexao = novaConexao();
+    $comandosSQL= "INSERT INTO prontuarios
+        VALUES(
+            '{$cpf}',
+            '{$dataProcedimento}',
+            '{$procedimentoTexto}'
+        );
+    ";
+
+    $conexao->query($comandosSQL);
+}
+
 function novaConexao()
 {
     $servidor = "localhost";
