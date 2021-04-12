@@ -33,6 +33,6 @@ function main() {
 
     var botaoCastro = document.querySelector("#irParaCadastro");
     botaoCastro.addEventListener("click", function () {
-        window.location.href = 'components/php/Paginas/cadastrar_paciente.php'
+        window.location.href = '/components/php/Paginas/cadastrar_paciente.php'
     });
 }
