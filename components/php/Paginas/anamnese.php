@@ -36,11 +36,13 @@
                 </div>
                 <div>
                     <label for="queixa_principal">Queixa Principal:</label>
-                    <textarea name="queixa_principal" id="queixa_principal" class="campo"></textarea>
+                    <br>
+                    <textarea name="queixa_principal" id="queixa_principal" class="campo" rows="3" cols="80%" style="font-size:20px;"></textarea>
                 </div>
                 <div>
                     <label for="hitorico_doenca">Historio da doença atual:</label>
-                    <textarea name="hitorico_doenca" id="hitorico_doenca" class="campo"></textarea>
+                    <br>
+                    <textarea name="hitorico_doenca" id="hitorico_doenca" class="campo" rows="5" cols="80%" style="font-size:20px;"></textarea>
                 </div>
                 <div>
                     <ol>
@@ -207,7 +209,8 @@
                     <ol>
                         <li>
                             <label for="historia_gestacao">História da gestação</label>
-                            <textarea name="historia_gestacao" id="historia_gestacao"></textarea>
+                            <br>
+                            <textarea name="historia_gestacao" id="historia_gestacao" rows="3" cols="77%" style="font-size:20px;"></textarea>
                         </li>
                         <li>
                             <label for="reposta_tipo_parto">Nasceu de parto</label>
@@ -417,7 +420,7 @@
 
                 <div>
                     <label for="observacoes">Observações:</label>
-                    <textarea name="observacoes" id="observacoes" class="campo"></textarea>
+                    <textarea name="observacoes" id="observacoes" class="campo" rows="3" cols="80%" style="font-size:20px;"></textarea>
                 </div>
 
                 <hr>
@@ -542,30 +545,36 @@
 
                 <div>
                     <label for="alteracoesEncontradas">Alterações encontradas:</label>
-                    <textarea name="alteracoesEncontradas" id="alteracoesEncontradas" class="campo"></textarea>
+                    <br>
+                    <textarea name="alteracoesEncontradas" id="alteracoesEncontradas" class="campo" rows="3" cols="80%" style="font-size:20px;"></textarea>
                 </div>
                 <div>
 
                 </div>
                 <div>
                     <label for="diagnosticoPresuntivo">Diagnóstico presuntivo:</label>
-                    <textarea name="diagnosticoPresuntivo" id="diagnosticoPresuntivo" class="campo"></textarea>
+                    <br>
+                    <textarea name="diagnosticoPresuntivo" id="diagnosticoPresuntivo" class="campo" rows="3" cols="80%" style="font-size:20px;"></textarea>
                 </div>
                 <div>
                     <label for="examesComplementares">Exames complementares:</label>
-                    <textarea name="examesComplementares" id="examesComplementares" class="campo"></textarea>
+                    <br>
+                    <textarea name="examesComplementares" id="examesComplementares" class="campo" rows="3" cols="80%" style="font-size:20px;"></textarea>
                 </div>
                 <div>
                     <label for="diagnosticoDefinitivo">Diagnóstico definitivo:</label>
-                    <textarea name="diagnosticoDefinitivo" id="diagnosticoDefinitivo" class="campo"></textarea>
+                    <br>
+                    <textarea name="diagnosticoDefinitivo" id="diagnosticoDefinitivo" class="campo" rows="3" cols="80%" style="font-size:20px;"></textarea>
                 </div>
                 <div>
                     <label for="tratamento">Tratamento/Proservação:</label>
-                    <textarea name="tratamento" id="tratamento" class="campo"></textarea>
+                    <br>
+                    <textarea name="tratamento" id="tratamento" class="campo" rows="3" cols="80%" style="font-size:20px;"></textarea>
                 </div>
                 <div>
                     <label for="planoTratamento">Plano de Tratamento:</label>
-                    <textarea name="planoTratamento" id="planoTratamento" class="campo"></textarea>
+                    <br>
+                    <textarea name="planoTratamento" id="planoTratamento" class="campo" rows="3" cols="80%" style="font-size:20px;"></textarea>
                 </div>
                 <div>
                     <input type="hidden" name="buffer" id="buffer">
