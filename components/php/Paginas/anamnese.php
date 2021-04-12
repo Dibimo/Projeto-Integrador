@@ -323,7 +323,7 @@
 
                 <div>
                     <label for="sono">Tem sono:</label>
-                    <select name="sono">
+                    <select name="sono" style="height : 5%; width: 25%; font-size: 20px;">
                         <option value="">selecione--</option>
                         <option value="tranquilo">Tranquilo</option>
                         <option value="intranquilo">Intranquilo</option>
@@ -370,7 +370,7 @@
 
                 <div>
                     <label for="alimentacao">Alimentação:</label>
-                    <select name="alimentacao">
+                    <select name="alimentacao" style="height : 5%; width: 25%; font-size: 20px;">
                         <option value="">selecione--</option>
                         <option value="normal">Normal</option>
                         <option value="supra">Supra normal</option>
@@ -380,7 +380,7 @@
 
                 <div>
                     <label for="sociabilidade">Sociabilidade:</label>
-                    <select name="sociabilidade">
+                    <select name="sociabilidade" style="height : 5%; width: 25%; font-size: 20px;">
                         <option value="">selecione--</option>
                         <option value="normal">Normal</option>
                         <option value="agressiva">Agressiva</option>
