@@ -120,58 +120,58 @@ $cpf = $_SESSION['cpf'];
     <div class="secao">
         <div class='secao'>
             <h3 class="AnamneseI">Conduta da Criança</h3>
-            <div><label class="campoAnamneseI" name="historiag"​>Historia da Gestação: </label></div>
-            <div><label class="campoAnamneseI" name="tipoparto"​>Tipo de parto: </label></div>
-            <div><label class="campoAnamneseI" name="problemap"​>Houveram problemas no parto: </label></div>
-            <div><label class="campoAnamneseI" name="amamentacao"​>Amamentação: </label></div>
-            <div><label class="campoAnamneseI" name="anestesia"​>Já foi dito para não tomar anestesia: </label></div>
-            <div><label class="campoAnamneseI" name="doenca_grave"​>Já teve doença grave: </label></div>
-            <div><label class="campoAnamneseI" name="vacinada"​>Já foi vacinada: </label></div>
+            <div><label class="campoAnamneseI" name="historiag" ​>Historia da Gestação: </label></div>
+            <div><label class="campoAnamneseI" name="tipoparto" ​>Tipo de parto: </label></div>
+            <div><label class="campoAnamneseI" name="problemap" ​>Houveram problemas no parto: </label></div>
+            <div><label class="campoAnamneseI" name="amamentacao" ​>Amamentação: </label></div>
+            <div><label class="campoAnamneseI" name="anestesia" ​>Já foi dito para não tomar anestesia: </label></div>
+            <div><label class="campoAnamneseI" name="doenca_grave" ​>Já teve doença grave: </label></div>
+            <div><label class="campoAnamneseI" name="vacinada" ​>Já foi vacinada: </label></div>
         </div>
         <div class='secao'>
             <h4 class="AnamneseI">Durente os dois primeiros anos</h4>
-            <div><label class="campoAnamneseI" name="sentou"​>Sentou: </label></div>
-            <div><label class="campoAnamneseI" name="engatinhou"​>Engatinhou: </label></div>
-            <div><label class="campoAnamneseI" name="andou"​>Andou: </label></div>
-            <div><label class="campoAnamneseI" name="falou"​>Falou: </label></div>
-            <div><label class="campoAnamneseI" name="dificuldade"​>Dificuldades de aprendizado: </label></div>
+            <div><label class="campoAnamneseI" name="sentou" ​>Sentou: </label></div>
+            <div><label class="campoAnamneseI" name="engatinhou" ​>Engatinhou: </label></div>
+            <div><label class="campoAnamneseI" name="andou" ​>Andou: </label></div>
+            <div><label class="campoAnamneseI" name="falou" ​>Falou: </label></div>
+            <div><label class="campoAnamneseI" name="dificuldade" ​>Dificuldades de aprendizado: </label></div>
         </div>
         <div class='secao'>
             <h4 class="AnamneseI">Estado normal</h4>
-            <div><label class="campoAnamneseI" name="alegre"​>Alegre: </label></div>
-            <div><label class="campoAnamneseI" name="triste"​>Triste: </label></div>
-            <div><label class="campoAnamneseI" name="timido"​>Timido: </label></div>
-            <div><label class="campoAnamneseI" name="tranquilo"​>Tranquilo: </label></div>
-            <div><label class="campoAnamneseI" name="inquieto"​>Inquieto: </label></div>
-            <div><label class="campoAnamneseI" name="assustado"​>Assustado: </label></div>
+            <div><label class="campoAnamneseI" name="alegre" ​>Alegre: </label></div>
+            <div><label class="campoAnamneseI" name="triste" ​>Triste: </label></div>
+            <div><label class="campoAnamneseI" name="timido" ​>Timido: </label></div>
+            <div><label class="campoAnamneseI" name="tranquilo" ​>Tranquilo: </label></div>
+            <div><label class="campoAnamneseI" name="inquieto" ​>Inquieto: </label></div>
+            <div><label class="campoAnamneseI" name="assustado" ​>Assustado: </label></div>
         </div>
         <div class='secao'>
             <h4>Sono</h4>
-            <div><label class="campoAnamneseI" name="sono"​></label></div>
+            <div><label class="campoAnamneseI" name="sono" ​></label></div>
         </div>
         <div class='secao'>
             <h4>Físico</h4>
-            <div><label class="campoAnamneseI" name="posturanor"​>Postura Normal: </label></div>
-            <div><label class="campoAnamneseI" name="posturaalt"​>Postura Alterada: </label></div>
-            <div><label class="campoAnamneseI" name="fonacaonor"​>Fonação normal: </label></div>
-            <div><label class="campoAnamneseI" name="disturb_fala"​>Disturbios de fala: </label></div>
-            <div><label class="campoAnamneseI" name="paralisia"​>Paralisia: </label></div>
-            <div><label class="campoAnamneseI" name="enurese"​>Enurese: </label></div>
-            <div><label class="campoAnamneseI" name="ctrl_esfinct"​>Controle os esfincteres: </label></div>
+            <div><label class="campoAnamneseI" name="posturanor" ​>Postura Normal: </label></div>
+            <div><label class="campoAnamneseI" name="posturaalt" ​>Postura Alterada: </label></div>
+            <div><label class="campoAnamneseI" name="fonacaonor" ​>Fonação normal: </label></div>
+            <div><label class="campoAnamneseI" name="disturb_fala" ​>Disturbios de fala: </label></div>
+            <div><label class="campoAnamneseI" name="paralisia" ​>Paralisia: </label></div>
+            <div><label class="campoAnamneseI" name="enurese" ​>Enurese: </label></div>
+            <div><label class="campoAnamneseI" name="ctrl_esfinct" ​>Controle os esfincteres: </label></div>
         </div>
         <div class='secao'>
             <h4>Alimentação e sociabilidade</h4>
-            <div><label class="campoAnamneseI" name="alimentacao"​>Alimentacão: </label></div>
-            <div><label class="campoAnamneseI" name="social"​>Social: </label></div>
+            <div><label class="campoAnamneseI" name="alimentacao" ​>Alimentacão: </label></div>
+            <div><label class="campoAnamneseI" name="social" ​>Social: </label></div>
         </div>
         <div class='secao'>
             <h4>Possui</h4>
-            <div><label class="campoAnamneseI" name="tiques"​>Tiques: </label></div>
-            <div><label class="campoAnamneseI" name="fobias"​>Fobias: </label></div>
-            <div><label class="campoAnamneseI" name="ansiedade"​>Ansiedade: </label></div>
-            <div><label class="campoAnamneseI" name="medo"​>Medo: </label></div>
-            <div><label class="campoAnamneseI" name="birra"​>Birra: </label></div>
-            <div><label class="campoAnamneseI" name="ciumes"​>Cíumes: </label></div>
+            <div><label class="campoAnamneseI" name="tiques" ​>Tiques: </label></div>
+            <div><label class="campoAnamneseI" name="fobias" ​>Fobias: </label></div>
+            <div><label class="campoAnamneseI" name="ansiedade" ​>Ansiedade: </label></div>
+            <div><label class="campoAnamneseI" name="medo" ​>Medo: </label></div>
+            <div><label class="campoAnamneseI" name="birra" ​>Birra: </label></div>
+            <div><label class="campoAnamneseI" name="ciumes" ​>Cíumes: </label></div>
             <div><label class="campoAnamneseI" name="observacoes">Observacões: </label></div>
         </div>
     </div>
@@ -209,27 +209,28 @@ $cpf = $_SESSION['cpf'];
 
 
     <h1>Prontuario</h1>
-    <form>
-        <label for="dataProcedimento">Data do procedimento</label>
-        <input type="date" name="dataProcedimento" id="dataProcedimento">
-        <label for="procedimento">Procedimento realizado</label>
-        <input type="text" name="procedimento" id="procedimentoTexto">
-        <input type="hidden" if="buffer">
-        <button id="botaoAdicionar">+</button>
-    </form>
-    <table id="prontuarioTabela">
-        <thead>
-            <tr>
-                <th>Data do procedimento</th>
-                <th>Procedimentos realizados</th>
-                <th>Assinatura</th>
-            </tr>
+    
+    <label for="dataProcedimento">Data do procedimento</label>
+    <input type="date" name="dataProcedimento" id="dataProcedimento">
+    <label for="procedimento">Procedimento realizado</label>
+    <input type="text" name="procedimento" id="procedimentoTexto">
+    <input type="hidden" if="buffer">
+    <button id="botaoAdicionar">+</button>
+    
+    <div class='secao'>
+        <table id="prontuarioTabela">
+            <thead>
+                <tr>
+                    <th>Data do procedimento</th>
+                    <th>Procedimentos realizados</th>
+                </tr>
 
-        </thead>
+            </thead>
 
-        <tbody>
+            <tbody>
 
-        </tbody>
+            </tbody>
+    </div>
     </table>
     <button id="salvarProcedimentos">Salvar</button>
     <script src="/components/js/prontuario/main.js"></script>
@@ -259,38 +260,3 @@ $cpf = $_SESSION['cpf'];
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
