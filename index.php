@@ -14,7 +14,7 @@
         <input type="password" name="senha">
         <button id="botaoEntrar">Entrar</button>
     </div>
-    <script src="/components/js/login/main.js"></script>
+    <script src="/components/js/index/main.js"></script>
     <script>main();</script>
 
 </body>

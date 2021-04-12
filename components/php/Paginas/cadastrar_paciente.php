@@ -231,10 +231,10 @@
 
         </div>
 
-        <script src="/components/js/index/main.js"></script>
-        <script src="/components/js/index/listeners.js"></script>
-        <script src="/components/js/index/validacoes.js"></script>
-        <script src="/components/js/index/paciente.js"></script>
+        <script src="/components/js/cadastrar_paciente/main.js"></script>
+        <script src="/components/js/cadastrar_paciente/listeners.js"></script>
+        <script src="/components/js/cadastrar_paciente/validacoes.js"></script>
+        <script src="/components/js/cadastrar_paciente/paciente.js"></script>
         <script src="/components/js/public/validacoes.js"></script>
         <script>
             main();
