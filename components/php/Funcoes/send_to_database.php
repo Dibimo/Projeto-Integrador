@@ -9,6 +9,8 @@ $paciente = $_SESSION['paciente']; //recebe paciente da página anterior anterio
 $anamneseDados = (json_decode($_POST['buffer'], true));
 $paciente->setAnamnese($anamneseDados); //salvando respostas no objeto
 
+session_start();
+$_SESSION['cpf'] = $paciente->getCpf();
 
 inserePaciente($paciente);
 header("Location: ..\\Paginas\\prontuario.php"); //TROCAR
