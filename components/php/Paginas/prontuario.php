@@ -49,66 +49,66 @@ $cpf = $_SESSION['cpf'];
         </div>
     </div>
 
-    
+
     <div id="dadosEndereco" class="secao">
         <div>
             <h3>Endereço</h3>
         </div>
         <div>
-            <div><label class="campoEndereco">Rua: </label></div>
-            <div><label class="campoEndereco">Numero: </label></div>
-            <div><label class="campoEndereco">Complemento: </label></div>
-            <div><label class="campoEndereco">Bairro: </label></div>
-            <div><label class="campoEndereco">Cep: </label></div>
-            <div><label class="campoEndereco">Cidade: </label></div>
-            <div><label class="campoEndereco">Estado de Residência: </label></div>
+            <div><label class="campoEndereco" name="rua">Rua: </label></div>
+            <div><label class="campoEndereco" name="numero">Numero: </label></div>
+            <div><label class="campoEndereco" name="complemento">Complemento: </label></div>
+            <div><label class="campoEndereco" name="bairro">Bairro: </label></div>
+            <div><label class="campoEndereco" name="cidade">Cidade: </label></div>
+            <div><label class="campoEndereco" name="estado_mora">Estado de Residência: </label></div>
+            <div><label class="campoEndereco" name="cep">Cep: </label></div>
         </div>
     </div>
-    
+
 
     <div class="secao">
         <div>
             <h3>Anamnese Geral</h3>
             <h4>Queixa Principal</h4>
-            <div><label class="campoAnamneseG">Queixa Principal: </label></div>
-            <div><label class="campoAnamneseG">Histórico da Doença: </label></div>
+            <div><label class="campoAnamneseG" name="queix_princ">Queixa Principal: </label></div>
+            <div><label class="campoAnamneseG" name="historico">Histórico da Doença: </label></div>
         </div>
     </div>
 
     <div class="secao">
         <div class='secao'>
             <h3>Histórico médico</h3>
-            <div><label class="campoAnamneseG">Hemorragia: </label></div>
-            <div><label class="campoAnamneseG">Reumatismo: </label></div>
-            <div><label class="campoAnamneseG">Alergia: </label></div>
-            <div><label class="campoAnamneseG">Distúrbio cardiovascular: </label></div>
-            <div><label class="campoAnamneseG">Gastriste: </label></div>
-            <div><label class="campoAnamneseG">Diabetico: </label></div>
-            <div><label class="campoAnamneseG">Já teve desmaio: </label></div>
-            <div><label class="campoAnamneseG">Esta sob Tratamento: </label></div>
-            <div><label class="campoAnamneseG">Esta tomando Medicamento: </label></div>
-            <div><label class="campoAnamneseG">Sofreu Opercão: </label></div>
+            <div><label class="campoAnamneseG" name="hemorragia">Hemorragia: </label></div>
+            <div><label class="campoAnamneseG" name="reumatismo">Reumatismo: </label></div>
+            <div><label class="campoAnamneseG" name="alergia">Alergia: </label></div>
+            <div><label class="campoAnamneseG" name="cardio">Distúrbio cardiovascular: </label></div>
+            <div><label class="campoAnamneseG" name="gastriste">Gastriste: </label></div>
+            <div><label class="campoAnamneseG" name="diabetico">Diabetico: </label></div>
+            <div><label class="campoAnamneseG" name="desmaio">Já teve desmaio: </label></div>
+            <div><label class="campoAnamneseG" name="tratamento">Esta sob Tratamento: </label></div>
+            <div><label class="campoAnamneseG" name="medicamento">Esta tomando Medicamento: </label></div>
+            <div><label class="campoAnamneseG" name="opercao">Sofreu Opercão: </label></div>
         </div>
         <div class="secao">
             <h3>Sofreu/Sofre</h3>
-            <div><label class="campoAnamneseG">Manias: </label></div>
-            <div><label class="campoAnamneseG">Depressão: </label></div>
-            <div><label class="campoAnamneseG">Tuberculose: </label></div>
-            <div><label class="campoAnamneseG">Sarampo: </label></div>
-            <div><label class="campoAnamneseG">Sifilis: </label></div>
-            <div><label class="campoAnamneseG">Caxumba: </label></div>
-            <div><label class="campoAnamneseG">Hepatite: </label></div>
-            <div><label class="campoAnamneseG">Varicela: </label></div>
-            <div><label class="campoAnamneseG">AIDS: </label></div>
+            <div><label class="campoAnamneseG" name="manias">Manias: </label></div>
+            <div><label class="campoAnamneseG" name="depressao">Depressão: </label></div>
+            <div><label class="campoAnamneseG" name="tuberculose">Tuberculose: </label></div>
+            <div><label class="campoAnamneseG" name="sarampo">Sarampo: </label></div>
+            <div><label class="campoAnamneseG" name="sifilis">Sifilis: </label></div>
+            <div><label class="campoAnamneseG" name="caxumba">Caxumba: </label></div>
+            <div><label class="campoAnamneseG" name="hepatite">Hepatite: </label></div>
+            <div><label class="campoAnamneseG" name="varicela">Varicela: </label></div>
+            <div><label class="campoAnamneseG" name="aids">AIDS: </label></div>
         </div>
         <div class="secao">
             <h3>Outras</h3>
-            <div><label class="campoAnamneseG">Outra: </label></div>
+            <div><label class="campoAnamneseG" name="outra">Outra: </label></div>
         </div>
         <div class='secao'>
             <h3>Fumante</h3>
-            <div><label class="campoAnamneseG">Fumante: </label></div>
-            <div><label class="campoAnamneseG">Frequencia de fumo: </label></div>
+            <div><label class="campoAnamneseG" name="fumante">Fumante: </label></div>
+            <div><label class="campoAnamneseG" name="fuman_freque">Frequencia de fumo: </label></div>
         </div>
     </div>
 
@@ -120,94 +120,94 @@ $cpf = $_SESSION['cpf'];
     <div class="secao">
         <div class='secao'>
             <h3 class="AnamneseI">Conduta da Criança</h3>
-            <div><label class="campoAnamneseI">Historia da Gestação: </label></div>
-            <div><label class="campoAnamneseI">Tipo de parto: </label></div>
-            <div><label class="campoAnamneseI">Houveram problemas no parto: </label></div>
-            <div><label class="campoAnamneseI">Amamentação: </label></div>
-            <div><label class="campoAnamneseI">Já foi dito para não tomar anestesia: </label></div>
-            <div><label class="campoAnamneseI">Já teve doença grave: </label></div>
-            <div><label class="campoAnamneseI">Já foi vacinada: </label></div>
+            <div><label class="campoAnamneseI" name="historiag"​>Historia da Gestação: </label></div>
+            <div><label class="campoAnamneseI" name="tipoparto"​>Tipo de parto: </label></div>
+            <div><label class="campoAnamneseI" name="problemap"​>Houveram problemas no parto: </label></div>
+            <div><label class="campoAnamneseI" name="amamentacao"​>Amamentação: </label></div>
+            <div><label class="campoAnamneseI" name="anestesia"​>Já foi dito para não tomar anestesia: </label></div>
+            <div><label class="campoAnamneseI" name="doenca_grave"​>Já teve doença grave: </label></div>
+            <div><label class="campoAnamneseI" name="vacinada"​>Já foi vacinada: </label></div>
         </div>
         <div class='secao'>
             <h4 class="AnamneseI">Durente os dois primeiros anos</h4>
-            <div><label class="campoAnamneseI">Sentou: </label></div>
-            <div><label class="campoAnamneseI">Engatinhou: </label></div>
-            <div><label class="campoAnamneseI">Andou: </label></div>
-            <div><label class="campoAnamneseI">Falou: </label></div>
-            <div><label class="campoAnamneseI">Dificuldades de aprendizado: </label></div>
+            <div><label class="campoAnamneseI" name="sentou"​>Sentou: </label></div>
+            <div><label class="campoAnamneseI" name="engatinhou"​>Engatinhou: </label></div>
+            <div><label class="campoAnamneseI" name="andou"​>Andou: </label></div>
+            <div><label class="campoAnamneseI" name="falou"​>Falou: </label></div>
+            <div><label class="campoAnamneseI" name="dificuldade"​>Dificuldades de aprendizado: </label></div>
         </div>
         <div class='secao'>
             <h4 class="AnamneseI">Estado normal</h4>
-            <div><label class="campoAnamneseI">Alegre: </label></div>
-            <div><label class="campoAnamneseI">Triste: </label></div>
-            <div><label class="campoAnamneseI">Timido: </label></div>
-            <div><label class="campoAnamneseI">Tranquilo: </label></div>
-            <div><label class="campoAnamneseI">Inquieto: </label></div>
-            <div><label class="campoAnamneseI">Assustado: </label></div>
+            <div><label class="campoAnamneseI" name="alegre"​>Alegre: </label></div>
+            <div><label class="campoAnamneseI" name="triste"​>Triste: </label></div>
+            <div><label class="campoAnamneseI" name="timido"​>Timido: </label></div>
+            <div><label class="campoAnamneseI" name="tranquilo"​>Tranquilo: </label></div>
+            <div><label class="campoAnamneseI" name="inquieto"​>Inquieto: </label></div>
+            <div><label class="campoAnamneseI" name="assustado"​>Assustado: </label></div>
         </div>
         <div class='secao'>
             <h4>Sono</h4>
-            <div><label class="campoAnamneseI"></label></div>
+            <div><label class="campoAnamneseI" name="sono"​></label></div>
         </div>
         <div class='secao'>
             <h4>Físico</h4>
-            <div><label class="campoAnamneseI">Postura Normal: </label></div>
-            <div><label class="campoAnamneseI">Postura Alterada: </label></div>
-            <div><label class="campoAnamneseI">Fonação normal: </label></div>
-            <div><label class="campoAnamneseI">Disturbios de fala: </label></div>
-            <div><label class="campoAnamneseI">Paralisia: </label></div>
-            <div><label class="campoAnamneseI">Enurese: </label></div>
-            <div><label class="campoAnamneseI">Controle os esfincteres: </label></div>
+            <div><label class="campoAnamneseI" name="posturanor"​>Postura Normal: </label></div>
+            <div><label class="campoAnamneseI" name="posturaalt"​>Postura Alterada: </label></div>
+            <div><label class="campoAnamneseI" name="fonacaonor"​>Fonação normal: </label></div>
+            <div><label class="campoAnamneseI" name="disturb_fala"​>Disturbios de fala: </label></div>
+            <div><label class="campoAnamneseI" name="paralisia"​>Paralisia: </label></div>
+            <div><label class="campoAnamneseI" name="enurese"​>Enurese: </label></div>
+            <div><label class="campoAnamneseI" name="ctrl_esfinct"​>Controle os esfincteres: </label></div>
         </div>
         <div class='secao'>
             <h4>Alimentação e sociabilidade</h4>
-            <div><label class="campoAnamneseI">Alimentacão: </label></div>
-            <div><label class="campoAnamneseI">Social: </label></div>
+            <div><label class="campoAnamneseI" name="alimentacao"​>Alimentacão: </label></div>
+            <div><label class="campoAnamneseI" name="social"​>Social: </label></div>
         </div>
         <div class='secao'>
             <h4>Possui</h4>
-            <div><label class="campoAnamneseI">Tiques: </label></div>
-            <div><label class="campoAnamneseI">Fobias: </label></div>
-            <div><label class="campoAnamneseI">Ansiedade: </label></div>
-            <div><label class="campoAnamneseI">Medo: </label></div>
-            <div><label class="campoAnamneseI">Birra: </label></div>
-            <div><label class="campoAnamneseI">Cíumes: </label></div>
-            <div><label class="campoAnamneseI">Observacões: </label></div>
+            <div><label class="campoAnamneseI" name="tiques"​>Tiques: </label></div>
+            <div><label class="campoAnamneseI" name="fobias"​>Fobias: </label></div>
+            <div><label class="campoAnamneseI" name="ansiedade"​>Ansiedade: </label></div>
+            <div><label class="campoAnamneseI" name="medo"​>Medo: </label></div>
+            <div><label class="campoAnamneseI" name="birra"​>Birra: </label></div>
+            <div><label class="campoAnamneseI" name="ciumes"​>Cíumes: </label></div>
+            <div><label class="campoAnamneseI" name="observacoes">Observacões: </label></div>
         </div>
     </div>
 
-    
+
     <div class="secao duasColunas">
         <div class='secao'>
             <h3>Avaliação fisica</h3>
-            <div><label class="campoAnamneseG">Labios: </label></div>
-            <div><label class="campoAnamneseG">Mucosa Jugal: </label></div>
-            <div><label class="campoAnamneseG">Língua: </label></div>
-            <div><label class="campoAnamneseG">Soalho da boca: </label></div>
-            <div><label class="campoAnamneseG">Palato Duro: </label></div>
-            <div><label class="campoAnamneseG">Garganta: </label></div>
-            <div><label class="campoAnamneseG">Palato Mole: </label></div>
-            <div><label class="campoAnamneseG">Mucosa Alveolar: </label></div>
-            <div><label class="campoAnamneseG">Gengiva: </label></div>
-            <div><label class="campoAnamneseG">Glândulas Salivares: </label></div>
-            <div><label class="campoAnamneseG">Linfonodo: </label></div>
-            <div><label class="campoAnamneseG">ATM: </label></div>
-            <div><label class="campoAnamneseG">Musculos Mastigadores: </label></div>
-            <div><label class="campoAnamneseG">Oclusão: </label></div>
-            <div><label class="campoAnamneseG">Alterações: </label></div>
+            <div><label class="campoAnamneseG" name="labios">Labios: </label></div>
+            <div><label class="campoAnamneseG" name="mucosaj">Mucosa Jugal: </label></div>
+            <div><label class="campoAnamneseG" name="lingua">Língua: </label></div>
+            <div><label class="campoAnamneseG" name="soalho">Soalho da boca: </label></div>
+            <div><label class="campoAnamneseG" name="palatod">Palato Duro: </label></div>
+            <div><label class="campoAnamneseG" name="garganta">Garganta: </label></div>
+            <div><label class="campoAnamneseG" name="palatom">Palato Mole: </label></div>
+            <div><label class="campoAnamneseG" name="mucosaa">Mucosa Alveolar: </label></div>
+            <div><label class="campoAnamneseG" name="gengiva">Gengiva: </label></div>
+            <div><label class="campoAnamneseG" name="glandulas">Glândulas Salivares: </label></div>
+            <div><label class="campoAnamneseG" name="linfonodo">Linfonodo: </label></div>
+            <div><label class="campoAnamneseG" name="atm">ATM: </label></div>
+            <div><label class="campoAnamneseG" name="muscmas">Musculos Mastigadores: </label></div>
+            <div><label class="campoAnamneseG" name="oclusao">Oclusão: </label></div>
+            <div><label class="campoAnamneseG" name="alteracoes">Alterações: </label></div>
         </div>
     </div>
     <div class='secao duasColunas'>
         <h3>Exames e diagnosticos</h3>
         <div>
-            <div><label class="campoAnamneseG">Diagnostico Presuntivo: </label></div>
-            <div><label class="campoAnamneseG">Exames complementares: </label></div>
-            <div><label class="campoAnamneseG">Diagnostico Definitivo: </label></div>
-            <div><label class="campoAnamneseG">Plano de Tratamento: </label></div>
+            <div><label class="campoAnamneseG" name="diagnosp">Diagnostico Presuntivo: </label></div>
+            <div><label class="campoAnamneseG" name="examec">Exames complementares: </label></div>
+            <div><label class="campoAnamneseG" name="diagnosd">Diagnostico Definitivo: </label></div>
+            <div><label class="campoAnamneseG" name="planotrat">Plano de Tratamento: </label></div>
         </div>
     </div>
 
-    
+
     <h1>Prontuario</h1>
     <form>
         <label for="dataProcedimento">Data do procedimento</label>
@@ -241,17 +241,56 @@ $cpf = $_SESSION['cpf'];
         var endereco = <?= (obtemDadosTabela($cpf, 'enderecos')); ?>;
         var anamneseGeral = <?= (obtemDadosTabela($cpf, 'anamnese_geral')); ?>;
         var anamneseInfantil = <?= (obtemDadosTabela($cpf, 'anamnese_infantil')); ?>;
+        console.log(Object.keys(endereco));
+        console.log(Object.keys(anamneseGeral));
+        console.log(Object.keys(anamneseInfantil));
+
         montaProntuario(prontuarioBruto);
 
-        insereDados(dadosPessoais, ".campoPessoal");
-        insereDados(endereco, ".campoEndereco", ['nome_paciente', 'cpf_paciente']);
-        insereDados(anamneseGeral, ".campoAnamneseG", ['nome_paciente', 'cpf_paciente']);
+        insereDados(dadosPessoais);
+        insereDados(endereco, ['nome_paciente', 'cpf_paciente']);
+        insereDados(anamneseGeral, ['nome_paciente', 'cpf_paciente']);
         if (anamneseInfantil === null) { //se anamneseInfantil for nulo quer dizer que não há linhas na tabela
             removeAnamneseInfatil(); //logo, os campos destinados a isso podem ser removidos
         } else {
-            insereDados(anamneseInfantil, ".campoAnamneseI", ['nome_paciente', 'cpf_paciente']);
+            insereDados(anamneseInfantil, ['nome_paciente', 'cpf_paciente']);
         }
     </script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

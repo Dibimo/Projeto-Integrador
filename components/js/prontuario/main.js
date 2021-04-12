@@ -69,9 +69,7 @@ function montaLinhaTabela(procendimento,classe) {
 
 }
 
-function insereDados(dados,nomeSecao,excoes) {
-    var secao = document.querySelectorAll(nomeSecao); //seleciona os campos de destino das informações
-
+function insereDados(dados,excoes) {
     if(excoes !== undefined){ //caso hajam campos que estão na tabela do banco, mas não precisam estar
         //na página do cliente:
         for (let i = 0; i < excoes.length; i++) {
@@ -79,9 +77,9 @@ function insereDados(dados,nomeSecao,excoes) {
         }
     }
     var chaves = Object.keys(dados); //obtem-se todos os nomes de propriedades
-    for (let i = 0; i < secao.length; i++) { 
-        secao[i].textContent = secao[i].textContent + dados[chaves[i]]; //atribui-se os valores obtidos do banco de dados
-        
+    for (let i = 0; i < chaves.length; i++) { 
+        // secao[i].textContent = secao[i].textContent + dados[chaves[i]]; //atribui-se os valores obtidos do banco de dados
+        document.getElementsByName(chaves[i])[0].textContent += dados[chaves[i]];
     }
     
 }
