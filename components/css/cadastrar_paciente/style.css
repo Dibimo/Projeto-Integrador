@@ -1,0 +1,46 @@
+
+.borda{
+    border: ridge;    
+    border-color: black;
+    background-color: rgb(255, 253, 253);
+    padding-top: 5%;
+    padding-bottom: 6%;
+    padding-left: 7px;
+    padding-right: 7px;    
+    border-width: 2px;
+    font-size: 20px;
+    line-height: 90px;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;    
+    text-align:justify;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: rgb(230, 230, 230); 
+}
+
+h2{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.botao{
+    border: 1px solid #ef1d26;
+    padding: 10px 20px;
+    background: #ef1d26;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.campo-nao-preenchido{
+    box-shadow: 0 0 10px red;
+}
+
