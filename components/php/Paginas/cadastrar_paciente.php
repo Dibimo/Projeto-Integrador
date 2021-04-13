@@ -20,7 +20,7 @@
         <div >
 
             <!-- Início do Form-->
-            <form id="formulario" action="components/php/Funcoes/constroi_paciente.php" method="post" class="borda">
+            <form id="formulario" action="/components/php/Funcoes/constroi_paciente.php" method="post" class="borda">
 
                 
                 <!-- 
