@@ -218,7 +218,7 @@ $cpf = $_SESSION['cpf'];
     <label for="procedimento">Procedimento realizado</label>
     <input type="text" name="procedimento" id="procedimentoTexto">
     <input type="hidden" if="buffer">
-    <button id="botaoAdicionar">+</button>
+    <button class="botao" id="botaoAdicionar">+</button>
     
     <div class='secao'>
         <table id="prontuarioTabela">
@@ -235,7 +235,7 @@ $cpf = $_SESSION['cpf'];
             </tbody>
     </div>
     </table>
-    <button id="salvarProcedimentos">Salvar</button>
+    <button class="botao" id="salvarProcedimentos">Salvar</button>
     <script src="/components/js/prontuario/main.js"></script>
     <script>
         var cpf = <?= $cpf ?>;

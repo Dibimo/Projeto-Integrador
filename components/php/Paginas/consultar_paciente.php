@@ -22,7 +22,7 @@
 
         <hr>
         <h1>Cadastrar paciente</h1>
-        <button id="irParaCadastro">Cadastrar</button>
+        <button id="irParaCadastro" class="botao">Cadastrar</button>
         
         <script src="/components/js/consultar_paciente/main.js"></script>
         <script>main();</script>

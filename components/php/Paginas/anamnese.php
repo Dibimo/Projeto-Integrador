@@ -576,7 +576,7 @@ $paciente = $_SESSION['paciente'];
                 <div>
                     <input type="hidden" name="buffer" id="buffer">
                 </div>
-                <button id="enviar">Enviar</button>
+                <button id="enviar" class="botao">Enviar</button>
             </form>
         </div>
 

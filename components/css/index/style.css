@@ -22,11 +22,6 @@ body{
     background-color: rgb(230, 230, 230); 
 }
 
-h2{
-    font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
 
 .botao{
     border: 1px solid #ef1d26;
@@ -39,8 +34,3 @@ h2{
     overflow: hidden;
     transition: 1s;
 }
-
-.campo-nao-preenchido{
-    box-shadow: 0 0 10px red;
-}
-

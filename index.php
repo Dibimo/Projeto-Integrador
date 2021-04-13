@@ -18,7 +18,7 @@
             <label for="senha">Senha</label>
             <input type="password" name="senha" style="height: 5%; width: 92%; font-size: 20px;">
             <br>
-            <button id="botaoEntrar">Entrar</button>
+            <button id="botaoEntrar" class="botao">Entrar</button>
         </div>
         <script src="/components/js/index/main.js"></script>
         <script>main();</script>

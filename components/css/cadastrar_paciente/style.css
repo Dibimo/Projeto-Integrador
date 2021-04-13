@@ -36,8 +36,7 @@ h2{
     color: white;
     cursor: pointer;
     position: relative;
-    overflow: hidden;
-    transition: 1s;
+    
 }
 
 .campo-nao-preenchido{
