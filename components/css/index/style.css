@@ -40,4 +40,7 @@ h2{
     transition: 1s;
 }
 
+.campo-nao-preenchido{
+    box-shadow: 0 0 10px red;
+}
 

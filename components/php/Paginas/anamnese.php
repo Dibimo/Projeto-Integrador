@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Questionario</title>
-    <link rel="stylesheet" href="/components/css/public/style.css">
+    <link rel="stylesheet" href="/components/css/anamnese/style.css">
 </head>
 
 <body>
