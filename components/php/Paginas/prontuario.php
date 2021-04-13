@@ -16,6 +16,9 @@ $cpf = $_SESSION['cpf'];
 </head>
 
 <body>
+    
+    <img src="/Assets/img_logo.png" height="200" width="300" style="padding-left: 30px;">
+    
     <h1>Dados do paciente</h1>
     <h3>Dados Pessoais</h3>
     <div id="dadosPessoais" class="secao quatroColunas">
