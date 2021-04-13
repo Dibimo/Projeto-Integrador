@@ -18,8 +18,8 @@
         private string $nomeMae;
         private string $naturalidadePai;
         private string $naturalidadeMae;
-        private int $contato;
-        private int $cpf;
+        private string $contato;
+        private string $cpf;
 
         //dados fisicos
         private float $peso;
@@ -123,7 +123,7 @@
             return $this->nomePai;
         }
  
-        public function getContato(): int
+        public function getContato(): string
         {
             return $this->contato;
         }
