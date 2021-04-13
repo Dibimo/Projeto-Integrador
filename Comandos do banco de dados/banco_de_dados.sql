@@ -4,13 +4,13 @@ use banco_pacientes;
 
 create table pacientes(
 	#dados pessoais
-	nome varchar(50) not null,
+	nome_paciente varchar(50) not null,
     data_nascimento date not null,
     sexo char not null,
     escolaridade varchar(12) not null,
     profissao varchar(25) not null,
-    rg varchar(25) not null,
-    cpf varchar(11) not null,
+    rg_paciente varchar(25) not null,
+    cpf_paciente varchar(11) not null,
     estado_civil varchar(10) not null,
     natu varchar(50) not null,
     estado_nasc varchar(2) not null,
@@ -24,10 +24,9 @@ create table pacientes(
     peso float not null,
     altura float not null,
     cor varchar(6) not null,
-    primary key (cpf,rg)
+    primary key (cpf_paciente,rg_paciente)
 );
 
-select * from pacientes where cpf='1067001107845';
 
 create table enderecos(
 	nome_paciente varchar (50) not null,
@@ -39,13 +38,9 @@ create table enderecos(
     cep varchar(8) not null,
     cidade varchar(50) not null,
     estado_mora varchar(2) not null,
-    foreign key (cpf_paciente) references pacientes(cpf),
+    foreign key (cpf_paciente) references pacientes(cpf_paciente),
     primary key (cpf_paciente)
 );
-
-
-
-drop table enderecos;
 
 create table anamnese_geral(
 	cpf_paciente varchar(11) not null,
@@ -95,11 +90,9 @@ create table anamnese_geral(
     examec varchar(100) not null,
     diagnosd varchar(100) not null,
     planotrat varchar(100) not null,
-    constraint anamPaciente foreign key (cpf_paciente) references pacientes(cpf),
+    foreign key (cpf_paciente) references pacientes(cpf_paciente),
     primary key (cpf_paciente)
 );
-
-
 
 create table anamnese_infantil(
 	nome_paciente varchar(50) not null,
@@ -139,7 +132,7 @@ create table anamnese_infantil(
     birra varchar(10),
     ciumes varchar(10),
     observacoes varchar(100),
-    constraint anamEndereco foreign key (cpf_paciente) references pacientes(cpf),
+    foreign key (cpf_paciente) references pacientes(cpf_paciente),
     primary key (cpf_paciente)
 );
 
@@ -147,28 +140,11 @@ create table prontuarios(
 	cpf_paciente varchar(11),
     data_procedimento date,
     procedimento varchar(50),
-    foreign key (cpf_paciente) references pacientes(cpf)
+    foreign key (cpf_paciente) references pacientes(cpf_paciente)
 );
 
-insert into prontuarios values('10054547016','2021-04-08','Procedimento 2');
-
-
-show tables;
-
-drop table anamnese_geral;
-
-select * from prontuarios;
+select * from pacientes;
 select * from enderecos;
 select * from anamnese_geral;
 select * from anamnese_infantil;
-
-select * from pacientes;
-
-create table teste (nome char(10));
-insert into teste values('carol');
-insert into teste values('diogo');
-insert into teste values('leo');
-drop table enderecos;
-truncate pacientes;
-select nome from teste;
-drop database BANCO_PACIENTES;
+select * from prontuarios;
