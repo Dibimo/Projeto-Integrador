@@ -29,6 +29,12 @@ function main(cpf) {
             linhas[i].removeEventListener("dblclick",removerComDuploClick); //removendo evento de deleção
             linhas[i].classList.remove('novoProcedimento'); //removendo o estilo de novo procedimento
         }
+    });
+
+    var voltar = document.querySelector('#voltar');
+    voltar.addEventListener("click",function (event) {
+        event.preventDefault();
+        window.location.href = "/index.php";
     })
 }
 

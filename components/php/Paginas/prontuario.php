@@ -16,9 +16,9 @@ $cpf = $_SESSION['cpf'];
 </head>
 
 <body>
-    
+
     <img src="/Assets/img_logo.png" height="200" width="300" style="padding-left: 30px;">
-    
+
     <h1>Dados do paciente</h1>
     <h3>Dados Pessoais</h3>
     <div id="dadosPessoais" class="secao quatroColunas">
@@ -120,7 +120,7 @@ $cpf = $_SESSION['cpf'];
 
 
 
-    <div class="secao">
+    <div class="secao AnamneseI">
         <div class='secao'>
             <h3 class="AnamneseI">Conduta da Criança</h3>
             <div><label class="campoAnamneseI" name="historiag" ​>Historia da Gestação: </label></div>
@@ -131,7 +131,7 @@ $cpf = $_SESSION['cpf'];
             <div><label class="campoAnamneseI" name="doenca_grave" ​>Já teve doença grave: </label></div>
             <div><label class="campoAnamneseI" name="vacinada" ​>Já foi vacinada: </label></div>
         </div>
-        <div class='secao'>
+        <div class='secao AnamneseI'>
             <h4 class="AnamneseI">Durente os dois primeiros anos</h4>
             <div><label class="campoAnamneseI" name="sentou" ​>Sentou: </label></div>
             <div><label class="campoAnamneseI" name="engatinhou" ​>Engatinhou: </label></div>
@@ -139,7 +139,7 @@ $cpf = $_SESSION['cpf'];
             <div><label class="campoAnamneseI" name="falou" ​>Falou: </label></div>
             <div><label class="campoAnamneseI" name="dificuldade" ​>Dificuldades de aprendizado: </label></div>
         </div>
-        <div class='secao'>
+        <div class='secao AnamneseI'>
             <h4 class="AnamneseI">Estado normal</h4>
             <div><label class="campoAnamneseI" name="alegre" ​>Alegre: </label></div>
             <div><label class="campoAnamneseI" name="triste" ​>Triste: </label></div>
@@ -148,11 +148,11 @@ $cpf = $_SESSION['cpf'];
             <div><label class="campoAnamneseI" name="inquieto" ​>Inquieto: </label></div>
             <div><label class="campoAnamneseI" name="assustado" ​>Assustado: </label></div>
         </div>
-        <div class='secao'>
+        <div class='secao AnamneseI'>
             <h4>Sono</h4>
             <div><label class="campoAnamneseI" name="sono" ​></label></div>
         </div>
-        <div class='secao'>
+        <div class='secao AnamneseI'>
             <h4>Físico</h4>
             <div><label class="campoAnamneseI" name="posturanor" ​>Postura Normal: </label></div>
             <div><label class="campoAnamneseI" name="posturaalt" ​>Postura Alterada: </label></div>
@@ -162,12 +162,12 @@ $cpf = $_SESSION['cpf'];
             <div><label class="campoAnamneseI" name="enurese" ​>Enurese: </label></div>
             <div><label class="campoAnamneseI" name="ctrl_esfinct" ​>Controle os esfincteres: </label></div>
         </div>
-        <div class='secao'>
+        <div class='secao AnamneseI'>
             <h4>Alimentação e sociabilidade</h4>
             <div><label class="campoAnamneseI" name="alimentacao" ​>Alimentacão: </label></div>
             <div><label class="campoAnamneseI" name="social" ​>Social: </label></div>
         </div>
-        <div class='secao'>
+        <div class='secao AnamneseI'>
             <h4>Possui</h4>
             <div><label class="campoAnamneseI" name="tiques" ​>Tiques: </label></div>
             <div><label class="campoAnamneseI" name="fobias" ​>Fobias: </label></div>
@@ -212,14 +212,14 @@ $cpf = $_SESSION['cpf'];
 
 
     <h1>Prontuario</h1>
-    
+
     <label for="dataProcedimento">Data do procedimento</label>
     <input type="date" name="dataProcedimento" id="dataProcedimento">
     <label for="procedimento">Procedimento realizado</label>
     <input type="text" name="procedimento" id="procedimentoTexto">
     <input type="hidden" if="buffer">
     <button class="botao" id="botaoAdicionar">+</button>
-    
+
     <div class='secao'>
         <table id="prontuarioTabela">
             <thead>
@@ -236,6 +236,7 @@ $cpf = $_SESSION['cpf'];
     </div>
     </table>
     <button class="botao" id="salvarProcedimentos">Salvar</button>
+    <button class="botao" id="voltar">Voltar</button>
     <script src="/components/js/prontuario/main.js"></script>
     <script>
         var cpf = <?= $cpf ?>;
@@ -245,9 +246,6 @@ $cpf = $_SESSION['cpf'];
         var endereco = <?= (obtemDadosTabela($cpf, 'enderecos')); ?>;
         var anamneseGeral = <?= (obtemDadosTabela($cpf, 'anamnese_geral')); ?>;
         var anamneseInfantil = <?= (obtemDadosTabela($cpf, 'anamnese_infantil')); ?>;
-        console.log(Object.keys(endereco));
-        console.log(Object.keys(anamneseGeral));
-        console.log(Object.keys(anamneseInfantil));
 
         montaProntuario(prontuarioBruto);
 
