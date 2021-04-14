@@ -81,6 +81,5 @@ function obtemAnamnese(form) {
         planoTratamento: form.planoTratamento.value,
         
     }
-    console.log(anamnese);
     return anamnese;
 }
