@@ -3,6 +3,11 @@ function main(){
     var botao = document.querySelector("#enviar");
     var buffer = document.querySelector("#buffer");
     botao.addEventListener("click",function (event) {
+        if(verificaCamposVaziosAnamnese()){ //se ha campos vazios
+            event.preventDefault();
+            document.querySelector("#erros").textContent = 'Há campos não preenchidos';
+            return;
+        }
         var anamnese = obtemAnamnese(form);
         buffer.value = JSON.stringify(anamnese);
     })
@@ -17,10 +22,9 @@ function main(){
                 return;
             }
             frequencia.style.display = 'none';
-        })
+        });
     });
 
     var checkboxs = document.querySelectorAll('input[type="checkbox"]');
     adicionaListeresCheckBoxs(checkboxs);
-
 }
