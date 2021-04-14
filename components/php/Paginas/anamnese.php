@@ -14,10 +14,10 @@ $paciente = $_SESSION['paciente'];
 </head>
 
 <body>
-    
+
     <div class="borda">
 
-    <img src="/Assets/img_logo.png" height="200" width="300" style="padding-left: 30px;">
+        <img src="/Assets/img_logo.png" height="200" width="300" style="padding-left: 30px;">
 
         <div class="conteiner">
             <form id="formulario" method="post" action="/components/php/Funcoes/send_to_database.php">
@@ -183,10 +183,6 @@ $paciente = $_SESSION['paciente'];
                                 <li>
                                     <label for="outra">Outra</label>
                                     <input type="text" name="outra" id="outra">
-                                    <input type="radio" value="true" name="resposta_sarampo">
-                                    <label for="true">Sim</label>
-                                    <input type="radio" value="false" name="resposta_sarampo">
-                                    <label for="false">Não</label>
                                 </li>
                             </ul>
                         <li>
@@ -203,6 +199,8 @@ $paciente = $_SESSION['paciente'];
                         </li>
                     </ol>
                     <hr>
+                </div>
+                <div class="anamneseI">
                     <ol>
                         <li>
                             <label for="historia_gestacao">História da gestação</label>
@@ -254,172 +252,172 @@ $paciente = $_SESSION['paciente'];
                             <label for="false">Não</label>
                         </li>
                     </ol>
-                </div>
-                <hr>
-                <h3>Conduta da criança</h3>
 
-                <div>
-                    <label for="doisPrimeiros">Durante os 2 primeiros anos de vida:</label>
-                    <ul>
-                        <li>
-                            <input type="checkbox" name="sentou" id="sentou" value="false">
-                            <label>Sentou-se</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="engatinhou" id="engatinhou" value="false">
-                            <label>Engatinhou</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="andou" id="andou" value="false">
-                            <label>Andou</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="falou" id="falou" value="false">
-                            <label>Falou</label>
-                        </li>
-                    </ul>
-                </div>
+                    <hr>
+                    <h3>Conduta da criança</h3>
 
-                <div>
-                    <label for="hemorragia">No lar e na escola, teve/tem alguma dificuldade no aprendizado?</label>
-                    <input type="radio" value="true" name="resposta_dificuldade">
-                    <label for="true">Sim</label>
-                    <input type="radio" value="false" name="resposta_dificuldade">
-                    <label for="false">Não</label>
-                </div>
+                    <div>
+                        <label for="doisPrimeiros">Durante os 2 primeiros anos de vida:</label>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="sentou" id="sentou" value="false">
+                                <label>Sentou-se</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="engatinhou" id="engatinhou" value="false">
+                                <label>Engatinhou</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="andou" id="andou" value="false">
+                                <label>Andou</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="falou" id="falou" value="false">
+                                <label>Falou</label>
+                            </li>
+                        </ul>
+                    </div>
 
-                <div>
-                    <label for="estadoAnimico">Estado anímico:</label>
-                    <ul>
-                        <li>
-                            <input type="checkbox" name="alegre" id="alegre" value="false">
-                            <label>Alegre</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="triste" id="triste" value="false">
-                            <label>Triste</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="timido" id="timido" value="false">
-                            <label>Timido</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="tranquilo" id="tranquilo" value="false">
-                            <label>Tranquilo</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="inquieto" id="inquieto" value="false">
-                            <label>Inquieto</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="assustado" id="assustado" value="false">
-                            <label>Assustado</label>
-                        </li>
-                    </ul>
-                </div>
+                    <div>
+                        <label for="hemorragia">No lar e na escola, teve/tem alguma dificuldade no aprendizado?</label>
+                        <input type="radio" value="true" name="resposta_dificuldade">
+                        <label for="true">Sim</label>
+                        <input type="radio" value="false" name="resposta_dificuldade">
+                        <label for="false">Não</label>
+                    </div>
 
-                <div>
-                    <label for="sono">Tem sono:</label>
-                    <select name="sono" style="height : 5%; width: 25%; font-size: 20px;">
-                        <option value="">selecione--</option>
-                        <option value="tranquilo">Tranquilo</option>
-                        <option value="intranquilo">Intranquilo</option>
-                        <option value="terror_noturno">Terror noturno</option>
-                        <option value="pesadelos">Pesadelos</option>
-                        <option value="sonambulismo">Sonambulismo</option>
-                        <option value="insonia">Insônia</option>
-                    </select>
-                </div>
+                    <div>
+                        <label for="estadoAnimico">Estado anímico:</label>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="alegre" id="alegre" value="false">
+                                <label>Alegre</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="triste" id="triste" value="false">
+                                <label>Triste</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="timido" id="timido" value="false">
+                                <label>Timido</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="tranquilo" id="tranquilo" value="false">
+                                <label>Tranquilo</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="inquieto" id="inquieto" value="false">
+                                <label>Inquieto</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="assustado" id="assustado" value="false">
+                                <label>Assustado</label>
+                            </li>
+                        </ul>
+                    </div>
 
-                <div>
-                    <label for="condutaPsicomotora">Conduta Psicomotora:</label>
-                    <ul>
-                        <li>
-                            <input type="checkbox" name="postura_normal" id="postura_normal" value="false">
-                            <label>Postura normal </label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="postura_alterada" id="postura_alterada" value="false">
-                            <label>Postura Alterada</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="fonacao_normal" id="fonacao_normal" value="false">
-                            <label>Fonoção Normal</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="disturbios_fala" id="disturbios_fala" value="false">
-                            <label>Distúrbios da fala</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="paralisia" id="paralisia" value="false">
-                            <label>Alguma paralisia</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="enurese" id="enurese" value="false">
-                            <label>Enurese Noturna</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="esfincteres" id="esfincteres" value="false">
-                            <label>Descontrole dos esfíncteres</label>
-                        </li>
-                    </ul>
-                </div>
+                    <div>
+                        <label for="sono">Tem sono:</label>
+                        <select name="sono" style="height : 5%; width: 25%; font-size: 20px;">
+                            <option value="">selecione--</option>
+                            <option value="tranquilo">Tranquilo</option>
+                            <option value="intranquilo">Intranquilo</option>
+                            <option value="terror_noturno">Terror noturno</option>
+                            <option value="pesadelos">Pesadelos</option>
+                            <option value="sonambulismo">Sonambulismo</option>
+                            <option value="insonia">Insônia</option>
+                        </select>
+                    </div>
 
-                <div>
-                    <label for="alimentacao">Alimentação:</label>
-                    <select name="alimentacao" style="height : 5%; width: 25%; font-size: 20px;">
-                        <option value="">selecione--</option>
-                        <option value="normal">Normal</option>
-                        <option value="supra">Supra normal</option>
-                        <option value="rejeita">Rejeita</option>
-                    </select>
-                </div>
+                    <div>
+                        <label for="condutaPsicomotora">Conduta Psicomotora:</label>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="postura_normal" id="postura_normal" value="false">
+                                <label>Postura normal </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="postura_alterada" id="postura_alterada" value="false">
+                                <label>Postura Alterada</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="fonacao_normal" id="fonacao_normal" value="false">
+                                <label>Fonoção Normal</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="disturbios_fala" id="disturbios_fala" value="false">
+                                <label>Distúrbios da fala</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="paralisia" id="paralisia" value="false">
+                                <label>Alguma paralisia</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="enurese" id="enurese" value="false">
+                                <label>Enurese Noturna</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="esfincteres" id="esfincteres" value="false">
+                                <label>Descontrole dos esfíncteres</label>
+                            </li>
+                        </ul>
+                    </div>
 
-                <div>
-                    <label for="sociabilidade">Sociabilidade:</label>
-                    <select name="sociabilidade" style="height : 5%; width: 25%; font-size: 20px;">
-                        <option value="">selecione--</option>
-                        <option value="normal">Normal</option>
-                        <option value="agressiva">Agressiva</option>
-                        <option value="isolada">Isolada</option>
-                    </select>
-                </div>
+                    <div>
+                        <label for="alimentacao">Alimentação:</label>
+                        <select name="alimentacao" style="height : 5%; width: 25%; font-size: 20px;">
+                            <option value="">selecione--</option>
+                            <option value="normal">Normal</option>
+                            <option value="supra">Supra normal</option>
+                            <option value="rejeita">Rejeita</option>
+                        </select>
+                    </div>
 
-                <div>
-                    <label for="conduta">Apresenta alguma patologia de conduta:</label>
-                    <ul>
-                        <li>
-                            <input type="checkbox" name="tiques" id="tiques" value="false">
-                            <label>Tiques</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="fobias" id="fobias" value="false">
-                            <label>Fobias</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="ansiedade" id="ansiedade" value="false">
-                            <label>Ansiedade</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="medo" id="medo" value="false">
-                            <label>Medo</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="birra" id="birra" value="false">
-                            <label>Birra</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="ciumes" id="ciumes" value="false">
-                            <label>Ciúmes</label>
-                        </li>
-                    </ul>
-                </div>
+                    <div>
+                        <label for="sociabilidade">Sociabilidade:</label>
+                        <select name="sociabilidade" style="height : 5%; width: 25%; font-size: 20px;">
+                            <option value="">selecione--</option>
+                            <option value="normal">Normal</option>
+                            <option value="agressiva">Agressiva</option>
+                            <option value="isolada">Isolada</option>
+                        </select>
+                    </div>
 
-                <div>
-                    <label for="observacoes">Observações:</label>
-                    <textarea name="observacoes" id="observacoes" class="campo" rows="3" cols="75" style="font-size:20px;"></textarea>
-                </div>
+                    <div>
+                        <label for="conduta">Apresenta alguma patologia de conduta:</label>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="tiques" id="tiques" value="false">
+                                <label>Tiques</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="fobias" id="fobias" value="false">
+                                <label>Fobias</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="ansiedade" id="ansiedade" value="false">
+                                <label>Ansiedade</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="medo" id="medo" value="false">
+                                <label>Medo</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="birra" id="birra" value="false">
+                                <label>Birra</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="ciumes" id="ciumes" value="false">
+                                <label>Ciúmes</label>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <div>
+                        <label for="observacoes">Observações:</label>
+                        <textarea name="observacoes" id="observacoes" class="campo" rows="3" cols="75" style="font-size:20px;"></textarea>
+                    </div>
+                </div>
                 <hr>
 
                 <div>
@@ -578,14 +576,14 @@ $paciente = $_SESSION['paciente'];
                 </div>
                 <button id="enviar" class="botao">Enviar</button>
             </form>
+            <div id="erros"></div>
         </div>
 
     </div>
-
     <script src="/components/js/anamnese/main.js"></script>
     <script src="/components/js/anamnese/anamnese.js"></script>
     <script src="/components/js/anamnese/listeners.js"></script>
-    <script src="/components/js/public/validacoes.js"></script>
+    <script src="/components/js/anamnese/valicacoes.js"></script>
     <script>
         main()
     </script>
