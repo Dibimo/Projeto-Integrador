@@ -1,7 +1,7 @@
 function main() {
     var botao = document.querySelector("#botao-cadastrar");
+    var form = document.querySelector("#formulario");
     botao.addEventListener("click", function (event) {
-        var form = document.querySelector("#formulario");
         var camposObrigatorios = document.querySelectorAll(".obrigatorio");
         //verifica se há campo obrigatorios não preenchidos
         var haCamposVazios = verificaCamposVazios(camposObrigatorios); 
@@ -25,8 +25,13 @@ function main() {
         buffer.value = JSON.stringify(paciente);
 
     });
-    var campos = document.querySelectorAll("input, select"); //obtem todos os campos do fórmulario
-    adicionaListenerCampos(campos); //adiona um listener em todos eles
+
+    form.addEventListener("input",function (event) {
+        event.target.classList.remove("campo-nao-preenchido");
+        event.target.classList.add("campo-preenchido");
+
+    })
+    
     
     var camposNumericos = document.querySelectorAll(".campoNumerico"); //obtem apenas os campos númericos
     defineEscopoCampos(camposNumericos,/[^0-9,.-]/); //adiciona um lister especifico para eles
