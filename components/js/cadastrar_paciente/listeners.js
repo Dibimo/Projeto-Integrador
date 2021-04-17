@@ -1,11 +1,3 @@
-function adicionaListenerCampos(campos) {
-    for (let i = 0; i < campos.length; i++) {
-        campos[i].addEventListener("focus", function () {
-            campos[i].classList.remove("campo-nao-preenchido")
-        });
-
-    }
-}
 function defineEscopoCampos(campos, escopo) {
     for (let i = 0; i < campos.length; i++) {
         campos[i].addEventListener("input", function () {
