@@ -29,27 +29,21 @@ function main() {
     form.addEventListener("input",function (event) {
         event.target.classList.remove("campo-nao-preenchido");
         event.target.classList.add("campo-preenchido");
-
-    })
+    });
     
     
     var camposNumericos = document.querySelectorAll(".campoNumerico"); //obtem apenas os campos númericos
     defineEscopoCampos(camposNumericos,/[^0-9,.-]/); //adiciona um lister especifico para eles
     
-    var camposLetriticos = document.querySelectorAll(".campoAlfabetico");
-    defineEscopoCampos(camposLetriticos,/[^a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÔÕÖÚÇÑ ]/);
+    var camposAlfabeticos = document.querySelectorAll(".campoAlfabetico");
+    defineEscopoCampos(camposAlfabeticos,/[^a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÔÕÖÚÇÑ ]/);
 
 
     var campoCpf = document.querySelector("#cpf");
     campoCpf.addEventListener("blur", function () {
         var texto = campoCpf.value.replace(/[.,-]/g,""); //recebendo o texto sem os caracteres de separação
         if(texto.length >= 11){
-            var parte1 = texto.slice(0, 3);
-            var parte2 = texto.slice(3, 6);
-            var parte3 = texto.slice(6, 9);
-            var digitosVerificadores = texto.slice(9,11);
-            var textoFormatado = `${parte1}.${parte2}.${parte3}-${digitosVerificadores}`;
-            campoCpf.value = textoFormatado;
+            campoCpf.value = aplicaFormatacao(texto,/(\d{3})(\d{3})(\d{3})(\d{2})/,"$1.$2.$3-$4");
         }else{
             campoCpf.classList.add('campo-nao-preenchido');
         }
@@ -59,11 +53,7 @@ function main() {
     telefone.addEventListener("blur",function (){
         var texto = telefone.value.replace(/[-]/g, ""); //recebendo o texto sem os caracteres de separação
         if (texto.length >= 10) {
-            var ddd = texto.slice(0, 2);
-            var parte2 = texto.slice(-4);
-            var parte1 = texto.substring(texto.indexOf(ddd)+2,texto.indexOf(parte2));
-            var textoFormatado = `(${ddd}) ${parte1}-${parte2}`;
-            telefone.value = textoFormatado;
+            telefone.value = aplicaFormatacao(texto,/(\d{2})(\d{5})(\d{4})/,"($1) $2-$3");
         }else{
             telefone.classList.add('campo-nao-preenchido');
         }
@@ -73,10 +63,7 @@ function main() {
     cep.addEventListener("blur", function (){
         var texto = cep.value.replace(/[-]/g, ""); //recebendo o texto sem os caracteres de separação
         if (texto.length >= 7) {
-            var parte1 = texto.slice(0,5);
-            var parte2 = texto.slice(-3);
-            var textoFormatado = `${parte1}-${parte2}`;
-            cep.value = textoFormatado;
+            cep.value = aplicaFormatacao(texto,/(\d{5})(\d{3})/,"$1-$2");
         }else{
             cep.classList.add('campo-nao-preenchido');
         }
