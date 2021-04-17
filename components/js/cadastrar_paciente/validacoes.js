@@ -61,3 +61,8 @@ function removeNaoNumericos(texto) {
 function substituiVirgulaPorPonto(texto) {
     return texto = texto.replace(/[\,]/g,".");
 }
+
+function aplicaFormatacao(texto,expressao,organizacao) {
+    return texto.replace(expressao,organizacao);
+}
+
