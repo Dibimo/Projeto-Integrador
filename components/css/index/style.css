@@ -39,14 +39,3 @@ button{
     margin: 10px 0px;
 
 }
-
-button:active{
-	border: 0;
-}
-
-button[disabled=disabled], button:disabled {
-    background-color: gray;
-	border-color: darkgray;
-
-}
-
