@@ -34,7 +34,7 @@ function main(cpf) {
     var voltar = document.querySelector('#voltar');
     voltar.addEventListener("click",function (event) {
         event.preventDefault();
-        window.location.href = "/index.php";
+        window.location.href = "/index.html";
     })
 }
 
