@@ -41,5 +41,11 @@ h2{
 
 .campo-nao-preenchido{
     box-shadow: 0 0 10px red;
+    transition: 0.5s;
+}
+
+.campo-preenchido{
+    box-shadow: none;
+    transition: 0.5s;
 }
 
