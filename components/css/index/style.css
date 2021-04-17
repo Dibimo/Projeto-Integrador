@@ -22,15 +22,31 @@ body{
     background-color: rgb(230, 230, 230); 
 }
 
+button{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#ef1d26;
+	border-color: #4c0a04;
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
 
-.botao{
-    border: 1px solid #ef1d26;
-    padding: 10px 20px;
-    background: #ef1d26;
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: 1s;
 }
+
+button:active{
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
