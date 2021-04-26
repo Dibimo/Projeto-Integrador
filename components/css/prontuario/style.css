@@ -81,3 +81,7 @@ table {
 .botao#botaoAdicionar{
     padding: 2px 12px;
 }
+
+.invisivel{
+    display: none;
+}
