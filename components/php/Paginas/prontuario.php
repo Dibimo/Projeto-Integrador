@@ -66,6 +66,7 @@ $cpf = $_SESSION['cpf'];
             <div><label class="campoEndereco" name="estado_mora">Estado de Residência: </label></div>
             <div><label class="campoEndereco" name="cep">Cep: </label></div>
         </div>
+        <button id="editarEndereco" class="botao">Editar endereço</button>
     </div>
 
 
