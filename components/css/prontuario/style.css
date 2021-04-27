@@ -67,7 +67,7 @@ table {
     color: rgb(153, 13, 8);
     transition: 0.5s;
 }
-.botao{
+.botao,.botaoDesligado{
     border: 1px solid #ef1d26;
     padding: 10px 20px;
     margin: 10px;
@@ -76,6 +76,11 @@ table {
     color: white;
     cursor: pointer;
     position: relative;
+}
+
+.botaoDesligado{
+    background: none;
+    color: #ef1d26;
 }
 
 .botao#botaoAdicionar{
