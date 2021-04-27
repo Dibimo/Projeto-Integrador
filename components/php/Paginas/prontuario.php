@@ -54,7 +54,7 @@ $cpf = $_SESSION['cpf'];
 
 
     <div id="dadosEndereco" class="secao">
-        <div>
+        <div class="divTitulo">
             <h3>Endereço</h3>
         </div>
         <div>
@@ -67,6 +67,7 @@ $cpf = $_SESSION['cpf'];
             <div><label class="campoEndereco" name="cep">Cep: </label></div>
         </div>
         <button id="editarEndereco" class="botao">Editar endereço</button>
+        <button id="salvarNovosDados" class="botao invisivel">Salvar</button>
     </div>
 
 
@@ -239,6 +240,8 @@ $cpf = $_SESSION['cpf'];
     <button class="botao" id="salvarProcedimentos">Salvar</button>
     <button class="botao" id="voltar">Voltar</button>
     <script src="/components/js/prontuario/main.js"></script>
+    <script src="/components/js/prontuario/salvarProcedimento.js"></script>
+    <script src="/components/js/prontuario/editarCampos.js"></script>
     <script>
         var cpf = <?= $cpf ?>;
         main(cpf);
