@@ -195,6 +195,28 @@ function atualizaProntuario(string $cpf, string $dataProcedimento, string $proce
     $conexao->query($comandosSQL);
 }
 
+function atualizaEndereco(string $cpf, string $rua, string $numero, string $complemento, string $bairro, string $cidade, string $estado_mora, string $cep)
+{
+    $conexao = novaConexao();
+    $comandosSQL = "UPDATE enderecos
+        SET
+            rua = '{$rua}',
+            numero = '{$numero}',
+            complemento = '{$complemento}',
+            bairro = '{$bairro}',
+            cep = '{$cep}',
+            cidade = '{$cidade}',
+            estado_mora = '{$estado_mora}'
+        
+        WHERE cpf_paciente = '{$cpf}';
+
+    ";
+
+    $conexao->query($comandosSQL);
+    return $conexao->error;
+
+}
+
 function novaConexao()
 {
     $servidor = "localhost";
