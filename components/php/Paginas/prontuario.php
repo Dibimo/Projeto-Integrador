@@ -75,6 +75,7 @@ $cpf = $_SESSION['cpf'];
     </div>
 
     <div id='anamneseTotal' class="invisivel">
+        <button class="botao">Fazer nova Anamnese</button>
         <div class="secao">
             <div>
                 <h3>Anamnese Geral</h3>
