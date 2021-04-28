@@ -23,20 +23,18 @@ function main() {
         //se todos os dados forem validos
 
         var xml = new XMLHttpRequest();
-        var dados = new FormData();
 
-        localStorage.setItem('cpf_paciente',paciente['cpf']);
+        localStorage.setItem('cpf_paciente',paciente['dadosPessoais']['cpf']);
+        localStorage.setItem('nome_paciente',paciente['dadosPessoais']['nome']);
 
-        dados.append('paciente', JSON.stringify(paciente));
         xml.open('POST','../../php/Funcoes/registrar_paciente.php',true);
         
         xml.send(JSON.stringify(paciente));
-        // xml.onreadystatechange = function () {
-        //     if(xml.readyState == 4 && xml.status==200){
-        //         console.log(xml.responseText);
-        //     }
-        // };
-        window.location.href = '../../php/Paginas/anamnese.php'
+        xml.onreadystatechange = function () {
+            if(xml.readyState == 4 && xml.status==200){
+                window.location.href = '../../php/Paginas/anamnese.php'
+            }
+        };
     });
 
     form.addEventListener("input",function (event) {
