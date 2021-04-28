@@ -32,6 +32,5 @@ function obtemPaciente(form) {
             estado_moradia: form.estados_moradia.value
         },
     }
-    console.log(paciente);
     return paciente;
 }
