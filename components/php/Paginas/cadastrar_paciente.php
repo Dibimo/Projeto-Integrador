@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/components/css/cadastrar_paciente/style.css">
-    <title>Document</title>
+    <title>Cadastar Paciente</title>
 </head>
 
 <body>
@@ -20,9 +20,7 @@
         <div >
 
             <!-- Início do Form-->
-            <form id="formulario" action="/components/php/Funcoes/constroi_paciente.php" method="post" class="borda">
-
-                
+            <form id="formulario" class="borda">
                 <!-- 
                     Por padrão, todo tag <div>, dentro deste Form, representa um linha do Form
                     Fora exceções, toda tag <div> possui pelo menos uma tag <label> e outra <input>
@@ -213,11 +211,6 @@
                     </select>
                 </div>
                
-
-                <div>
-                    <input type="hidden" id="buffer" name="buffer">
-                </div>
-
                 <br>
 
                 <div >
