@@ -25,11 +25,33 @@ function inserePaciente(Paciente $paciente)
             '{$paciente->getCor()}'
         );
     ";
-    /*ENVIO DOS DADOS*/ 
+    $comandosSQL[] = "INSERT INTO enderecos
+        VALUES(
+            '{$paciente->getNome()}',
+            '{$paciente->getCpf()}',
+            '{$paciente->getEndereco()->getEndereco()}',
+            '{$paciente->getEndereco()->getNumero()}',
+            '{$paciente->getEndereco()->getComplemento()}',
+            '{$paciente->getEndereco()->getBairro()}',
+            '{$paciente->getEndereco()->getCep()}',
+            '{$paciente->getEndereco()->getCidade()}',
+            '{$paciente->getEndereco()->getEstado_moradia()}'
+        );
+    ";
+    for ($i=0; $i < count($comandosSQL); $i++) { 
+        $conexao->query($comandosSQL[$i]);
+        echo $conexao->error;
+    }
+
+}
+
+function anamnese($paciente)
+{
+    /*ENVIO DOS DADOS*/
     /*Calucalndo a idade do paciente, para saber se haverá insersão no banco de anamnese infantil*/
     $anoAtual = date('Y');
-    $anoDeNascimento = substr($paciente->getData_nascimento(),0,4);
-    if (($anoAtual - $anoDeNascimento)<=10){
+    $anoDeNascimento = substr($paciente->getData_nascimento(), 0, 4);
+    if (($anoAtual - $anoDeNascimento) <= 10) {
         $comandosSQL[] = "INSERT INTO anamnese_infantil
         VALUES(
             '{$paciente->getNome()}',
@@ -124,25 +146,6 @@ function inserePaciente(Paciente $paciente)
     
     
     ";
-
-    $comandosSQL[] = "INSERT INTO enderecos
-        VALUES(
-            '{$paciente->getNome()}',
-            '{$paciente->getCpf()}',
-            '{$paciente->getEndereco()->getEndereco()}',
-            '{$paciente->getEndereco()->getNumero()}',
-            '{$paciente->getEndereco()->getComplemento()}',
-            '{$paciente->getEndereco()->getBairro()}',
-            '{$paciente->getEndereco()->getCep()}',
-            '{$paciente->getEndereco()->getCidade()}',
-            '{$paciente->getEndereco()->getEstado_moradia()}'
-        );
-    ";
-    for ($i=0; $i < count($comandosSQL); $i++) { 
-        $conexao->query($comandosSQL[$i]);
-        echo $conexao->error;
-    }
-
 }
 
 function verificaPacienteExistente(string $cpf)
