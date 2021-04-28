@@ -2,11 +2,11 @@ function main() {
     var botao = document.querySelector("#botao-cadastrar");
     var form = document.querySelector("#formulario");
     botao.addEventListener("click", function (event) {
+        event.preventDefault();
         var camposObrigatorios = document.querySelectorAll(".obrigatorio");
         //verifica se há campo obrigatorios não preenchidos
         var haCamposVazios = verificaCamposVazios(camposObrigatorios); 
         if(haCamposVazios.length > 0){
-            event.preventDefault();
             var erros = document.querySelector('#erros');
             erros.textContent = 'Os seguintes campos não estão preenchidos: ' + haCamposVazios;
             return;
@@ -21,9 +21,22 @@ function main() {
             return;
         }
         //se todos os dados forem validos
-        var buffer = document.querySelector("#buffer");
-        buffer.value = JSON.stringify(paciente);
 
+        var xml = new XMLHttpRequest();
+        var dados = new FormData();
+
+        localStorage.setItem('cpf_paciente',paciente['cpf']);
+
+        dados.append('paciente', JSON.stringify(paciente));
+        xml.open('POST','../../php/Funcoes/registrar_paciente.php',true);
+        
+        xml.send(JSON.stringify(paciente));
+        // xml.onreadystatechange = function () {
+        //     if(xml.readyState == 4 && xml.status==200){
+        //         console.log(xml.responseText);
+        //     }
+        // };
+        window.location.href = '../../php/Paginas/anamnese.php'
     });
 
     form.addEventListener("input",function (event) {
