@@ -33,38 +33,49 @@
 
         public function __construct($dados)
         {
-            //dados pessoais
-            $this->nome = $dados['dadosPessoais']['nome'];
-            $this->data_nascimento = $dados['dadosPessoais']['data_nascimento'];
-            $this->sexo = $dados['dadosPessoais']['sexo'];
-            $this->estado_nascenca = $dados['dadosPessoais']['estado_nascenca'];
-            $this->escolaridade = $dados['dadosPessoais']['escolaridade'];
-            $this->contato = $dados['dadosPessoais']['contato'];
-            $this->profissao = $dados['dadosPessoais']['profissao'];
-            $this->rg = $dados['dadosPessoais']['rg'];
-            $this->estado_civil = $dados['dadosPessoais']['estado_civil'];
-            $this->naturalidade = $dados['dadosPessoais']['naturalidade'];
-            $this->nomePai = $dados['dadosPessoais']['pai'];
-            $this->nomeMae = $dados['dadosPessoais']['mae'];
-            $this->naturalidadePai = $dados['dadosPessoais']['naturalidadePai'];
-            $this->naturalidadeMae = $dados['dadosPessoais']['naturalidadeMae'];
-            $this->cpf = $dados['dadosPessoais']['cpf'];
+            if(array_key_exists('dadosPessoais',$dados)){
+                //dados pessoais
+                $this->nome = $dados['dadosPessoais']['nome'];
+                $this->data_nascimento = $dados['dadosPessoais']['data_nascimento'];
+                $this->sexo = $dados['dadosPessoais']['sexo'];
+                $this->estado_nascenca = $dados['dadosPessoais']['estado_nascenca'];
+                $this->escolaridade = $dados['dadosPessoais']['escolaridade'];
+                $this->contato = $dados['dadosPessoais']['contato'];
+                $this->profissao = $dados['dadosPessoais']['profissao'];
+                $this->rg = $dados['dadosPessoais']['rg'];
+                $this->estado_civil = $dados['dadosPessoais']['estado_civil'];
+                $this->naturalidade = $dados['dadosPessoais']['naturalidade'];
+                $this->nomePai = $dados['dadosPessoais']['pai'];
+                $this->nomeMae = $dados['dadosPessoais']['mae'];
+                $this->naturalidadePai = $dados['dadosPessoais']['naturalidadePai'];
+                $this->naturalidadeMae = $dados['dadosPessoais']['naturalidadeMae'];
+                $this->cpf = $dados['dadosPessoais']['cpf'];
+    
+                //dados fisicos
+                $this->peso = $dados['dadosFisicos']['peso'];
+                $this->altura = $dados['dadosFisicos']['altura'];
+                $this->cor = $dados['dadosFisicos']['cor'];
+    
+                //endereço
+                $this->endereco = new Endereco(
+                    $dados['enderecoCompleto']['endereco'],
+                    $dados['enderecoCompleto']['complemento'],
+                    $dados['enderecoCompleto']['cidade'],
+                    $dados['enderecoCompleto']['bairro'],
+                    $dados['enderecoCompleto']['estado_moradia'],
+                    $dados['enderecoCompleto']['numero'],
+                    $dados['enderecoCompleto']['cep']
+                );
+            }else{
+                $this->constroiAnamenese($dados);
+            }
+        }
 
-            //dados fisicos
-            $this->peso = $dados['dadosFisicos']['peso'];
-            $this->altura = $dados['dadosFisicos']['altura'];
-            $this->cor = $dados['dadosFisicos']['cor'];
-
-            //endereço
-            $this->endereco = new Endereco(
-                $dados['enderecoCompleto']['endereco'],
-                $dados['enderecoCompleto']['complemento'],
-                $dados['enderecoCompleto']['cidade'],
-                $dados['enderecoCompleto']['bairro'],
-                $dados['enderecoCompleto']['estado_moradia'],
-                $dados['enderecoCompleto']['numero'],
-                $dados['enderecoCompleto']['cep']
-            );
+        public function constroiAnamenese($dadosAnamense)
+        {
+            $this->nome = $dadosAnamense['nome_paciente'];
+            $this->cpf = $dadosAnamense['cpf_paciente'];
+            $this->setAnamnese($dadosAnamense);
         }
 
 
