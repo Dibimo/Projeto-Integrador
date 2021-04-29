@@ -561,9 +561,6 @@
                     <br>
                     <textarea name="planoTratamento" id="planoTratamento" class="campo" rows="3" cols="75" style="font-size:20px;"></textarea>
                 </div>
-                <div>
-                    <input type="hidden" name="buffer" id="buffer">
-                </div>
                 <button id="enviar" class="botao">Enviar</button>
             </form>
             <div id="erros"></div>
