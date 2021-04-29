@@ -1,8 +1,20 @@
 var removerComDuploClick = function () { //evento para a remoção da linha caso hajam erros de digitação
-    tabela.removeChild(linha);
+    this.remove();
 }
 
-function main(cpf) {
+
+function main() {
+
+    var cpfPaciente = localStorage["cpf_paciente"];
+    var nomePaciente = localStorage["nome_paciente"];
+
+    
+    buscarDados(cpfPaciente, 'pacientes',);
+    buscarDados(cpfPaciente,'enderecos',['nome_paciente', 'cpf_paciente']);
+    buscarDados(cpfPaciente,'anamnese_geral',['nome_paciente', 'cpf_paciente']);
+    buscarDados(cpfPaciente,'anamnese_infantil',['nome_paciente', 'cpf_paciente']);
+    buscarDados(cpfPaciente,'prontuarios');
+
     var botao = document.querySelector("#botaoAdicionar");
     botao.addEventListener("click",function (event) {
         event.preventDefault(); //evitando que a página seja recarregada
@@ -25,7 +37,7 @@ function main(cpf) {
         var linhas = document.querySelectorAll('.novoProcedimento');
 
         for (let i = 0; i < procedimentos.length; i++) {
-            salvarProcedimento(datas[i].textContent,procedimentos[i].textContent,cpf); //enviando para o banco
+            salvarProcedimento(datas[i].textContent,procedimentos[i].textContent,cpfPaciente); //enviando para o banco
             linhas[i].removeEventListener("dblclick",removerComDuploClick); //removendo evento de deleção
             linhas[i].classList.remove('novoProcedimento'); //removendo o estilo de novo procedimento
         }
@@ -35,7 +47,7 @@ function main(cpf) {
     voltar.addEventListener("click",function (event) {
         event.preventDefault();
         window.location.href = "/index.html";
-    })
+    });
 }
 
 function montaProntuario(prontuarioBruto){ //Monta a tabela de prontuario com as operações já realizadas
