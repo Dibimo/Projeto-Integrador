@@ -1,15 +1,37 @@
 function main(){
+
     var form = document.querySelector("#formulario");
     var botao = document.querySelector("#enviar");
-    var buffer = document.querySelector("#buffer");
+
+    var nomePaciente = localStorage['nome_paciente'];
+    var cpfPaciente = localStorage['cpf_paciente'];
+
+    var labelNome = document.querySelector('#nome_paciente');
+    var labelCpf = document.querySelector('#cpf_paciente');
+
+    labelNome.textContent += nomePaciente;
+    labelCpf.textContent += cpfPaciente;
+
     botao.addEventListener("click",function (event) {
+        event.preventDefault();
         if(verificaCamposVaziosAnamnese()){ //se ha campos vazios
-            event.preventDefault();
             document.querySelector("#erros").textContent = 'Há campos não preenchidos';
             return;
         }
         var anamnese = obtemAnamnese(form);
-        buffer.value = JSON.stringify(anamnese);
+        anamnese.nome_paciente = nomePaciente;
+        anamnese.cpf_paciente = cpfPaciente;
+
+        var xml = new XMLHttpRequest();
+
+        xml.open('POST','../../php/Funcoes/registrar_anamnese.php',true);
+        
+        xml.send(JSON.stringify(anamnese));
+        xml.onreadystatechange = function () {
+            if(xml.readyState == 4 && xml.status==200){
+                window.location.href = '../../php/Paginas/prontuario.php'
+            }
+        };
     })
 
 
