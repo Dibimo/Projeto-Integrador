@@ -1,9 +1,3 @@
-<?php
-require_once dirname(__DIR__, 1) . '\\Classes\\Paciente.php';
-session_start();
-$paciente = $_SESSION['paciente'];
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,16 +14,12 @@ $paciente = $_SESSION['paciente'];
         <img src="/Assets/img_logo.png" height="200" width="300" style="padding-left: 30px;">
 
         <div class="conteiner">
-            <form id="formulario" method="post" action="/components/php/Funcoes/send_to_database.php">
+            <form id="formulario">
                 <div>
-                    <?php
-                    echo "<label>Nome: {$paciente->getNome()}</label>"
-                    ?>
+                    <label id='nome_paciente'>Nome do paciente: </label>
                 </div>
                 <div>
-                    <?php
-                    echo "<label>Cadastro: {$paciente->getCpf()}</label>"
-                    ?>
+                    <label id='cpf_paciente'>CPF: </label>
                 </div>
                 <div>
                     <label for="queixa_principal">Queixa Principal:</label>
