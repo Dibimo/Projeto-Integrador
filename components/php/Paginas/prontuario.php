@@ -1,9 +1,3 @@
-<?php
-require_once dirname(__DIR__, 1) . '\\Funcoes\\manipular_banco.php';
-require_once dirname(__DIR__, 1) . '\\Classes\\Paciente.php';
-session_start();
-$cpf = $_SESSION['cpf'];
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -247,25 +241,9 @@ $cpf = $_SESSION['cpf'];
     <script src="/components/js/prontuario/salvarProcedimento.js"></script>
     <script src="/components/js/prontuario/editarCampos.js"></script>
     <script src="/components/js/prontuario/filtrarDados.js"></script>
+    <script src="/components/js/prontuario/carregarDados.js"></script>
     <script>
-        var cpf = <?= $cpf ?>;
-        main(cpf);
-        var prontuarioBruto = <?= obtemProntuario($cpf); ?>;
-        var dadosPessoais = <?= (obtemDadosTabela($cpf, 'pacientes')); ?>;
-        var endereco = <?= (obtemDadosTabela($cpf, 'enderecos')); ?>;
-        var anamneseGeral = <?= (obtemDadosTabela($cpf, 'anamnese_geral')); ?>;
-        var anamneseInfantil = <?= (obtemDadosTabela($cpf, 'anamnese_infantil')); ?>;
-
-        montaProntuario(prontuarioBruto);
-
-        insereDados(dadosPessoais);
-        insereDados(endereco, ['nome_paciente', 'cpf_paciente']);
-        insereDados(anamneseGeral, ['nome_paciente', 'cpf_paciente']);
-        if (anamneseInfantil === null) { //se anamneseInfantil for nulo quer dizer que não há linhas na tabela
-            removeAnamneseInfatil(); //logo, os campos destinados a isso podem ser removidos
-        } else {
-            insereDados(anamneseInfantil, ['nome_paciente', 'cpf_paciente']);
-        }
+        main();
     </script>
 </body>
 
