@@ -1,6 +1,8 @@
 
 function obtemAnamnese(form) {
     var anamnese = {
+        cpf_paciente: '',
+        nome_paciente: '',
         queixa_principal: form.queixa_principal.value,
         hitorico_doenca: form.hitorico_doenca.value,
         resposta_hemorragia: form.resposta_hemorragia.value,
