@@ -45,13 +45,12 @@ function inserePaciente(Paciente $paciente)
 
 }
 
-function anamnese($paciente)
+function insereAnamnese($paciente)
 {
-    /*ENVIO DOS DADOS*/
-    /*Calucalndo a idade do paciente, para saber se haverá insersão no banco de anamnese infantil*/
-    $anoAtual = date('Y');
-    $anoDeNascimento = substr($paciente->getData_nascimento(), 0, 4);
-    if (($anoAtual - $anoDeNascimento) <= 10) {
+    $conexao = novaConexao();
+    $comandosSQL = Array();
+    
+    if ($paciente->getAnamnese()->getTipoParto()!='') {
         $comandosSQL[] = "INSERT INTO anamnese_infantil
         VALUES(
             '{$paciente->getNome()}',
@@ -146,6 +145,10 @@ function anamnese($paciente)
     
     
     ";
+    for ($i = 0; $i < count($comandosSQL); $i++) {
+        $conexao->query($comandosSQL[$i]);
+        echo $conexao->error;
+    }
 }
 
 function verificaPacienteExistente(string $cpf)
