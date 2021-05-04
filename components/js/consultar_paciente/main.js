@@ -11,7 +11,7 @@ function main() {
             xml.onreadystatechange = function () {
                 if(xml.readyState == 4 && xml.status==200){
                     if(xml.responseText == 'Usuário encontrado!'){
-                        window.location.href = '../../php/Paginas/prontuario.php'
+                        window.location.href = '../../php/Paginas/prontuario.html'
                     }else{
                         resposta.textContent = xml.responseText;
                     }
@@ -33,6 +33,6 @@ function main() {
 
     var botaoCastro = document.querySelector("#irParaCadastro");
     botaoCastro.addEventListener("click", function () {
-        window.location.href = '/components/php/Paginas/cadastrar_paciente.php'
+        window.location.href = '/components/php/Paginas/cadastrar_paciente.html'
     });
 }

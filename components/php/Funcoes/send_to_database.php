@@ -13,7 +13,7 @@ session_start();
 $_SESSION['cpf'] = $paciente->getCpf();
 
 inserePaciente($paciente);
-header("Location: ..\\Paginas\\prontuario.php"); //TROCAR
+header("Location: ..\\Paginas\\prontuario.html"); //TROCAR
 die();
 
 

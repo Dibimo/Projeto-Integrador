@@ -29,7 +29,7 @@ function main(){
         xml.send(JSON.stringify(anamnese));
         xml.onreadystatechange = function () {
             if(xml.readyState == 4 && xml.status==200){
-                window.location.href = '../../php/Paginas/prontuario.php'
+                window.location.href = '../../php/Paginas/prontuario.html'
             }
         };
     })

@@ -5,6 +5,6 @@
     $paciente = new Paciente($pacienteDados);
     
     $_SESSION['paciente'] = $paciente; //salvando paciente na sessão
-    header("Location: ..\\Paginas\\anamnese.php");
+    header("Location: ..\\Paginas\\anamnese.html");
 
 ?>
