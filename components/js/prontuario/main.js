@@ -70,6 +70,10 @@ function montaLinhaTabela(procendimento,classe) {
     var dataProcedimento = document.createElement("td");  //cria a coluna de procedimento
     var procedimentoTexto = document.createElement("td"); //cria a coluna de data
     
+    var regex = /(\d{4})-(\d{2})-(\d{2})/;
+    var grupos = procendimento["data_procedimento"].match(regex);
+    procendimento["data_procedimento"] = `${grupos[3]}/${grupos[2]}/${grupos[1]}`;
+
     dataProcedimento.textContent = procendimento['data_procedimento'];//atribuição dos valores
     procedimentoTexto.textContent = procendimento['procedimento'];    //atribuição dos valores
     
@@ -94,9 +98,13 @@ function insereDados(dados,excoes) {
             delete dados[excoes[i]]; //remove-se os campos
         }
     }
+    var regex = /(\d{4})-(\d{2})-(\d{2})/;
     var chaves = Object.keys(dados); //obtem-se todos os nomes de propriedades
     for (let i = 0; i < chaves.length; i++) { 
-        // secao[i].textContent = secao[i].textContent + dados[chaves[i]]; //atribui-se os valores obtidos do banco de dados
+        if(dados[chaves[i]].match(regex)){
+            let grupos = dados[chaves[i]].match(regex);
+            dados[chaves[i]] = `${grupos[3]}/${grupos[2]}/${grupos[1]}`;
+        }
         document.getElementsByName(chaves[i])[0].textContent += dados[chaves[i]];
     }
     
