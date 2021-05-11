@@ -48,6 +48,12 @@ function main() {
         event.preventDefault();
         window.location.href = "/index.html";
     });
+
+    var novaAnamense = document.querySelector("#novaAnamnese");
+    novaAnamense.addEventListener("click",function () {
+        window.location.href = "../../php/Paginas/anamnese.html";
+    })
+
 }
 
 function montaProntuario(prontuarioBruto){ //Monta a tabela de prontuario com as operações já realizadas
