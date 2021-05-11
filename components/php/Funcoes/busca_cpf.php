@@ -6,7 +6,7 @@ session_start();
 $existe = verificaPacienteExistente($cpf);
 if($existe){
     $_SESSION['cpf'] = $cpf;
-    echo 'Usuário encontrado!';
+    echo $existe;
     die();
 }
 echo 'Usuário não econtrado! Por favor cadastre o paciente primeiro.'

@@ -159,7 +159,7 @@ function verificaPacienteExistente(string $cpf)
     $linha = mysqli_fetch_assoc($resultado);
     
     if($linha != NULL){
-        return true; //já existe
+        return $linha['nome_paciente']; //já existe
     }
     return false; //não existe
 }
