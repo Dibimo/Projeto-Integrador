@@ -328,6 +328,23 @@ function atualizaEndereco(string $cpf, string $rua, string $numero, string $comp
 
 }
 
+function excluirPaciente(string $cpf)
+{
+    $conexao = novaConexao();
+    $comandosSQL = array();
+
+    $comandosSQL[] = "DELETE FROM prontuarios WHERE cpf_paciente='{$cpf}';";
+    $comandosSQL[] = "DELETE FROM enderecos WHERE cpf_paciente='{$cpf}';";
+    $comandosSQL[] = "DELETE FROM anamnese_geral WHERE cpf_paciente='{$cpf}';";
+    $comandosSQL[] = "DELETE FROM anamnese_infantil WHERE cpf_paciente='{$cpf}';";
+    $comandosSQL[] = "DELETE FROM pacientes WHERE cpf_paciente='{$cpf}';";
+
+    for ($i = 0; $i < count($comandosSQL); $i++) {
+        $conexao->query($comandosSQL[$i]);
+        echo $conexao->error;
+    }
+}
+
 function novaConexao()
 {
     $servidor = "localhost";
