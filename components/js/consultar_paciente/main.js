@@ -10,7 +10,9 @@ function main() {
             dados.append('cpf',cpfInput);
             xml.onreadystatechange = function () {
                 if(xml.readyState == 4 && xml.status==200){
-                    if(xml.responseText == 'Usuário encontrado!'){
+                    if(xml.responseText != 'Usuário não econtrado! Por favor cadastre o paciente primeiro.'){
+                        localStorage.setItem('cpf_paciente',cpfInput);
+                        localStorage.setItem('nome_paciente',xml.responseText);
                         window.location.href = '../../php/Paginas/prontuario.html'
                     }else{
                         resposta.textContent = xml.responseText;
