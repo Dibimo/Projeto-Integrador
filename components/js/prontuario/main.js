@@ -78,9 +78,9 @@ function montaLinhaTabela(procendimento,classe) {
     
     var regex = /(\d{4})-(\d{2})-(\d{2})/;
     var grupos = procendimento["data_procedimento"].match(regex);
-    procendimento["data_procedimento"] = `${grupos[3]}/${grupos[2]}/${grupos[1]}`;
+    var procedimentoFormatado = `${grupos[3]}/${grupos[2]}/${grupos[1]}`;
 
-    dataProcedimento.textContent = procendimento['data_procedimento'];//atribuição dos valores
+    dataProcedimento.textContent = procedimentoFormatado;//atribuição dos valores
     procedimentoTexto.textContent = procendimento['procedimento'];    //atribuição dos valores
     
     linha.appendChild(dataProcedimento);  //lincando as novas colunas com a nova linha
