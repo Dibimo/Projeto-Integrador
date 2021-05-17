@@ -1,6 +1,8 @@
 var botaoDados = document.querySelector('#botaoDados');
 var botaoAnamnese = document.querySelector('#botaoAnamnese');
 var botaoProntuario = document.querySelector('#botaoProntuario');
+var botaoEditar = document.querySelector("#editarEndereco");
+var botaoSalvar = document.querySelector("#salvarNovosDados");
 
 var dadosPessoaisFisicosEndereco = document.querySelector('#dadosPessoaisFisicosEndereco');
 var anamneseTotal = document.querySelector('#anamneseTotal');
@@ -19,6 +21,8 @@ botaoDados.addEventListener('click',function () {
     dadosPessoaisFisicosEndereco.classList.remove('invisivel');
     anamneseTotal.classList.add('invisivel');
     prontuario.classList.add('invisivel');
+    botaoEditar.classList.remove("invisivel");
+    
 
 });
 botaoAnamnese.addEventListener('click',function () {
@@ -34,6 +38,8 @@ botaoAnamnese.addEventListener('click',function () {
     anamneseTotal.classList.remove('invisivel');
     dadosPessoaisFisicosEndereco.classList.add('invisivel');
     prontuario.classList.add('invisivel');
+    botaoEditar.classList.add('invisivel');
+    
 });
 botaoProntuario.addEventListener('click',function () {
 
@@ -48,4 +54,6 @@ botaoProntuario.addEventListener('click',function () {
     prontuario.classList.remove('invisivel');
     dadosPessoaisFisicosEndereco.classList.add('invisivel');
     anamneseTotal.classList.add('invisivel');
+    botaoEditar.classList.add("invisivel");
+   
 });
