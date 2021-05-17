@@ -214,13 +214,16 @@
 
     <div id='prontuario' class="invisivel">
         <h1>Prontuario</h1>
-
+        <div id="mensagemDeSalvamento"> </div>
         <label for="dataProcedimento">Data do procedimento</label>
         <input type="date" name="dataProcedimento" id="dataProcedimento" class="prontuario">
         <label for="procedimento">Procedimento realizado</label>
         <input type="text" name="procedimento" id="procedimentoTexto" class="prontuario">
-        <input type="hidden" if="buffer">
         <button class="botao" id="botaoAdicionar">+</button>
+
+        <button class="botao" id="salvarProcedimentos">Salvar</button>
+        <button class="botao" id="voltar">Voltar</button>
+
 
         <div class='secao'>
             <table id="prontuarioTabela">
@@ -237,8 +240,6 @@
                 </tbody>
         </div>
         </table>
-        <button class="botao" id="salvarProcedimentos">Salvar</button>
-        <button class="botao" id="voltar">Voltar</button>
     </div>
 
     <script src="/components/js/prontuario/main.js"></script>
