@@ -59,6 +59,14 @@ table {
     
 }
 
+input:not(.prontuario){
+    width: 35%;
+}
+select{
+    height: 22px;
+    width: 35%;
+}
+
 .novoProcedimento{
     color: rgb(95, 153, 8);
 }
