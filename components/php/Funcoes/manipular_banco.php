@@ -304,9 +304,10 @@ function atualizaProntuario(string $cpf, string $dataProcedimento, string $proce
     ";
 
     $conexao->query($comandosSQL);
+    echo $conexao->error;
 }
 
-function atualizaEndereco(string $cpf, string $rua, string $numero, string $complemento, string $bairro, string $cidade, string $estado_mora, string $cep)
+function atualizaEndereco(string $cpf_paciente, string $rua, string $numero, string $complemento, string $bairro, string $cidade, string $estado_mora, string $cep)
 {
     $conexao = novaConexao();
     $comandosSQL = "UPDATE enderecos
@@ -319,13 +320,62 @@ function atualizaEndereco(string $cpf, string $rua, string $numero, string $comp
             cidade = '{$cidade}',
             estado_mora = '{$estado_mora}'
         
-        WHERE cpf_paciente = '{$cpf}';
+        WHERE cpf_paciente = '{$cpf_paciente}';
 
     ";
 
     $conexao->query($comandosSQL);
     return $conexao->error;
 
+}
+
+function atualizaDadosPessoais(
+    string $nome_paciente,
+    string $cpf_paciente,
+    string $data_nascimento,
+    string $sexo,
+    string $escolaridade,
+    string $profissao,
+    string $rg_paciente,
+    string $estado_civil,
+    string $natu,
+    string $estado_nasc,
+    string $tel_contato,
+    string $nome_pai,
+    string $nome_mae,
+    string $natu_pai,
+    string $natu_mae,
+    string $peso,
+    string $altura,
+    string $cor)
+{
+    $conexao = novaConexao();
+    $comandosSQL = "UPDATE pacientes
+        SET
+            nome_paciente = '{$nome_paciente}',
+            data_nascimento = '{$data_nascimento}',
+            sexo = '{$sexo}',
+            escolaridade = '{$escolaridade}',
+            profissao = '{$profissao}',
+            rg_paciente = '{$rg_paciente}',
+            estado_civil = '{$estado_civil}',
+            natu = '{$natu}',
+            estado_nasc = '{$estado_nasc}',
+            tel_contato = '{$tel_contato}',
+            nome_pai = '{$nome_pai}',
+            nome_mae = '{$nome_mae}',
+            natu_pai = '{$natu_pai}',
+            natu_mae = '{$natu_mae}',
+            peso = '{$peso}',
+            altura = '{$altura}',
+            cor = '{$cor}'
+        
+        WHERE cpf_paciente = '{$cpf_paciente}';
+
+    ";
+
+    $conexao->query($comandosSQL);
+    return $conexao->error;
 }
 
 function excluirPaciente(string $cpf)
