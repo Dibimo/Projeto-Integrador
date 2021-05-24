@@ -32,7 +32,8 @@ function main() {
         xml.send(JSON.stringify(paciente));
         xml.onreadystatechange = function () {
             if(xml.readyState == 4 && xml.status==200){
-                window.location.href = '../../php/Paginas/anamnese.html'
+                console.log(xml.responseText);
+                // window.location.href = '../../php/Paginas/anamnese.html'
             }
         };
     });

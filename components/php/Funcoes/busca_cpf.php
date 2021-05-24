@@ -9,6 +9,6 @@ if($existe){
     echo $existe;
     die();
 }
-echo 'Usuário não econtrado! Por favor cadastre o paciente primeiro.'
+echo 'Paciente não econtrado! Por favor cadastre o paciente primeiro.'
 
 ?>
