@@ -15,7 +15,7 @@
     <div id="botoes" style="align-items: center;">
         <button id='botaoDados' class="botao">Dados pessoais</button>
         <button id='botaoAnamnese' class="botaoDesligado">Anamnese</button>
-        <button id='botaoProntuario' class="botaoDesligado">Prontuario</button>
+        <button id='botaoProntuario' class="botaoDesligado">Prontuário</button>
         <button id="editarEndereco" class="botao">Editar dados</button>
         <button id="salvarNovosDados" class="botao invisivel">Salvar</button>
     </div>
@@ -24,51 +24,46 @@
     <div id='dadosPessoaisFisicosEndereco'>
         <h1>Dados do paciente</h1>
         <h3>Dados Pessoais</h3>
-        <div id="dadosPessoais" class="secao quatroColunas">
-            <div>
-                <div><label class="campoPessoal campoEditavel " name="nome_paciente">Nome: </label> </div>
-                <div><label class="campoPessoal campoEditavel" name="data_nascimento">Data de Nascimento: </label> </div>
-                <div><label class="campoPessoal campoEditavel" name="sexo">Sexo: </label></div>
-            </div>
-            <div>
-                <div><label class="campoPessoal campoEditavel" name="escolaridade">Escolaridade: </label></div>
-                <div><label class="campoPessoal campoEditavel" name="profissao">Profissão: </label></div>
-                <div><label class="campoPessoal campoEditavel" name="rg_paciente">RG: </label></div>
-                <div><label class="campoPessoal campoEditavel" name="cpf_paciente">CPF: </label></div>
-                <div><label class="campoPessoal campoEditavel" name="estado_civil">Estado Civil: </label></div>
-                <div><label class="campoPessoal campoEditavel" name="natu">Naturalidade: </label></div>
-                <div><label class="campoPessoal campoEditavel" name="estado_nasc">Estado de Nascença: </label></div>
-                <div><label class="campoPessoal campoEditavel" name="tel_contato">Telefone de contato: </label></div>
-            </div>
-            <div class='secao'>
-                <h3>Pais</h3>
-                <div><label class="campoPessoal campoEditavel" name="nome_pai">Nome do pai: </label></div>
-                <div><label class="campoPessoal campoEditavel" name="nome_mae">Nome da mãe: </label></div>
-                <div><label class="campoPessoal campoEditavel" name="natu_pai">Naturalidade do Pai: </label></div>
-                <div><label class="campoPessoal campoEditavel" name="natu_mae">Naturalidade da Mãe: </label></div>
-            </div>
-            <div class='secao'>
-                <h3>Dados Fisicos</h3>
-                <div><label class="campoPessoal campoEditavel" name="peso">Peso: </label></div>
-                <div><label class="campoPessoal campoEditavel" name="altura">Altura: </label></div>
-                <div><label class="campoPessoal campoEditavel" name="cor">Cor: </label></div>
-            </div>
+        
+        <div class="conteinerCamposDadosPessoais">
+            <label class="campoPessoal campoEditavel campoItemDadosPessoais" name="nome_paciente">Nome: </label> 
+            <label class="campoPessoal campoEditavel campoItemDadosPessoais" name="data_nascimento">Data de Nascimento: </label> 
+            <label class="campoPessoal campoEditavel campoItemDadosPessoais" name="natu">Naturalidade: </label>
+            <label class="campoPessoal campoEditavel campoItemDadosPessoais" name="estado_nasc">Estado de Nascença: </label>
+            <label class="campoPessoal campoEditavel campoItemDadosPessoais" name="sexo">Sexo: </label>
+        
+            <label class="campoPessoal campoEditavel campoItemDadosPessoais" name="cpf_paciente">CPF: </label>
+            <label class="campoPessoal campoEditavel campoItemDadosPessoais" name="rg_paciente">RG: </label>
+            <label class="campoPessoal campoEditavel campoItemDadosPessoais" name="escolaridade">Escolaridade: </label>
+            <label class="campoPessoal campoEditavel campoItemDadosPessoais" name="profissao">Profissão: </label>
+            <label class="campoPessoal campoEditavel campoItemDadosPessoais" name="estado_civil">Estado Civil: </label>
+            <label class="campoPessoal campoEditavel campoItemDadosPessoais" name="tel_contato">Telefone de contato: </label>
+        </div>
+    
+        <h3>Pais</h3>
+        <div class="conteinerCamposPais">
+            <label class="campoPessoal campoEditavel campoItemPais" name="nome_pai">Nome do pai: </label>
+            <label class="campoPessoal campoEditavel campoItemPais" name="nome_mae">Nome da mãe: </label>
+            <label class="campoPessoal campoEditavel campoItemPais" name="natu_pai">Naturalidade do Pai: </label>
+            <label class="campoPessoal campoEditavel campoItemPais" name="natu_mae">Naturalidade da Mãe: </label>
+        </div>
+    
+        <h3>Dados Fisicos</h3>
+        <div class="conteinerCamposFisicos">
+            <label class="campoPessoal campoEditavel campoItemFisicos" name="peso">Peso: </label>
+            <label class="campoPessoal campoEditavel campoItemFisicos" name="altura">Altura: </label>
+            <label class="campoPessoal campoEditavel campoItemFisicos" name="cor">Cor: </label>
         </div>
 
-
-        <div id="dadosEndereco" class="secao">
-            <div class="divTitulo">
-                <h3>Endereço</h3>
-            </div>
-            <div>
-                <div><label class="campoEndereco campoEditavel" name="rua">Rua: </label></div>
-                <div><label class="campoEndereco campoEditavel" name="numero">Numero: </label></div>
-                <div><label class="campoEndereco campoEditavel" name="complemento">Complemento: </label></div>
-                <div><label class="campoEndereco campoEditavel" name="bairro">Bairro: </label></div>
-                <div><label class="campoEndereco campoEditavel" name="cidade">Cidade: </label></div>
-                <div><label class="campoEndereco campoEditavel" name="estado_mora">Estado de Residência: </label></div>
-                <div><label class="campoEndereco campoEditavel" name="cep">Cep: </label></div>
-            </div>
+        <h3>Endereço</h3>
+        <div class="conteinerCamposEndereco">
+            <label class="campoEndereco campoEditavel campoItemEndereco" name="rua">Rua: </label>
+            <label class="campoEndereco campoEditavel campoItemEndereco" name="numero">Numero: </label>
+            <label class="campoEndereco campoEditavel campoItemEndereco" name="complemento">Complemento: </label>
+            <label class="campoEndereco campoEditavel campoItemEndereco" name="bairro">Bairro: </label>
+            <label class="campoEndereco campoEditavel campoItemEndereco" name="cidade">Cidade: </label>
+            <label class="campoEndereco campoEditavel campoItemEndereco" name="estado_mora">Estado de Residência: </label>
+            <label class="campoEndereco campoEditavel campoItemEndereco" name="cep">Cep: </label>
         </div>
     </div>
 
@@ -213,7 +208,7 @@
 
 
     <div id='prontuario' class="invisivel">
-        <h1>Prontuario</h1>
+        <h1>Prontuário</h1>
         <div id="mensagemDeSalvamento"> </div>
         <label for="dataProcedimento">Data do procedimento</label>
         <input type="date" name="dataProcedimento" id="dataProcedimento" class="prontuario">
