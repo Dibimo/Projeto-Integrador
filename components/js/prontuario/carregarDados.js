@@ -18,6 +18,6 @@ function buscarDados(cpf, tabela, excoes) {
     }
   };
 
-  xml.open("POST", "../../php/Funcoes/obtem_dados_banco.php", true);
+  xml.open("POST", "../php/Funcoes/obtem_dados_banco.php", true);
   xml.send(dadosBusca);
 }

@@ -23,7 +23,7 @@ function salvarProcedimento(dataProcedimento,procedimentoTexto,cpfPaciente) {
       }
     };
 
-    xml.open('POST','../../php/Funcoes/atualiza_prontuario.php',true);
+    xml.open('POST','../php/Funcoes/atualiza_prontuario.php',true);
     xml.send(dados);
 
 }

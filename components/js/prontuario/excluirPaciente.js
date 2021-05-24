@@ -4,7 +4,7 @@ botaoExcluir.addEventListener('click',function () {
    var dados = new FormData();
    dados.append("cpf_paciente", localStorage.getItem("cpf_paciente"));
    var xml = new XMLHttpRequest();
-   xml.open("POST", "../../php/Funcoes/excluir_paciente.php", true);
+   xml.open("POST", "../php/Funcoes/excluir_paciente.php", true);
 
    xml.send(dados);
    xml.onreadystatechange = function () {

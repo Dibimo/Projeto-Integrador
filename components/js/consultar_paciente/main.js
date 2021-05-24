@@ -13,7 +13,7 @@ function main() {
                     if(xml.responseText != 'Paciente não econtrado! Por favor cadastre o paciente primeiro.'){
                         localStorage.setItem('cpf_paciente',cpfInput);
                         localStorage.setItem('nome_paciente',xml.responseText);
-                        window.location.href = '../../php/Paginas/prontuario.html'
+                        window.location.href = '/components/Paginas/prontuario.html'
                     }else{
                         resposta.textContent = xml.responseText;
                     }
@@ -21,7 +21,7 @@ function main() {
                 }
             };
 
-            xml.open('POST','../../php/Funcoes/busca_cpf.php',true);
+            xml.open('POST','../php/Funcoes/busca_cpf.php',true);
             xml.send(dados);
         }else{
             resposta.textContent = '';
@@ -35,6 +35,6 @@ function main() {
 
     var botaoCastro = document.querySelector("#irParaCadastro");
     botaoCastro.addEventListener("click", function () {
-        window.location.href = '/components/php/Paginas/cadastrar_paciente.html'
+        window.location.href = '/components/Paginas/cadastrar_paciente.html'
     });
 }

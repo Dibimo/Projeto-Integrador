@@ -27,13 +27,13 @@ function main() {
         localStorage.setItem('cpf_paciente',paciente['dadosPessoais']['cpf']);
         localStorage.setItem('nome_paciente',paciente['dadosPessoais']['nome']);
 
-        xml.open('POST','../../php/Funcoes/registrar_paciente.php',true);
+        xml.open('POST','../php/Funcoes/registrar_paciente.php',true);
         
         xml.send(JSON.stringify(paciente));
         xml.onreadystatechange = function () {
             if(xml.readyState == 4 && xml.status==200){
                 console.log(xml.responseText);
-                // window.location.href = '../../php/Paginas/anamnese.html'
+                // window.location.href = '/components/Paginas/anamense.html'
             }
         };
     });

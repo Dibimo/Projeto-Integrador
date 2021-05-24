@@ -51,7 +51,7 @@ function main() {
 
     var novaAnamense = document.querySelector("#novaAnamnese");
     novaAnamense.addEventListener("click",function () {
-        window.location.href = "../../php/Paginas/anamnese.html";
+        window.location.href = '/components/Paginas/anamnese.html';
     })
 
 }

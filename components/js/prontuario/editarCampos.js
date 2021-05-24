@@ -115,7 +115,7 @@ botaoSalvar.addEventListener('click',function () {
             botaoSalvar.classList.add('invisivel');
       }
     };
-    xml.open("POST", "../../php/Funcoes/atualiza_dados.php", true);
+    xml.open("POST", "../php/Funcoes/atualiza_dados.php", true);
     xml.send(novosDados);
     
 });

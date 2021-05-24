@@ -24,12 +24,12 @@ function main(){
 
         var xml = new XMLHttpRequest();
 
-        xml.open('POST','../../php/Funcoes/registrar_anamnese.php',true);
+        xml.open('POST','../php/Funcoes/registrar_anamnese.php',true);
         
         xml.send(JSON.stringify(anamnese));
         xml.onreadystatechange = function () {
             if(xml.readyState == 4 && xml.status==200){
-                window.location.href = '../../php/Paginas/prontuario.html'
+                window.location.href = '/components/Paginas/prontuario.html'
             }
         };
     })
