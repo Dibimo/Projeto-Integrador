@@ -19,7 +19,8 @@ h2{
 
 }
 .borda{
-    border: ridge;    
+    border: ridge;
+    border-radius: 7%;
     border-color: black;
     padding-top: 5%;
     padding-bottom: 6%;

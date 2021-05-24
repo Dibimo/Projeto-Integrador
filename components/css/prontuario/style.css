@@ -129,6 +129,7 @@ select{
 }
 .botao,.botaoDesligado{
     border: 1px solid #ef1d26;
+    border-radius: 7%;
     padding: 10px 20px;
     margin: 10px;
     background: #ef1d26;
@@ -144,6 +145,7 @@ select{
 }
 
 .botao#botaoAdicionar{
+    border-radius: 7%;
     padding: 2px 12px;
 }
 
