@@ -1,15 +1,22 @@
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Configuração geral dos conteiners*/
-.conteinerCamposDadosPessoais, .conteinerCamposPais, .conteinerCamposFisicos, .conteinerCamposEndereco{
+.conteinerCamposDadosPessoais, .conteinerCamposPais, .conteinerCamposFisicos, .conteinerCamposEndereco,
+.conteinerQueixaPrincipal, .conteinerHistorico, .conteinerSofre, .conteinerOutras, .conteinerCondutaCrianca,
+.conteinerDoisPrimeiros, .conteinerNormal, .conteinerCampoFisicoI, .conteinerPossui, .conteinerAvaliacaoFisica,
+.conteinerExames{
     display: flex;
     flex-wrap: wrap; /*quebra o conteudo quando chega no máximo de largura e/ou altura*/
     height: 50%; /*tem sempre metade da altura disponivel*/
 }
 /* Configuração geral dos itens */
-.campoItemDadosPessoais, .campoItemPais, .campoItemFisicos, .campoItemEndereco{
+.campoItemDadosPessoais, .campoItemPais, .campoItemFisicos, .campoItemEndereco,
+.campoItemQueixaPrinciapal, .campoItemHistorico, .campoItemSofre, .campoItemOutras, .campoItemConduta,
+.campoItemDoisPrimeiros, .campoItemNormal, .campoItemFisicoI, .campoItemPossui, .campoItemAvaliacaoFisica,
+.campoItemExames{
     word-wrap: break-word;
     border: 0.5px solid black;
     padding: 10px;
@@ -53,63 +60,135 @@ body{
     width: 52%;
 }
 
-
-.secao{
-    text-align: justify;
-    float: left;
-    width: 100%
-    
-}
-.secao div div{
-    border: 0.5px solid black;
-    float: left;
-    width: 25%;
-    padding: 10px;
-    margin-left: -1px;
-    margin-bottom: -1px;
-    
+.conteinerHistorico{
+    width: 50%;
 }
 
-.secao.quatroColunas div div{
-    border: 0.5px solid black;
-    float: left;
-    width: 20%;
-    padding: 10px;
-    margin-left: -1px;
-    margin-bottom: -1px;
-    
+.campoItemHistorico{
+    width: 40%
 }
-.secao.duasColunas div div{
-    border: 0.5px solid black;
-    float: left;
+
+.conteinerSofre{
+    width: 50%
+}
+
+.conteinerCondutaCrianca{
+    width: 50%;
+}
+
+.campoItemConduta{
     width: 45%;
-    padding: 10px;
-    margin-left: -1px;
-    margin-bottom: -1px;
+}
+
+.campoItemConduta:first-child{
+    width: 93.1%;
+}
+
+.conteinerDoisPrimeiros{
+    width: 40%
+}
+
+.campoItemDoisPrimeiros{
+    width: 35%;
+}
+
+.campoItemDoisPrimeiros:last-child{
+    width: 73.9%;
+}
+
+.conteinerNormal{
+    width: 35%;
+}
+
+.conteinerCampoFisicoI{
+    width: 40%;
+}
+
+.campoItemFisicoI{
+    width: 45%;
+}
+
+.campoItemFisicoI:last-child{
+    width: 94%;
+}
+
+.conteinerPossui{
+    width: 35%;
+    margin-bottom: 2%;
+}
+
+.campoItemPossui:last-child{
+    width: 84%;
+}
+
+.conteinerAvaliacaoFisica{
+    width: 40%
+}
+
+.campoItemAvaliacaoFisica{
+    width: 43%;
+}
+
+.campoItemAvaliacaoFisica:last-child{
+    width: 90%;
+}
+
+.conteinerExames{
+    width: 49%;
+    margin-bottom: 2%;
+}
+
+.campoItemExames{
+    width: 46%;
+}
+
+.conteinerAdicionarProcedimento{
+    display: flex;
+    align-items: center;
     
 }
 
 
-.dadosEndereco div div{
-    border: 0.5px solid black;
-    float: left;
-    width: 20%;
+.conteinerProntuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.campoItemProntuario{
+    width: 70%;
+    
+}
+
+.conteinerTabela{
+    display: flex;
+    align-items: center;
+
 }
 
 table,
 td,
 th {
     text-align: center;
-    border: 2px solid black;
     font-weight: normal;
-    padding: 5px;
-}
-
-
-table {
-    width: 45%;
+    
     
 }
+
+table {
+    width: 91%;
+    border-collapse: separate; /*changed from collapse*/
+    border-spacing: 0;
+    border: 1px solid black;
+    border-width: 0 0 1px 1px; /*draw bottom and left borders*/
+}
+td, th{
+    padding: 5px;
+    border: 1px solid black;
+    border-width: 1px 1px 0 0; /*draw top and right borders*/
+}
+
 
 input:not(.prontuario){
     width: 35%;
@@ -131,7 +210,7 @@ select{
     border: 1px solid #ef1d26;
     border-radius: 7%;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 0.3%;
     background: #ef1d26;
     font-size: 20px;
     color: white;
