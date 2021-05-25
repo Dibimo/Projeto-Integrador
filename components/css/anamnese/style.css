@@ -20,7 +20,6 @@ h2{
 }
 .borda{
     border: ridge;
-    border-radius: 7%;
     border-color: black;
     padding-top: 5%;
     padding-bottom: 6%;
@@ -35,6 +34,7 @@ h2{
 
 .botao{
     border: 1px solid #ef1d26;
+    border-radius: 7%;
     padding: 10px 20px;
     background: #ef1d26;
     font-size: 20px;
